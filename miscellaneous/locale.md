@@ -28,12 +28,12 @@ MESSAGE_PAGE_INVALID: "&cThe page number you have entered is invalid."
 #
 # Common Room message
 #
-MESSAGE_ROOM_NOT_IN_ROOM: "&cYou must be in a room before executing this command."
+MESSAGE_ROOM_NOT_IN_ROOM: "&cYou are not in any room."
 MESSAGE_ROOM_ALREADY_IN: "&cYou are already in a room."
 MESSAGE_ROOM_PLAYER_NOT_IN: "&cPlayer {0}&c is not in your room."
 MESSAGE_ROOM_PLAYER_ALREADY_IN: "&cPlayer {0}&c is already in your room."
 MESSAGE_ROOM_COMMAND_UNAVAILABLE: "&cThis command is unavailable."
-MESSAGE_ROOM_NOT_OWNER: "&cYou must be room owner to execute this command."
+MESSAGE_ROOM_NOT_OWNER: "&cYou are not room owner."
 MESSAGE_ROOM_ID_INVALID: "&cRoom with id {0} not found."
 MESSAGE_ROOM_NOT_EXIST: "&cThe room does not exist."
 MESSAGE_ROOM_FULL: "&cThe room is already full."
@@ -152,8 +152,9 @@ MESSAGE_GROUP_MIGRATE_FAIL: "&cFailed to migrate dungeon group {0}."
 #
 # Common Dungeon message
 #
-MESSAGE_DUNGEON_NOT_IN_DUNGEON: "&cYou must be in a dungeon before executing this command."
+MESSAGE_DUNGEON_NOT_IN_DUNGEON: "&cYou are not in any dungeon."
 MESSAGE_DUNGEON_ALREADY_IN_RUN: "&cOne/some member(s) already in a dungeon run."
+MESSAGE_DUNGEON_ALREADY_IN_RUN_SELF: "&cYou are already in a dungeon run."
 MESSAGE_DUNGEON_BLACKLIST_ITEM: "&cBlacklisted item {0} was found in one/some member(s) inventory."
 MESSAGE_DUNGEON_BLACKLIST_ITEM_SELF: "&cBlacklisted item {0} was found in your inventory."
 
@@ -167,11 +168,13 @@ MESSAGE_DUNGEON_ID_NOT_EXIST: "&cThe dungeon's id you have entered does not exis
 
 MESSAGE_DUNGEON_NO_PERMISSION_CREATE: "&cYou don't have permission to create dungeon {0}&c."
 MESSAGE_DUNGEON__NO_PERMISSION_JOIN: "&cYou don't have permission to join dungeon {0}&c."
+MESSAGE_DUNGEON_GROUP_DISABLED: "&cDungeon {0} is disabled."
 
 # Player removal message
 MESSAGE_DUNGEON_PLAYER_NAME_TO_REMOVE: "&cPlease enter player's name to remove."
 MESSAGE_DUNGEON_PLAYER_REMOVED: "&aPlayer {0}&a has been removed from the dungeon."
 MESSAGE_DUNGEON_PLAYER_BE_REMOVED: "&cYou have been removed from the dungeon."
+MESSAGE_DUNGEON_PLAYER_LEAVE_SELF: "&aYou have left the dungeon."
 MESSAGE_DUNGEON_OFFLINE_PLAYER: "&c1 challenger is not online, tell him/her to get online."
 MESSAGE_DUNGEON_OFFLINE_PLAYERS: "&c{0} challengers are not online, tell them to get online."
 

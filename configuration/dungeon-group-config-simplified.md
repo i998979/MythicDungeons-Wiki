@@ -35,8 +35,7 @@ Ruins:
       z: 245.0
     # Icon of this Dungeon Group in Dungeon Type Selector
     # Use "/mg check" with the items on your hand to retrieve the string
-    # Icon: '{"v":2865,"type":"REDSTONE_BLOCK"}'
-    Icon: '{"v":3218,"type":"ACACIA_BOAT","meta":{"meta-type":"UNSPECIFIC","display-name":"[{\"text\":\"123\",\"italic\":false,\"bold\":true}]","lore":["[{\"text\":\"12334\"}]"],"enchants":{"WATER_WORKER":1},"attribute-modifiers":{"GENERIC_MAX_HEALTH":[{"uuid":"fffe1f70-0000-10bc-0000-5b66ffffde88","name":"generic.max_health","amount":40.0,"operation":"ADD_NUMBER","slot":"HAND"}]},"internal":"H4sIAAAAAAAA/+NiYOBkYAlJTC/mYGBgYGJgTkxMZGBOSkpiAAAWQ1q0GgAAAA\u003d\u003d"}}'
+    Icon: '{"v":2865,"type":"REDSTONE_BLOCK"}'
   # How the dungeon is placed
   Map:
     # Length, Width, Height are optional if you have dungeon schematic in place

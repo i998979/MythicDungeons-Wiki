@@ -42,8 +42,18 @@ Ruins:
       y: 4.0
       z: 245.0
     # Icon of this Dungeon Group in Dungeon Type Selector
-    # Use "/mg check" with the items on your hand to retrieve the string
+    # Either use "/mg check" with the items on your hand to retrieve the string
+    # Or follow the format in menu.yml
+    # The dungeon will be sorted by the time it is loaded if only 1 is specified
     Icon: '{"v":2865,"type":"REDSTONE_BLOCK"}'
+    # If the slot is specified, it will be placed in that slot
+    # All existing buttons will be overridden
+    # If the slot is not specified, it will be placed in the next available slot
+    # Icon:
+    #   Items:
+    #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 0'
+    #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 1'
+    #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 2'
     # Blacklist items that cannot be brought into dungeon
     BlacklistItems:
       - '{"v":2865,"type":"EMERALD_BLOCK"}'
@@ -233,60 +243,17 @@ Ruins:
       z: 247.53789380317693
       pitch: 0.0
       yaw: 0.0
-  # Loot chests that players can get items from it
-  LootChests:
-    '1':
-      # Type of the loot chest, check here for available inventory type
-      # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryType.html
-      Type: CHEST
-      # Whether every player in the dungeon has their own loot chest inventory, or they share the same one
-      PerPlayer: true
-      # How long(in ticks) will the loot chest renews
-      Renew: 60
-      # Title of the loot chest, empty if default title should be used
-      Title: ''
-      # Size of the loot chest when "Type" is "CHEST"
-      Size: 54
-      # Contents of the loot chest
-      # Use "/mg check" with the items on your hand to retrieve the string
-      # Followed by which slot to put
-      Items:
-        - '{"v":2865,"type":"REDSTONE_BLOCK"} 8'
-        - '{"v":2865,"type":"DIAMOND_BLOCK"} 16'
-        - '{"v":2865,"type":"EMERALD_BLOCK"} 24'
-      # Potions: [ ]
-      # Effects: [ ]
-      # Hologram:
-      #   Lines: [ ]
-      #   Offset: 2.0
-      # Location of the loot chest
-      Location:
-        world: dungeon
-        x: 125.0
-        y: 5.0
-        z: 260.0
   # Buffs that players can get potion effects
   Buffs:
     '1':
       # Name of the buff
       Name: '&b&lSPEED BOOST'
-      # Type of the buff
-      # ONETIME: The buff can only be claimed once
-      # REPEAT=<tick>: The buff can be claimable again after <tick> ticks
-      Type: REPEAT=20
-      # If true, when the player claimed the buff, others can still claim the buff
-      # If false, when the player claimed the buff, others cannot claim the buff
-      PerPlayer: true
-      # If true, the effects are applied to all team members
-      # If false, the effects are applied to the claimed player only
-      ToTeam: true
-      # Potion effects to apply
-      # Check here for available potion effects name
-      # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
-      # - PotionType Duration(in ticks) Amplifier Ambient Particles Icon
-      Potions:
-        - SPEED 10 2 true true true
-        - JUMP 10 2 true true true
+      # Location of the buff
+      Location:
+        world: dungeon
+        x: 120.5
+        y: 5.0
+        z: 262.5
       # Particle effects of the buff, it will appear when the buff is not claimed
       # Only effects declared in "effects.yml" can be used
       Effects:
@@ -308,32 +275,43 @@ Ruins:
         Offset: 2.0
       # How big is the buff
       Range: 3.0
-      # Location of the buff
-      Location:
-        world: dungeon
-        x: 120.5
-        y: 5.0
-        z: 262.5
+      # Potion effects to apply
+      # Check here for available potion effects name
+      # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+      # - PotionType Duration(in ticks) Amplifier Ambient Particles Icon
+      Potions:
+        - SPEED 10 2 true true true
+        - JUMP 10 2 true true true
+      # Type of the buff
+      # ONETIME: The buff can only be claimed once
+      # REPEAT=<tick>: The buff can be claimable again after <tick> ticks
+      Type: REPEAT=20
+      # If true, when the player claimed the buff, others can still claim the buff
+      # If false, when the player claimed the buff, others cannot claim the buff
+      PerPlayer: true
+      # If true, the effects are applied to all team members
+      # If false, the effects are applied to the claimed player only
+      ToTeam: true
   # Checkpoints declaration so that it can be used in stages
   Checkpoints:
     '1':
       Name: '&bMountain'
+      Location:
+        world: dungeon
+        x: 116.0
+        y: 5.0
+        z: 262.0
       Effects:
         - vortex 3.0
         - vortex 0.0
       Hologram:
         Lines:
           - '&bMountain'
-          - '{material=PLAYER_HEAD;glow=true;Damage=0;custommodeldata=1;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+          - '{material=PLAYER_HEAD;glow=true;damage=0;custommodeldata=1;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
           - '&fThe coldest point that'
           - '&fno one has been here before'
         Offset: 4.0
       Range: 3.0
-      Location:
-        world: dungeon
-        x: 116.0
-        y: 5.0
-        z: 262.0
       # Spawnpoint of the checkpoint, the player respawns in the list of location after death if configured
       Spawnpoints:
         '0':
@@ -357,20 +335,74 @@ Ruins:
           z: 263.0
           pitch: 0.0
           yaw: 0.0
+  # Interactive Holograms so that it can be used in stages
+  InteractiveHolograms:
+    '1':
+      Name: "&2Main Entrance"
+      Location:
+        world: dungeon
+        x: 125.0
+        y: 5.0
+        z: 260.0
+      Effects:
+        - vortex 3.0
+        - vortex 0.0
+      Hologram:
+        Lines:
+          - '&2Main Entrance'
+          - '{material=PLAYER_HEAD;glow=true;famage=0;custommodeldata=1;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+          - '&fInsert %itemamount% %item% to get in'
+          - '&f%itemcurrent%/%itemrequired%'
+        Offset: 4.0
+      # Potions: [ ]
+      Clear: true
+      ConsumeItems: true
+      PerPlayer: false
+      Items:
+        - "{\"v\":3465,\"type\":\"WOODEN_AXE\"}"
+        - "{\"v\":3465,\"type\":\"OAK_LOG\"}"
+  # Loot chests that players can get items from it
+  LootChests:
+    '1':
+      Name: "&eTreasure Chest"
+      # Location of the loot chest
+      Location:
+        world: dungeon
+        x: 125.0
+        y: 5.0
+        z: 260.0
+      # Effects: [ ]
+      # Hologram:
+      #   Lines: [ ]
+      #   Offset: 2.0
+      # Potions: [ ]
+      # Type of the loot chest, check here for available inventory type
+      # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryType.html
+      Type: CHEST
+      # Whether every player in the dungeon has their own loot chest inventory, or they share the same one
+      PerPlayer: true
+      # How long(in ticks) will the loot chest renews
+      Renew: 60
+      # Title of the loot chest, empty if default title should be used
+      Title: ''
+      # Size of the loot chest when "Type" is "CHEST"
+      Size: 54
+      # Contents of the loot chest
+      # Use "/mg check" with the items on your hand to retrieve the string
+      # Followed by which slot to put
+      Items:
+        - '{"v":2865,"type":"REDSTONE_BLOCK"} 8'
+        - '{"v":2865,"type":"DIAMOND_BLOCK"} 16'
+        - '{"v":2865,"type":"EMERALD_BLOCK"} 24'
   # Teleporters that players can shift on it and teleport to designated location
   Teleporters:
     '1':
       Name: '&bMountain'
-      # Destination of the teleporter
-      Destination:
+      Location:
         world: dungeon
-        x: 120.5
+        x: 124.5
         y: 5.0
-        z: 256.5
-        pitch: 0.0
-        yaw: 0.0
-      # Cooldown of the teleporter before it can be used again
-      Cooldown: 60
+        z: 262.5
       Effects:
         - vortex 3.0
         - vortex 0.0
@@ -381,23 +413,28 @@ Ruins:
           - '{material=WHITE_WOOL}'
         Offset: 3.0
       Range: 1.5
-      Location:
+      # Destination of the teleporter
+      Destination:
         world: dungeon
-        x: 124.5
+        x: 120.5
         y: 5.0
-        z: 262.5
+        z: 256.5
+        pitch: 0.0
+        yaw: 0.0
+      # Cooldown of the teleporter before it can be used again
+      Cooldown: 60
   # Different type of traps that can damage players
   Traps:
     # Arrow trap that shoots arrows
     Arrow:
-      # ID of the trap, must be unique for ALL traps
+      # ID of the trap, must be unique for all traps
       '1':
         # Interval(in ticks) between arrow shoots
         Interval: 20
-        # How far will the arrow shoot, default dispenser is 1.0
-        Velocity: 2.0
         # Arrow's damage, 2 means a full heart
         Damage: 5.0
+        # How far will the arrow shoot, default dispenser is 1.0
+        Velocity: 2.0
         # How long(in ticks) will the player be set on fire when he gets hit
         FireTicks: 60
         Potions:
@@ -411,8 +448,8 @@ Ruins:
           z: 255.0
       '2':
         Interval: 20
-        Velocity: 1.0
         Damage: 5.0
+        Velocity: 1.0
         FireTicks: 60
         Potions:
           - SLOW 10 2 true true true
@@ -424,8 +461,8 @@ Ruins:
           z: 256.0
       '3':
         Interval: 20
-        Velocity: 1.0
         Damage: 5.0
+        Velocity: 1.0
         FireTicks: 60
         Potions:
           - SLOW 10 2 true true true
