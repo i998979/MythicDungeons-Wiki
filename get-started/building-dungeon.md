@@ -38,6 +38,6 @@ Also, it is recommended to have `RestoreTerrains` in `config.yml` disabled if ha
 * Join the server
 * Define `Row`, `Column`, `RowGap`, `ColumnGap` in `Ruins.yml` depending on how many dungeon instances you want, total amount of instances is row \* column
 * Define `Length`, `Width`, `Height` of the dungeon schematic in `Ruins.yml` depending on which corner the schematic is copied from. `Length` spans on z-axis positive, `Width` spans on x-axis positive, `Height` spans on y-axis positive. Use negative value if it spans oppositely
-* Paste the schematic file into `MythicDungeons/schematics`
+* Paste the schematic in pre-defined dungeon instance location
 {% endtab %}
 {% endtabs %}
