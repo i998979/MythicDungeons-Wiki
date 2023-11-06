@@ -121,7 +121,7 @@ Starting:
       - "&ewww.Example.com"
 InGame:
   # %expire%: Time before the dungeon expires, and you automatically fail
-  # %objective%: Reserved space to display boss related status messages
+  # %objective%: Reserved space to display boss-related status messages
   Interval: 10
   Title:
     - "&6&lMythicDungeons"
@@ -148,6 +148,38 @@ InGame:
   # Lines between 2 consecutive boss information
   Spaces: 2
 
+  # %block%: Block type required to break
+  # %broke%: Blocks broke
+  # %amount%: Amount of blocks needed to break
+  # %world1% %x1% %y1% %z1%: First corner of the region
+  # %world2% %x2% %y2% %z2%: Second corner of the region
+  # Break Stone 0/3
+  BlockBreak:
+    - "&eBreak %block% %broke%/%amount%"
+  # Break Stone
+  # Cobblestone
+  # Gravel 0/3
+  BlockBreakCombined:
+    - "&eBreak %block%"
+    - "&e%block%"
+    - "&e%block% %broke%/%amount%"
+
+  # %block%: Block type required to place
+  # %placed%: Blocks placed
+  # %amount%: Amount of blocks needed to place
+  # %world1% %x1% %y1% %z1%: First corner of the region
+  # %world2% %x2% %y2% %z2%: Second corner of the region
+  # Place Stone 0/3
+  BlockPlace:
+    - "&ePlace %amount%x %block%"
+  # Place Stone
+  # Cobblestone
+  # Gravel 0/3
+  BlockPlaceCombined:
+    - "&ePlace %block%"
+    - "&e%block%"
+    - "&e%block% %placed%/%amount%"
+
   # %chatscoreboard%: Chat message required, scoreboard text is additionally defined in action
   # %chathassaid%: Is this message has been said by players
   # "Say 123456: Yes"
@@ -160,7 +192,7 @@ InGame:
 
   # %item%: Display name of the item required, if the item has no display name, material name is shown instead
   # %amount%: Amount of the item required
-  # %hasitem%: Is any/all player have all required items or not
+  # %hasitem%: Does any/all player have all required items or not
   # "Has 1x REDSTONE_BLOCK: Yes"
   HasItem: "&eHas %amount%x %item%&7: &f%hasitem%"
   # "Has 1x REDSTONE_BLOCK"
@@ -190,8 +222,8 @@ InGame:
   MobToKill: "&e%mobkill%&7: &f%mobkilled%"
 
   # %npcname%: Name of the NPC
-  # %npcinteract%: Left click, right click or both accepted
-  # %npcinteracted%: Did the player interacted with NPC or not
+  # %npcinteract%: Left click, Right click or both accepted
+  # %npcinteracted%: Did the player interact with NPC or not
   # Click NPC1: Yes
   NPCInteract: "%e%npcinteract% %npcname%&7: %npcinteracted%"
 

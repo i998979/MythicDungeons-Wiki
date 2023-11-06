@@ -30,10 +30,10 @@ MythicDungeons:
   LoadDelay: false
   # Restore the dungeon to what it used to look like after the challenge is ended
   RestoreTerrains: true
-  # Teleport back players into the dungeon when he left the server and join back during dungeon fight
+  # Teleport back players into the dungeon when they left the server and join back during dungeon fight
   # If the server has static spawn, it should be enabled
   TeleportBack: true
-  # Where to teleport players after he left and join back the server during dungeon fight
+  # Where to teleport players after they left and join back the server during dungeon fight
   # Only effective when TeleportBack: true
   # Available options:
   # SPAWN: Teleport back to dungeon's spawn
@@ -62,6 +62,8 @@ MythicDungeons:
   BlockInteract: true
   # Block commands when challenging dungeon
   BlockCommands: true
+  # Block PvP when challenging dungeon
+  BlockPvP: true
   # Hide messages sent by dungeon challengers from all players
   # Hide messages sent by all players except teammates from dungeon challengers
   HideOtherChat: false

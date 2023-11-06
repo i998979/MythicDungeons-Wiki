@@ -90,6 +90,7 @@ MESSAGE_ROOM_ALLINVITE_DISABLED: "&e{0}&c disabled&e all invite. Members can no 
 MESSAGE_ROOM_CREATED: "&eCreated room for dungeon {0}&e."
 MESSAGE_ROOM_NO_PERMISSION_CREATE: "&cYou don't have permission to create room for dungeon {0}&c."
 MESSAGE_ROOM_NO_PERMISSION_JOIN: "&cYou don't have permission to join room for dungeon {0}&c."
+# TODO: Unclear instruction
 MESSAGE_ROOM_NOT_LEADER: "&cYou are not party leader."
 
 # Disband
