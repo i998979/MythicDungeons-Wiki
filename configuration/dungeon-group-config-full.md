@@ -313,36 +313,36 @@ Ruins:
         x: 116.0
         y: 5.0
         z: 262.0
-      # Regional checkpoint, it will captured if player stays between 2 points
-      Regions:
-        Min:
-          world: dungeon
-          x: 114.5
-          y: 0.0
-          z: 264.5
-        Max:
-          world: dungeon
-          x: 117.5
-          y: 256.0
-          z: 261.5
+      # Regional checkpoint, it will be captured if player stays between 2 points
+      # Regions:
+      #   Min:
+      #     world: dungeon
+      #     x: 114.5
+      #     y: 0.0
+      #     z: 264.5
+      #   Max:
+      #     world: dungeon
+      #     x: 117.5
+      #     y: 256.0
+      #     z: 261.5
       # Multi-point checkpoint, it will be captured if player stays within range of either point
       # Or players are required to stay in all points
-      Points:
-        '0':
-          world: dungeon
-          x: 115.0
-          y: 5.0
-          z: 262.0
-        '1':
-          world: dungeon
-          x: 116.0
-          y: 5.0
-          z: 262.0
-        '2':
-          world: dungeon
-          x: 117.0
-          y: 5.0
-          z: 262.0
+      # Points:
+      #   '0':
+      #     world: dungeon
+      #     x: 115.0
+      #     y: 5.0
+      #     z: 262.0
+      #   '1':
+      #     world: dungeon
+      #     x: 116.0
+      #     y: 5.0
+      #     z: 262.0
+      #   '2':
+      #     world: dungeon
+      #     x: 117.0
+      #     y: 5.0
+      #     z: 262.0
       # Spawnpoint of the checkpoint, the player respawns in the list of locations after death if configured
       Spawnpoints:
         '0':
