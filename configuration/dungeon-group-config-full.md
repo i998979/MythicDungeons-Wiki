@@ -177,20 +177,20 @@ Ruins:
     # ID of the stage, must be unique
     '0':
       Options:
-        # True if this is the first stage of the dungeon, only 1 can be existed
+        # True if this is the first stage of the dungeon, only 1 can exist
         Initial: true
       # A list of actions will do when this stage starts
       Actions:
         - MythicSpawner{type=rat1;world=dungeon;x=116.0;y=5.0;z=255.0;yaw=0.0;pitch=0.0;settings=rat1.yml}
         - MythicSpawner{type=rat1;world=dungeon;x=116.0;y=5.0;z=252.0;yaw=0.0;pitch=0.0;settings=rat1.yml}
         - MythicSpawner{type=rat2;world=dungeon;x=124.0;y=5.0;z=252.0;yaw=0.0;pitch=0.0;settings=rat2.yml}
-      # A list of objectives need to be fulfilled to complete this stage
+      # A list of objectives needs to be fulfilled to complete this stage
       Objectives:
         - MythicMob{type=rat1;amount=3}
         - Checkpoint{id=1}
       # A list of actions will do when this stage is completed
       Completions: [ ]
-      # A list of actions will do when the dungeon is failed during this stage
+      # A list of actions will do when the dungeon fails during this stage
       FailActions: [ ]
       # A list of stages that will start when this stage is completed
       Branches:
@@ -210,7 +210,7 @@ Ruins:
         - Branch{id=2}
     '2':
       Options:
-        # True if this is the last stage of the dungeon, more than 1 can be existed
+        # True if this is the last stage of the dungeon, more than 1 can exist
         End: true
       Actions:
         - MythicMob{type=rat4;at=NEARBY;radius=10.0}
@@ -296,11 +296,6 @@ Ruins:
   Checkpoints:
     '1':
       Name: '&bMountain'
-      Location:
-        world: dungeon
-        x: 116.0
-        y: 5.0
-        z: 262.0
       Effects:
         - vortex 3.0
         - vortex 0.0
@@ -312,7 +307,43 @@ Ruins:
           - '&fno one has been here before'
         Offset: 4.0
       Range: 3.0
-      # Spawnpoint of the checkpoint, the player respawns in the list of location after death if configured
+      # Single-point checkpoint, it will be captured if player stays within range
+      Location:
+        world: dungeon
+        x: 116.0
+        y: 5.0
+        z: 262.0
+      # Regional checkpoint, it will captured if player stays between 2 points
+      Regions:
+        Min:
+          world: dungeon
+          x: 114.5
+          y: 0.0
+          z: 264.5
+        Max:
+          world: dungeon
+          x: 117.5
+          y: 256.0
+          z: 261.5
+      # Multi-point checkpoint, it will be captured if player stays within range of either point
+      # Or players are required to stay in all points
+      Points:
+        '0':
+          world: dungeon
+          x: 115.0
+          y: 5.0
+          z: 262.0
+        '1':
+          world: dungeon
+          x: 116.0
+          y: 5.0
+          z: 262.0
+        '2':
+          world: dungeon
+          x: 117.0
+          y: 5.0
+          z: 262.0
+      # Spawnpoint of the checkpoint, the player respawns in the list of locations after death if configured
       Spawnpoints:
         '0':
           world: dungeon
