@@ -16,5 +16,6 @@
 | MythicDungeons.Bypass.Rooms.Private          | Bypass private room limit                                                          |
 | MythicDungeons.Bypass.Rooms.MinLimit         | Bypass limit of starting dungeon with insufficient players                         |
 | MythicDungeons.Bypass.Rooms.MaxLimit         | Bypass limit of starting dungeon with excessive players                            |
+| MythicDungeons.Bypass.Dungeons.PvP           | Bypass limit of PvPing players inside dungeon                                      |
 
 \
