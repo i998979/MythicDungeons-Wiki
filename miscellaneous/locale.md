@@ -103,6 +103,10 @@ MESSAGE_ROOM_DISBAND_LEFT_MEMBER: "&eThe room owner has left the room and the ro
 MESSAGE_ROOM_LEFT_SELF: "&eYou left the room."
 MESSAGE_ROOM_LEFT_MEMBER: "&e{0}&e left the room."
 
+# Note
+MESSAGE_ROOM_NOTE_CLEARED: "&eRoom note has been cleared."
+MESSAGE_ROOM_NOTE_SET: "&eRoom note has been set to \"{0}\"."
+
 # Privacy
 MESSAGE_ROOM_PRIVACY: "&cPlease enter room privacy. (Available options: PUBLIC/PRIVATE/PASSWORD)"
 MESSAGE_ROOM_PRIVACY_ENTER_NEW_PASSWORD: "&cPlease enter the new password."
