@@ -84,14 +84,6 @@ Please make sure that other plugins did not handle teleport upon death / login.
 
 <details>
 
-<summary>Getting <code>java.lang.NullPointerException: Cannot invoke "org.bukkit.World.getName()</code> when loading.</summary>
-
-Most likely you have a custom world generator and / or the world wasn't registered when the plugin loads. Try enabling `LoadDelay` in [General Config](../configuration/general-config.md).
-
-</details>
-
-<details>
-
 <summary>Getting <code>java.lang.IndexOutOfBoundsException</code> when starting dungeon.</summary>
 
 The dungeon schematic is most likely pasting outside Minecraft's height limit. Try adjusting `Origin` in[ Dungeon Group Config](../configuration/dungeon-group-config-simplified.md).
