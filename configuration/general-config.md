@@ -22,12 +22,6 @@ MythicDungeons:
       z: 242.5
       pitch: 180.0
       yaw: 0.0
-  # Delay the dungeon configuration and player data loading
-  # If you are using World Generator plugin and having this error
-  # "java.lang.NullPointerException: Cannot invoke "org.bukkit.World.getName()"
-  # because the return value of "org.bukkit.Location.getWorld()" is null"
-  # You may try to turn this on
-  LoadDelay: false
   # Restore the dungeon to what it used to look like after the challenge is ended
   RestoreTerrains: true
   # Teleport back players into the dungeon when they left the server and join back during dungeon fight
@@ -42,7 +36,7 @@ MythicDungeons:
   TeleportTo: SPAWN
   # Cancel death screen when the player dies
   AutoRespawn: true
-  # *** NOT IMPLEMENTED *** Show message to remind player the dungeon is about to end, ascending order, in seconds
+  # Show message to remind player the dungeon is about to end, ascending order, in seconds
   PlaytimeRemind: '60 30 15 5'
   # How long will the dungeon start if the room has enough players, only effective when joining through signs or NPCs
   AutoStartTimer:

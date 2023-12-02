@@ -22,6 +22,7 @@ InRoom:
   # %current%: Room's member count
   # %min%: Room's min member
   # %max%: Room's max member
+  # %note%: Room's note
   # %privacy%: Room's privacy
   # %password%: Room's password
   # %created%: Room's creation time
@@ -81,6 +82,7 @@ Starting:
   # %current%: Room's member count
   # %min%: Room's min member
   # %max%: Room's max member
+  # %note%: Room's note
   # %privacy%: Room's privacy
   # %password%: Room's password
   # %creation%: Room's creation time
@@ -203,7 +205,7 @@ InGame:
     - "&eor %amount%x %item%"
     - "&eor %amount%x %item%&7: &f%hasitem%"
 
-  # %lc%: Name of the lootchest needs to be opened
+  # %lc%: Name of the loot chest needs to be opened
   # %lcopened% Lootchest opened or not
   # "Treasure: Not opened"
   LootChest: "&e%lc%&7: &f%lcopened%"

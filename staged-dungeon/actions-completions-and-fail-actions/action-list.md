@@ -19,6 +19,7 @@ If the parameters are located under `Completions`, the list of actions will be d
 | renew      | How long in ticks will the buff claimable again                                                                        |                                                              |          |
 | perplayer  | If `true`, when the player claimed the buff, othters can still claim the buff. Otherwise, others cannot claim the buff | `true` or `false`                                            |          |
 | toteam     | Is the buff effects apply to team                                                                                      | `true` or `false`                                            |          |
+| refresh    | Make the buff claimable again instantly                                                                                | `true`                                                       |          |
 | \<index>   | Potion effects to apply                                                                                                | `0='SPEED 10 2 true true true';1='JUMP 10 2 true true true'` |          |
 
 ### CancelStage

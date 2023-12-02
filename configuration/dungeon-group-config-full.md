@@ -33,7 +33,7 @@ Ruins:
     # Experience will not drop on ground upon death
     KeepExperience: true
     # Additional title countdown, players will be invincible and frozen during countdown
-    TitleCountdown: true
+    TitleCountdown: false
     # Location where the dungeon schematic will start to place
     # It should be the lower corner of the dungeon
     Origin:
@@ -260,7 +260,7 @@ Ruins:
         # - EffectType VerticalOffset
         - vortex 3.0
         - vortex 0.0
-      # Holograms of the buff. Only effective if HolographicDisplays is installed and the hook is enabled
+      # Holograms of the buff. Only effective if hologram plugin is installed and the hook is enabled
       Hologram:
         # Text line or Item line is supported
         # Available parameters of Item line(separate with ;):
@@ -302,7 +302,7 @@ Ruins:
       Hologram:
         Lines:
           - '&bMountain'
-          - '{material=PLAYER_HEAD;glow=true;damage=0;custommodeldata=1;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+          - '{material=PLAYER_HEAD;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
           - '&fThe coldest point that'
           - '&fno one has been here before'
         Offset: 4.0
@@ -366,7 +366,7 @@ Ruins:
           z: 263.0
           pitch: 0.0
           yaw: 0.0
-  # Interactive Holograms so that it can be used in stages
+  # *** NOT IMPLEMENTED *** Interactive Holograms so that it can be used in stages
   InteractiveHolograms:
     '1':
       Name: "&2Main Entrance"
@@ -381,7 +381,7 @@ Ruins:
       Hologram:
         Lines:
           - '&2Main Entrance'
-          - '{material=PLAYER_HEAD;glow=true;famage=0;custommodeldata=1;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+          - '{material=PLAYER_HEAD;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
           - '&fInsert %itemamount% %item% to get in'
           - '&f%itemcurrent%/%itemrequired%'
         Offset: 4.0
@@ -406,7 +406,9 @@ Ruins:
       # Hologram:
       #   Lines: [ ]
       #   Offset: 2.0
-      # Potions: [ ]
+      Potions:
+        - SPEED 10 2 true true true
+        - JUMP 10 2 true true true
       # Type of the loot chest, check here for available inventory type
       # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryType.html
       Type: CHEST
@@ -452,6 +454,8 @@ Ruins:
         z: 256.5
         pitch: 0.0
         yaw: 0.0
+      # Time before the teleporter teleports
+      Time: 60
       # Cooldown of the teleporter before it can be used again
       Cooldown: 60
   # Different type of traps that can damage players
