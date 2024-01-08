@@ -21,7 +21,7 @@ MESSAGE_NOT_PLAYER: "&cYou must be a player to execute this command."
 MESSAGE_PLAYER_NOT_FOUND: "&cPlayer named {0} not found."
 MESSAGE_PLAYER_OFFLINE: "&cPlayer {0}&c is not online."
 MESSAGE_CHAT_ENTER_MESSAGE: "&cPlease enter the message."
-MESSAGE_ENTER_OWN_NAME: "&cYou cannot enter your own name."
+MESSAGE_ENTER_OWN_NAME: "&cYou cannot enter your name."
 MESSAGE_PAGE_INVALID: "&cThe page number you have entered is invalid."
 
 
@@ -52,7 +52,7 @@ MESSAGE_ROOM_VIEW_NON_PUBLIC: "&aYou cannot view this room as it is not public."
 
 # Invite
 MESSAGE_ROOM_INVITE_ENTER_NAME: "&cPlease enter the player's name who has sent you the invitation."
-MESSAGE_ROOM_INVITE_NO_INVITATION: "&cYou don't have any invitation from {0}&c."
+MESSAGE_ROOM_INVITE_NO_INVITATION: "&cYou don't have an invitation from {0}&c."
 MESSAGE_ROOM_INVITE_DECLINED_INVITER: "&e{0}&e has declined your invitation."
 MESSAGE_ROOM_INVITE_DECLINED_SELF: "&eYou declined {0}&e room invitation by {1}&e."
 MESSAGE_ROOM_INVITE_PLAYER: "&cPlease enter player's name you want to invite."
@@ -68,9 +68,9 @@ MESSAGE_ROOM_INVITE_EXPIRED_INVITED: "&eThe invitation of {0} &esent from {1} &e
 MESSAGE_ROOM_JOIN_SELF: "&eYou have joined the room with id {0} owned by {1}&e."
 MESSAGE_ROOM_JOIN_SELF_NO_OWNER: "&eYou have joined the room with id {0}."
 MESSAGE_ROOM_JOIN_MEMBER: "&e{0}&e has joined the room."
-MESSAGE_ROOM_JOIN_ENTER_NAME_OR_ID: "&cPlease enter the room owner's name or room id that you want to join."
+MESSAGE_ROOM_JOIN_ENTER_NAME_OR_ID: "&cPlease enter the room owner's name or room ID that you want to join."
 MESSAGE_ROOM_JOIN_NO_OWNED: "&c{0}&c does not own any rooms."
-MESSAGE_ROOM_JOIN_ENTER_PASSWORD: "&cPlease enter password of the room by typing /room join {0} <Password>."
+MESSAGE_ROOM_JOIN_ENTER_PASSWORD: "&cPlease enter the password of the room by typing /room join {0} <Password>."
 MESSAGE_ROOM_JOIN_PASSWORD_INCORRECT: "&cIncorrect password."
 MESSAGE_ROOM_JOIN_PRIVATE: "&cThe room you are joining is private and you don't have an invitation."
 MESSAGE_ROOM_STARTED: "&cThe room has already started."
@@ -90,7 +90,6 @@ MESSAGE_ROOM_ALLINVITE_DISABLED: "&e{0}&c disabled&e all invite. Members can no 
 MESSAGE_ROOM_CREATED: "&eCreated room for dungeon {0}&e."
 MESSAGE_ROOM_NO_PERMISSION_CREATE: "&cYou don't have permission to create room for dungeon {0}&c."
 MESSAGE_ROOM_NO_PERMISSION_JOIN: "&cYou don't have permission to join room for dungeon {0}&c."
-# TODO: Unclear instruction
 MESSAGE_ROOM_NOT_LEADER: "&cYou are not party leader."
 
 # Disband
@@ -137,7 +136,7 @@ MESSAGE_GROUP_TYPE_ALREADY_EXIST: "&cDungeon group type {0} already exist."
 MESSAGE_GROUP_ENTER_DISPLAY_NAME: "&cPlease enter dungeon group display name."
 MESSAGE_GROUP_CREATED: "&aDungeon group type {0} named {1}&a was created."
 MESSAGE_GROUP_DELETED: "&aDungeon group type {0} was deleted."
-MESSAGE_GROUP_CANNOT_LOAD_STILL_RUNNING: "&cDungeon groups cannot be loaded since there are dungeon still running."
+MESSAGE_GROUP_CANNOT_LOAD_STILL_RUNNING: "&cDungeon groups cannot be loaded since there are dungeons still running."
 MESSAGE_GROUP_FILE_NOT_EXIST: "&aDungeon group file {0} does not exist."
 MESSAGE_GROUP_LOADED: "&aDungeon group {0} loaded from config."
 MESSAGE_GROUPS_LOADED: "&aDungeon groups loaded from config."
@@ -150,7 +149,7 @@ MESSAGE_GROUP_MIGRATE_ENTER_NAME: "&cPlease enter a file name to migrate."
 MESSAGE_GROUP_MIGRATE_NOT_EXIST: "&cThe file you have entered does not exist."
 MESSAGE_GROUP_MIGRATE_ALL: "&aMigrating all dungeon groups..."
 MESSAGE_GROUP_MIGRATE_COMPLETE_ALL: "&aCompleted migration for all dungeon groups."
-MESSAGE_GROUP_MIGRATE_FAIL_SOME: "&cSome of the dungeon group failed to migrate. Please check server console for details."
+MESSAGE_GROUP_MIGRATE_FAIL_SOME: "&cSome of the dungeon group failed to migrate. Please check the server console for details."
 MESSAGE_GROUP_MIGRATE_COMPLETE: "&aCompleted migration for dungeon group {0}."
 MESSAGE_GROUP_MIGRATE_FAIL: "&cFailed to migrate dungeon group {0}."
 
@@ -173,7 +172,8 @@ MESSAGE_DUNGEON_ID_INVALID: "&cThe dungeon's id you have entered is invalid."
 MESSAGE_DUNGEON_ID_NOT_EXIST: "&cThe dungeon's id you have entered does not exist."
 
 MESSAGE_DUNGEON_NO_PERMISSION_CREATE: "&cYou don't have permission to create dungeon {0}&c."
-MESSAGE_DUNGEON__NO_PERMISSION_JOIN: "&cYou don't have permission to join dungeon {0}&c."
+MESSAGE_DUNGEON__NO_PERMISSION_JOIN: "&cOne/some member(s) does not have permission to join dungeon {0}&c."
+MESSAGE_DUNGEON__NO_PERMISSION_JOIN_SELF: "&cYou don't have permission to join dungeon {0}&c."
 MESSAGE_DUNGEON_GROUP_DISABLED: "&cDungeon {0} is disabled."
 
 # Player removal message
@@ -276,5 +276,6 @@ TIMER_SEC: "s"
 # GUI
 #
 GUI_INVALID_NAME: "Invalid name"
+
 ```
 {% endcode %}
