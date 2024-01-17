@@ -68,18 +68,18 @@ Ruins:
         Locations:
           '0':
             world: dungeon
-            x: 0.0
-            y: 0.0
-            z: 0.0
+            x: 113.0
+            y: 4.0
+            z: 242.0
       Leave:
         # Configure Leave Signs
         Locations:
           # Location of the Leave Signs, ID must be unique
           '0':
             world: dungeon
-            x: 0.0
-            y: 0.0
-            z: 0.0
+            x: 112.0
+            y: 4.0
+            z: 242.0
     # Citizens NPCs for user to click to join/leave the dungeon queue (temporary room)
     # All NPCs must be configured and spawned in world by Citizens
     NPCs:
@@ -119,9 +119,9 @@ Ruins:
       # Only Loot Tables declared in "loottables" folder are supported
       # Use "/mg check" with the items on your hand to retrieve the string
       Items:
-        - '{"v":2865,"type":"REDSTONE_BLOCK"}'
-        - '{"v":2865,"type":"DIAMOND_BLOCK"}'
-        - '{"v":2865,"type":"EMERALD_BLOCK"}'
+        - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
+        - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
+        - "{\"v\":3578,\"type\":\"EMERALD_BLOCK\"}"
         # - 'MMOItems{type=FOOD;id=ICE_CREAM;amount=64}'
         # - 'MythicMobs{id="SkeletonKingSword";amount=2}'
         # - 'ItemsAdder{id=iron_search;amount=2}'
@@ -281,7 +281,6 @@ Ruins:
       # - PotionType Duration(in ticks) Amplifier Ambient Particles Icon
       Potions:
         - SPEED 10 2 true true true
-        - JUMP 10 2 true true true
       # Type of the buff
       # ONETIME: The buff can only be claimed once
       # REPEAT=<tick>: The buff can be claimable again after <tick> ticks
@@ -297,15 +296,40 @@ Ruins:
     '1':
       Name: '&bMountain'
       Effects:
-        - vortex 3.0
-        - vortex 0.0
+        # Appear when the checkpoint is enabled
+        Idle:
+          - vortex 3.0
+        # Appear when the checkpoint going to be claimed
+        Claiming:
+          - vortex 3.0
+        # Appear when the checkpoint is claimed
+        Claimed:
+          - vortex 3.0
       Hologram:
-        Lines:
-          - '&bMountain'
-          - '{material=PLAYER_HEAD;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
-          - '&fThe coldest point that'
-          - '&fno one has been here before'
-        Offset: 4.0
+        Idle:
+          Offset: 4.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+            - '0 &bMountain'
+            - '0 &fThe coldest point that'
+            - '0 '
+            - '0 &fno one has been here before'
+        Claiming:
+          Offset: 6.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=3fb398fb-f50a-42de-998d-692c35048e86}'
+            - '1 &bMountain'
+            - '1 &fThe coldest point that'
+            - '1 &fno one has been here before'
+            - '1 Claiming in %time%s'
+        Claimed:
+          Offset: 2.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=34a35801-3895-4aae-a7e5-fbb52e575e3d}'
+            - '2 &bMountain'
+            - '2 &fThe coldest point that'
+            - '2 &fno one has been here before'
+            - '2 Claimed'
       Range: 3.0
       # Single-point checkpoint, it will be captured if player stays within range
       Location:
@@ -366,32 +390,6 @@ Ruins:
           z: 263.0
           pitch: 0.0
           yaw: 0.0
-  # *** NOT IMPLEMENTED *** Interactive Holograms so that it can be used in stages
-  InteractiveHolograms:
-    '1':
-      Name: "&2Main Entrance"
-      Location:
-        world: dungeon
-        x: 125.0
-        y: 5.0
-        z: 260.0
-      Effects:
-        - vortex 3.0
-        - vortex 0.0
-      Hologram:
-        Lines:
-          - '&2Main Entrance'
-          - '{material=PLAYER_HEAD;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
-          - '&fInsert %itemamount% %item% to get in'
-          - '&f%itemcurrent%/%itemrequired%'
-        Offset: 4.0
-      # Potions: [ ]
-      Clear: true
-      ConsumeItems: true
-      PerPlayer: false
-      Items:
-        - "{\"v\":3465,\"type\":\"WOODEN_AXE\"}"
-        - "{\"v\":3465,\"type\":\"OAK_LOG\"}"
   # Loot chests that players can get items from it
   LootChests:
     '1':
@@ -402,10 +400,6 @@ Ruins:
         x: 125.0
         y: 5.0
         z: 260.0
-      # Effects: [ ]
-      # Hologram:
-      #   Lines: [ ]
-      #   Offset: 2.0
       Potions:
         - SPEED 10 2 true true true
         - JUMP 10 2 true true true
@@ -427,37 +421,38 @@ Ruins:
         - '{"v":2865,"type":"REDSTONE_BLOCK"} 8'
         - '{"v":2865,"type":"DIAMOND_BLOCK"} 16'
         - '{"v":2865,"type":"EMERALD_BLOCK"} 24'
-  # Teleporters that players can shift on it and teleport to designated location
-  Teleporters:
-    '1':
-      Name: '&bMountain'
-      Location:
-        world: dungeon
-        x: 124.5
-        y: 5.0
-        z: 262.5
-      Effects:
-        - vortex 3.0
-        - vortex 0.0
-      Hologram:
-        Lines:
-          - '&bTELEPORT TO'
-          - '&f&lMOUNTAIN'
-          - '{material=WHITE_WOOL}'
-        Offset: 3.0
-      Range: 1.5
-      # Destination of the teleporter
-      Destination:
-        world: dungeon
-        x: 120.5
-        y: 5.0
-        z: 256.5
-        pitch: 0.0
-        yaw: 0.0
-      # Time before the teleporter teleports
-      Time: 60
-      # Cooldown of the teleporter before it can be used again
-      Cooldown: 60
+    # Teleporters that players can shift on it and teleport to designated location
+    Teleporters:
+      '1':
+        Name: '&bMountain'
+        Location:
+          world: dungeon
+          x: 124.5
+          y: 5.0
+          z: 262.5
+        Effects:
+          - vortex 3.0
+          - vortex 0.0
+        Hologram:
+          Lines:
+            - '&bTELEPORT TO'
+            - '&f&lMOUNTAIN'
+            - 'Teleport in %time%s'
+            - 'Cooldown in %cooldown%s'
+            - '{material=WHITE_WOOL}'
+          Offset: 3.0
+        Range: 1.5
+        # Destination of the teleporter
+        Destination:
+          world: dungeon
+          x: 120.5
+          y: 5.0
+          z: 256.5
+          pitch: 0.0
+          yaw: 0.0
+        Time: 60
+        # Cooldown of the teleporter before it can be used again
+        Cooldown: 60
   # Different type of traps that can damage players
   Traps:
     # Arrow trap that shoots arrows
