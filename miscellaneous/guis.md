@@ -67,100 +67,19 @@ Menus:
   #
   #
   #
-  Menu:
-    Size: 54
-    Name: "MythicDungeons rooms"
-    Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44 45 53"
-      Material: WHITE_STAINED_GLASS_PANE
-      Name: " "
-      Lores: [ ]
-    Head:
-      Slot: "10 11 12 13 14 15 16 19 20 21 22 23 24 25 28 29 30 31 32 33 34 37 38 39 40 41 42 43"
-      Material: PLAYER_HEAD
-      Name: "&e%owner%"
-      Lores:
-        - "&7Id: %id%"
-        - "&7Dungeon: %dungeon%"
-        - "&7Members: %current%/%max%"
-        - "&7Privacy: %privacy%"
-        - "&7Note: %note%"
-        - ""
-        - "&7Left click to join"
-        - "&7Right click to view"
-    Previous:
-      Slot: 46
-      Material: ARROW
-      Name: "&fPrevious page"
-      Lores:
-        - "&7%current%/%max%"
-    Next:
-      Slot: 52
-      Material: ARROW
-      Name: "&fNext page"
-      Lores:
-        - "&7%current%/%max%"
-    Search:
-      Slot: 48
-      Material: OAK_SIGN
-      Name: "&aSearch"
-      Lores:
-        # Nothing is filtered
-        Empty:
-          - "&7Find room by owner's name"
-          - "&7room type, or room id."
-          - ""
-          - "&eClick to search!"
-        # Filtered text included
-        Filtered:
-          - "&7Find room by owner's name"
-          - "&7room type, or room id."
-          - ""
-          - "&7Filtered: &e%search%"
-          - ""
-          - "&bRight click to clear!"
-          - "&eClick to edit filter!"
-    Create:
-      Slot: 49
-      Material: END_PORTAL_FRAME
-      Name: "&cCreate room"
-      Lores:
-        - "&7Have fun with your friends!"
-    Return:
-      Slot: 49
-      Material: OAK_DOOR
-      Name: "&aReturn to room"
-      Lores:
-        - "&7You are already inside a room,"
-        - "&7click here to return."
-    Sort:
-      Slot: 50
-      Material: HOPPER
-      Name: "&aSort by"
-      Lores:
-        - "%c_none%> None"
-        - "%c_name%> Owner name"
-        - "%c_type%> Room type"
-        - "%c_id%> Room id"
-        - ""
-        - "&eClick to change!"
-      # Color code of selected sorting method
-      Unselected: "&7"
-      # Color code of unselected sorting method
-      Selected: "&b"
   Confirm:
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
     Confirm:
-      Slot: "10 11 12 19 20 21 28 29 30"
+      Slot: [ 10, 11, 12, 19, 20, 21, 28, 29, 30 ]
       Material: EMERALD_BLOCK
       Name: "&aConfirm"
       Lores: [ ]
     Cancel:
-      Slot: "14 15 16 23 24 25 32 33 34"
+      Slot: [ 14, 15, 16, 23, 24, 25, 32, 33, 34 ]
       Material: REDSTONE_BLOCK
       Name: "&cCancel"
       Lores: [ ]
@@ -175,7 +94,7 @@ Menus:
     Size: 45
     Name: "Creating %dungeon% &rroom"
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
@@ -255,20 +174,24 @@ Menus:
     Size: 54
     Name: "Viewing invitations..."
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44 45 53"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 53 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
-    Invited:
-      Slot: "0 8 9 17 18 26 27 35 36 44 45 53"
-      Material: PLAYER_HEAD
-      Name: "&e%name%"
+    Previous:
+      Slot: 46
+      Material: ARROW
+      Name: "&ePrevious page &7(%curr%/%max%)"
       Lores:
-        # Lore only show for room owner
-        Owner:
-          - "&cClick to remove invitation"
-        # Lore only show for room members
-        Member: [ ]
+        - ""
+        - "&bRight click to skip!"
+    Next:
+      Slot: 52
+      Material: ARROW
+      Name: "&eNext page &7(%curr%/%max%)"
+      Lores:
+        - ""
+        - "&bRight click to skip!"
     Invite:
       Slot: 48
       Material: OAK_SIGN
@@ -281,50 +204,127 @@ Menus:
       Material: ARROW
       Name: "&aReturn to room"
       Lores: [ ]
-    Next:
-      Slot: 52
-      Material: ARROW
-      Name: "&eNext page &7(%curr%/%max%)"
+    Invited:
+      Slot: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+      Material: PLAYER_HEAD
+      Name: "&e%name%"
       Lores:
+        # Lore only show for room owner
+        Owner:
+          - "&cClick to remove invitation"
+        # Lore only show for room members
+        Member: [ ]
+  Menu:
+    Size: 54
+    Name: "MythicDungeons rooms"
+    Pane:
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 53 ]
+      Material: WHITE_STAINED_GLASS_PANE
+      Name: " "
+      Lores: [ ]
+    Head:
+      Slot: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
+      Material: PLAYER_HEAD
+      Name: "&e%owner%"
+      Lores:
+        - "&7Id: %id%"
+        - "&7Dungeon: %dungeon%"
+        - "&7Members: %current%/%max%"
+        - "&7Privacy: %privacy%"
+        - "&7Note: %note%"
         - ""
-        - "&bRight click to skip!"
+        - "&7Left click to join"
+        - "&7Right click to view"
     Previous:
       Slot: 46
       Material: ARROW
-      Name: "&ePrevious page &7(%curr%/%max%)"
+      Name: "&fPrevious page"
       Lores:
+        - "&7%current%/%max%"
+    Next:
+      Slot: 52
+      Material: ARROW
+      Name: "&fNext page"
+      Lores:
+        - "&7%current%/%max%"
+    Search:
+      Slot: 48
+      Material: OAK_SIGN
+      Name: "&aSearch"
+      Lores:
+        # Nothing is filtered
+        Empty:
+          - "&7Find room by owner's name"
+          - "&7room type, or room id."
+          - ""
+          - "&eClick to search!"
+        # Filtered text included
+        Filtered:
+          - "&7Find room by owner's name"
+          - "&7room type, or room id."
+          - ""
+          - "&7Filtered: &e%search%"
+          - ""
+          - "&bRight click to clear!"
+          - "&eClick to edit filter!"
+    Create:
+      Slot: 49
+      Material: END_PORTAL_FRAME
+      Name: "&cCreate room"
+      Lores:
+        - "&7Have fun with your friends!"
+    Return:
+      Slot: 49
+      Material: OAK_DOOR
+      Name: "&aReturn to room"
+      Lores:
+        - "&7You are already inside a room,"
+        - "&7click here to return."
+    Sort:
+      Slot: 50
+      Material: HOPPER
+      Name: "&aSort by"
+      Lores:
+        - "%c_none%> None"
+        - "%c_name%> Owner name"
+        - "%c_type%> Room type"
+        - "%c_id%> Room id"
         - ""
-        - "&bRight click to skip!"
+        - "&eClick to change!"
+      # Color code of selected sorting method
+      Unselected: "&7"
+      # Color code of unselected sorting method
+      Selected: "&b"
   Ready:
     Size: 27
     Name: "Get ready for %dungeon%&r!"
     Pane:
-      Slot: "1 2 3 4 5 6 7 19 20 21 22 23 24 25"
+      Slot: [ 1, 2, 3, 4, 5, 6, 7, 19, 20, 21, 22, 23, 24, 25 ]
       Material: BLACK_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
     Pane2:
-      Slot: "0 8 9 17 18 26"
+      Slot: [ 0, 8, 9, 17, 18, 26 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
     Three:
-      Slot: "10 16"
+      Slot: [ 10, 16 ]
       Material: YELLOW_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
     Two:
-      Slot: "11 15"
+      Slot: [ 11, 15 ]
       Material: ORANGE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
     One:
-      Slot: "12 14"
+      Slot: [ 12, 14 ]
       Material: RED_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
     Cancel:
-      Slot: "4 22"
+      Slot: [ 4, 22 ]
       Material: REDSTONE_BLOCK
       Name: "&cCancel"
       Lores: [ ]
@@ -339,7 +339,7 @@ Menus:
     Size: 54
     Name: "%owner%'s %dungeon% &rroom"
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44 45 53"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 53 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
@@ -355,7 +355,7 @@ Menus:
         Offline:
           - "&7Status: &cOffline"
     Member:
-      Slot: "10 11 12 13 14 15 16 19 20 21 22 23 24 25 28 29 30 31 32 33 34 37 38 39 40 41 42 43"
+      Slot: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
       Material: PLAYER_HEAD
       Name: "&e%name%"
       Lores:
@@ -463,7 +463,7 @@ Menus:
     Size: 54
     Name: "Viewing %owner%'s %dungeon% &rroom"
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44 45 53"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 53 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
@@ -477,7 +477,7 @@ Menus:
         Offline:
           - "&7Status: &cOffline"
     Member:
-      Slot: "10 11 12 13 14 15 16 19 20 21 22 23 24 25 28 29 30 31 32 33 34 37 38 39 40 41 42 43"
+      Slot: [ 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43 ]
       Material: PLAYER_HEAD
       Name: "&e%name%"
       Lores:
@@ -519,7 +519,7 @@ Menus:
     Size: 45
     Name: "Modifying %dungeon% &rroom..."
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
@@ -594,7 +594,7 @@ Menus:
     Size: 54
     Name: "Please select a dungeon type..."
     Pane:
-      Slot: "0 8 9 17 18 26 27 35 36 44 45 53"
+      Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44, 45, 53 ]
       Material: WHITE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
