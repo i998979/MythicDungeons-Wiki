@@ -84,9 +84,11 @@ Please make sure that other plugins did not handle teleport upon death / login.
 
 <details>
 
-<summary>Getting <code>java.lang.IndexOutOfBoundsException</code> when starting dungeon.</summary>
+<summary><del>Getting <code>java.lang.IndexOutOfBoundsException</code> when starting dungeon.</del></summary>
 
-The dungeon schematic is most likely pasting outside Minecraft's height limit. Try adjusting `Origin` in[ Dungeon Group Config](../configuration/dungeon-group-config-simplified.md).
+~~The dungeon schematic is most likely pasting outside Minecraft's height limit. Try adjusting `Origin` in~~[ ~~Dungeon Group Config~~](../configuration/dungeon-group-config-simplified.md)~~.~~
+
+_**Fixed in 2.6.1-SNAPSHOT.**_
 
 </details>
 

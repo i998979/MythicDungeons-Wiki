@@ -14,6 +14,7 @@ Arguments inside `<>` are required and arguments inside `[]` are optional.
 | /MythicGroups Check                 | MythicDungeons.Commands.Groups.Check   | Get the item on hand in MythicDungeons formatted string |
 | /MythicGroups Delete \<Group>       | MythicDungeons.Commands.Groups.Delete  | Delete specified dungeon group                          |
 | /MythicGroups Info \<Group> \<Page> | MythicDungeons.Commands.Groups.Info    | Show specified dungeon group’s info                     |
-| /MythicGroups Migrate               | MythicDungeons.Commands.Groups.Migrate | Migrate old dungeon group settings to the new version   |
 | /MythicGroups Load                  | MythicDungeons.Commands.Groups.Load    | Load dungeon group data                                 |
+| /MythicGroups Migrate               | MythicDungeons.Commands.Groups.Migrate | Migrate old dungeon group settings to the new version   |
 | /MythicGroups Save                  | MythicDungeons.Commands.Groups.Save    | Save dungeon group data                                 |
+| /MythicGroups Toggle                | MythicDungeons.Commands.Groups.Toggle  | Toggle dungeon state until next restarts                |

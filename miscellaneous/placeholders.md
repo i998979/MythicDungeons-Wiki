@@ -27,19 +27,20 @@ If your PlaceholderAPI's placeholder aren't parsing, please check [here](https:/
 
 ## Dungeon Placeholders
 
-|                                        |                                                                       |
-| -------------------------------------- | --------------------------------------------------------------------- |
-| %mythicdungeons\_group\_name%          | Dungeon Group's name                                                  |
-| %mythicdungeons\_group\_type%          | Dungeon Group's type                                                  |
-| %mythicdungeons\_group\_minplayer%     | Dungeon Group's minimum players amount                                |
-| %mythicdungeons\_group\_maxplayer%     | Dungeon Group's maximum players amount                                |
-| %mythicdungeons\_group\_visible%       | Dungeon Group's visibility                                            |
-| %mythicdungeons\_dungeon\_id%          | Dungeon's ID                                                          |
-| %mythicdungeons\_dungeon\_origin\_x%   | Dungeon's Origin x-axis                                               |
-| %mythicdungeons\_dungeon\_origin\_y%   | Dungeon's Origin y-axis                                               |
-| %mythicdungeons\_dungeon\_origin\_z%   | Dungeon's Origin z-axis                                               |
-| %mythicdungeons\_dungeon\_current%     | Dungeon's current players amount                                      |
-| %mythicdungeons\_dungeon\_playerdeath% | Dungeon's player death count                                          |
-| %mythicdungeons\_dungeon\_teamdeath%   | Dungeon's team death count                                            |
-| %mythicdungeons\_dungeon\_startedat%   | Timestamp of the dungeon started                                      |
-| %mythicdungeons\_dungeon\_state%       | Dungeon's state `(NOT_STARTED, PRE_STARTING, STARTED, ENDING, ENDED)` |
+|                                          |                                                                       |
+| ---------------------------------------- | --------------------------------------------------------------------- |
+| %mythicdungeons\_group\_name%            | Dungeon Group's name                                                  |
+| %mythicdungeons\_group\_type%            | Dungeon Group's type                                                  |
+| %mythicdungeons\_group\_minplayer%       | Dungeon Group's minimum players amount                                |
+| %mythicdungeons\_group\_maxplayer%       | Dungeon Group's maximum players amount                                |
+| %mythicdungeons\_group\_visible%         | Dungeon Group's visibility                                            |
+| %mythicdungeons\_dungeon\_id%            | Dungeon's ID                                                          |
+| %mythicdungeons\_dungeon\_origin\_world% | Dungeon's Origin world                                                |
+| %mythicdungeons\_dungeon\_origin\_x%     | Dungeon's Origin x-axis                                               |
+| %mythicdungeons\_dungeon\_origin\_y%     | Dungeon's Origin y-axis                                               |
+| %mythicdungeons\_dungeon\_origin\_z%     | Dungeon's Origin z-axis                                               |
+| %mythicdungeons\_dungeon\_current%       | Dungeon's current players amount                                      |
+| %mythicdungeons\_dungeon\_playerdeath%   | Dungeon's player death count                                          |
+| %mythicdungeons\_dungeon\_teamdeath%     | Dungeon's team death count                                            |
+| %mythicdungeons\_dungeon\_startedat%     | Timestamp of the dungeon started                                      |
+| %mythicdungeons\_dungeon\_state%         | Dungeon's state `(NOT_STARTED, PRE_STARTING, STARTED, ENDING, ENDED)` |

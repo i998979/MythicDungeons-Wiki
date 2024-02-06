@@ -155,42 +155,60 @@ InGame:
   # %amount%: Amount of blocks needed to break
   # %world1% %x1% %y1% %z1%: First corner of the region
   # %world2% %x2% %y2% %z2%: Second corner of the region
-  # Break Stone 0/3
+  # "Break Stone 0/3"
   BlockBreak:
     - "&eBreak %block% %broke%/%amount%"
-  # Break Stone
-  # Cobblestone
-  # Gravel 0/3
+  # "Break Stone"
+  # "Cobblestone"
+  # "Gravel 0/3"
   BlockBreakCombined:
     - "&eBreak %block%"
     - "&e%block%"
-    - "&e%block% %broke%/%amount%"
+    - "&e%block% &f%broke%/%amount%"
 
   # %block%: Block type required to place
   # %placed%: Blocks placed
   # %amount%: Amount of blocks needed to place
   # %world1% %x1% %y1% %z1%: First corner of the region
   # %world2% %x2% %y2% %z2%: Second corner of the region
-  # Place Stone 0/3
+  # "Place Stone 0/3"
   BlockPlace:
     - "&ePlace %amount%x %block%"
-  # Place Stone
-  # Cobblestone
-  # Gravel 0/3
+  # "Place Stone"
+  # "Cobblestone"
+  # "Gravel 0/3"
   BlockPlaceCombined:
     - "&ePlace %block%"
     - "&e%block%"
-    - "&e%block% %placed%/%amount%"
+    - "&e%block% &f%placed%/%amount%"
+
+  # %bf%: Chat message required, scoreboard text is additionally defined in action
+  # %bfclaimed%: Is this message has been said by players
+  # "SPEED BOOST: Not claimed"
+  BuffClaim: "&e%bf%&7: %bfclaimed%"
 
   # %chatscoreboard%: Chat message required, scoreboard text is additionally defined in action
   # %chathassaid%: Is this message has been said by players
   # "Say 123456: Yes"
-  ChatMessage: "Say %chatscoreboard%: %chathassaid%"
+  ChatMessage: "Say %chatscoreboard%&7: &f%chathassaid%"
 
   # %cp%: Name of the checkpoint needs to be reached
   # %cpreached% Checkpoint reached or not
   # "Mountain: Not reached"
   Checkpoint: "&e%cp%&7: &f%cpreached%"
+
+  # %world% %x% %y% %z%: Location of the container
+  # %item%: Item to sacrifice
+  # %amount%: Amount to sacrifice
+  # %picked%: Is the item picked up by container
+  # "Sacrifice 1x Emerald Block: Yes"
+  ContainerPickup: "&eSacrifice %amount%x %item%&7: &f%picked%"
+
+  # %damage%: Damage to take
+  # %time%: Times of the damage to take
+  # %damaged%: Times of the damage taken
+  # "Take 1 damage 0/1 times"
+  Damage: "&eTake %damage% damage %damaged%/%time% times"
 
   # %item%: Display name of the item required, if the item has no display name, material name is shown instead
   # %amount%: Amount of the item required
@@ -227,12 +245,12 @@ InGame:
   # %npcinteract%: Left click, Right click or both accepted
   # %npcinteracted%: Did the player interact with NPC or not
   # Click NPC1: Yes
-  NPCInteract: "%e%npcinteract% %npcname%&7: %npcinteracted%"
+  NPCInteract: "%e%npcinteract% %npcname%&7: &f%npcinteracted%"
 
   # %item%: Item required player to pick up
   # %picked%: Is the item picked up or not
   # "Picked up REDSTONE_BLOCK: Yes"
-  PlayerPickup: "&ePicked up %item%&7: %picked%"
+  PlayerPickup: "&ePicked up %item%&7: &f%picked%"
 Ending:
   # %dungeon%: Dungeon's name
   # %teleport%: Time before dungeon ends and teleport all challengers to lobby

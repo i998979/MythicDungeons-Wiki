@@ -12,12 +12,14 @@ Effects:
   EffectLib:
     vortex:
       class: VortexEffect
-      iterations: 100000
+      iterations: 1
       particle: smoke
       helixes: 16
-      circles: 7
-      grow: 0.1
+      circles: 1
+      grow: 0.0
       radius: 1
+      period: 10
+      pitch: 90
     equation:
       class: EquationEffect
       xEquation: 0
@@ -47,7 +49,7 @@ Basically, effects listed [here](https://github.com/elBukkit/EffectLib/tree/mast
 
 Remember only `public` variables can be added/removed and `class` is REQUIRED. In addition, effect-specific options can be added, it depends on what kind of effects you have used. You may check effect-specific options [here](https://github.com/elBukkit/EffectLib/tree/master/src/main/java/de/slikey/effectlib/effect).
 
-The below example creates a `DnaEffect` named `DNA` with `period` of `1` and effect-specific option `length` of `15`, then the file will look like this:
+The example below creates a `DnaEffect` named `DNA` with `period` of `1` and effect-specific option `length` of `15`, then the file will look like this:
 
 {% code title="" lineNumbers="true" %}
 ```yaml
