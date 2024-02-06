@@ -55,6 +55,4 @@ Everything is similar to Citizens `saves.yml`. However, the location is replaced
    x: '%mythicdungeons_dungeon_origin_x%'
    y: '%mythicdungeons_dungeon_origin_y%'
    z: '%mythicdungeons_dungeon_origin_z%'
-   yaw: '-0.5243'
-   pitch: '-5.7066'
 ```
