@@ -4,7 +4,7 @@ Citizens is used to create NPC-related features. Please make sure you have [Citi
 
 Citizens NPC is saved inside `MythicDungeons/saves.yml`. Please create one if you want to use NPC-related features.
 
-MythicDungeons does not provide any method to create/copy NPC. However, you can create an NPC using Citizens command, save it using `/Citizens save`, open `Citizens/saves.yml`, copy the NPC into `MythicDungeons/saves.yml`, and replace world and coordinates using [Placeholders](placeholders.md). The plugin will parse placeholders inside before the dungeon is started.
+MythicDungeons does not provide any method to create/copy NPC. However, you can create an NPC using Citizens command, save it using `/Citizens save`, open `Citizens/saves.yml`, copy the NPC into `MythicDungeons/saves.yml`, and replace locations using [Placeholders](placeholders.md). The plugin will parse placeholders inside before the dungeon is started.
 
 {% code title="saves.yml" lineNumbers="true" %}
 ```yaml
