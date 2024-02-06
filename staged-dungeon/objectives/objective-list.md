@@ -104,7 +104,6 @@
 | id              | ID of the NPC declared in `saves.yml` |                                               |          |
 | left            | Is left-clicking NPC accepted         | `true` or `false`                             |          |
 | right           | Is right-clicking NPC accepted        | `true` or `false`                             |          |
-|                 |                                       |                                               |          |
 
 ### **PlayerPickup**
 
