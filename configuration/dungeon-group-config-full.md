@@ -14,7 +14,7 @@ If you are familiar with the configuration, here is a full configuration.
 Ruins:
   # General configurations of the dungeon
   General:
-    # Display name of the dungeon, it will be shown on GUI, scoreboards and messages
+    # Display Name of the dungeon, it will be shown on GUI, scoreboards and messages
     Name: '&4Ruins'
     # Minimum players required for the dungeon
     MinPlayer: 1
@@ -28,9 +28,31 @@ Ruins:
     # team 10: 10 deaths total for the whole team
     # player 3: 3 deaths total for any 1 player
     DeathLimit: none
-    # Inventory items will not drop on ground upon death
+    # Death Penalty when the player dies
+    DeathPenalty:
+      # Use player's death or team's death for counting
+      PerPlayer: true
+      # Item penalty
+      Items:
+        Enabled: true
+        Items:
+          # Death count, different death counts drops different lists of items
+          # If the player dies once, an Emerald Block and items drawn from LootTable will be removed from the player's inventory/death drop
+          # If '3' is enabled and the player dies twice, items in '1' will be removed
+          '1':
+            - '{"v":2865,"type":"EMERALD_BLOCK"}'
+            - 'LootTable{id=Stage1Table}'
+          # If the player dies 3 times, a Diamond Block will be removed from the player's inventory/death drop
+          # '3':
+          #   - '{"v":2865,"type":"DIAMOND_BLOCK"}'
+      # Money penalty. Only effective if Vault and economy plugin is installed and the hook is enabled
+      Money:
+        Enabled: true
+        Amount:
+          '1': 300
+    # Inventory items will not drop on the ground upon death
     KeepInventory: true
-    # Experience will not drop on ground upon death
+    # Experience will not drop on the ground upon death
     KeepExperience: true
     # Additional title countdown, players will be invincible and frozen during countdown
     TitleCountdown: false
@@ -58,7 +80,7 @@ Ruins:
     BlacklistItems:
       - '{"v":2865,"type":"EMERALD_BLOCK"}'
       - 'LootTable{id=Stage1Table}'
-    # Signs for user to click to join/leave the dungeon queue (temporary room)
+    # Signs for users to click to join/leave the dungeon queue (temporary room)
     Signs:
       # Enable/disable all signs
       Enabled: true
@@ -80,8 +102,8 @@ Ruins:
             x: 112.0
             y: 4.0
             z: 242.0
-    # Citizens NPCs for user to click to join/leave the dungeon queue (temporary room)
-    # All NPCs must be configured and spawned in world by Citizens
+    # Citizens NPCs for users to click to join/leave the dungeon queue (temporary room)
+    # All NPCs must be configured and spawned in the world by Citizens
     NPCs:
       # Enable/disable all NPCs
       Enabled: true
@@ -115,7 +137,7 @@ Ruins:
       # Otherwise, only the leader will be charged
       PerPlayer: true
       # Items to pay
-      # Some custom items plugin are supported, DO NOT add extra spaces or quotations
+      # Some custom item plugins are supported, DO NOT add extra spaces or quotations
       # Only Loot Tables declared in "loottables" folder are supported
       # Use "/mg check" with the items on your hand to retrieve the string
       Items:
@@ -133,8 +155,8 @@ Ruins:
         # - 'LootTable{id=Stage1Table}'
   # How the dungeon is placed
   Map:
-    # Length, Width, Height are optional if you have dungeon schematic in place
-    # All length, width, and height must be configured in order to work
+    # Length, Width, Height are optional if you have a dungeon schematic in place
+    # All length, width, and height must be configured to work
     # Otherwise it will still be automatically calculated depending on the schematic
     #
     # Length of the dungeon, spanned on z-axis positive
@@ -153,7 +175,7 @@ Ruins:
     Column: 3
     # How many blocks of the gap in columns between adjoining dungeons
     ColumnGap: 1
-  # How long is the dungeon challenge time, what to do after it ends
+  # How long is the dungeon challenge time, and what to do after it ends
   Expire:
     # Maximum dungeon challenge time(in sec), after the timer ends, the dungeon fails
     Time: 60
@@ -254,25 +276,33 @@ Ruins:
         x: 120.5
         y: 5.0
         z: 262.5
-      # Particle effects of the buff, it will appear when the buff is not claimed
-      # Only effects declared in "effects.yml" can be used
+      # Particle effects of the buff, only effects declared in "effects.yml" can be used
       Effects:
-        # - EffectType VerticalOffset
-        - vortex 3.0
-        - vortex 0.0
-      # Holograms of the buff. Only effective if hologram plugin is installed and the hook is enabled
+        # Appear when the buff is not claimed
+        Idle:
+          - vortex 3.0
+        # Appear when the buff is being claimed
+        Claiming:
+          - vortex 4.0
+        # Appear when the buff is in cooldown
+        Cooldown:
+          - vortex 2.0
       Hologram:
-        # Text line or Item line is supported
-        # Available parameters of Item line(separate with ;):
-        # material: What material of this item is
-        # glow: Does this item has enchantment glow effect
-        # damage: Item's damage
-        # custommodeldata: Custom model data of this item
-        # skullowner: Owner of the skull if the item is a player head
-        Lines:
-          - '&b&lSPEED BOOST'
-          - '{material=WHITE_WOOL}'
-        Offset: 2.0
+        Idle:
+          Offset: 3.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+            - '0 &fCLAIM ME!'
+        Claiming:
+          Offset: 4.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=3fb398fb-f50a-42de-998d-692c35048e86}'
+            - '1 &7CLAIMING in %time%'
+        Cooldown:
+          Offset: 2.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=34a35801-3895-4aae-a7e5-fbb52e575e3d}'
+            - '2 &7CLAIMABLE in %cooldown%'
       # How big is the buff
       Range: 3.0
       # Potion effects to apply
@@ -285,6 +315,8 @@ Ruins:
       # ONETIME: The buff can only be claimed once
       # REPEAT=<tick>: The buff can be claimable again after <tick> ticks
       Type: REPEAT=20
+      # How long(in ticks) the player required to stay before the buff is being claimed
+      Time: 60
       # If true, when the player claimed the buff, others can still claim the buff
       # If false, when the player claimed the buff, others cannot claim the buff
       PerPlayer: true
@@ -296,10 +328,10 @@ Ruins:
     '1':
       Name: '&bMountain'
       Effects:
-        # Appear when the checkpoint is enabled
+        # Appear when the checkpoint is not claimed
         Idle:
           - vortex 3.0
-        # Appear when the checkpoint going to be claimed
+        # Appear when the checkpoint is being claimed
         Claiming:
           - vortex 3.0
         # Appear when the checkpoint is claimed
@@ -331,13 +363,13 @@ Ruins:
             - '2 &fno one has been here before'
             - '2 Claimed'
       Range: 3.0
-      # Single-point checkpoint, it will be captured if player stays within range
+      # Single-point checkpoint, it will be captured if the player stays within range
       Location:
         world: dungeon
         x: 116.0
         y: 5.0
         z: 262.0
-      # Regional checkpoint, it will be captured if player stays between 2 points
+      # Regional checkpoint, it will be captured if the player stays between 2 points
       # Regions:
       #   Min:
       #     world: dungeon
@@ -349,7 +381,7 @@ Ruins:
       #     x: 117.5
       #     y: 256.0
       #     z: 261.5
-      # Multi-point checkpoint, it will be captured if player stays within range of either point
+      # Multi-point checkpoint, it will be captured if the player stays within range of either point
       # Or players are required to stay in all points
       # Points:
       #   '0':
@@ -400,13 +432,39 @@ Ruins:
         x: 125.0
         y: 5.0
         z: 260.0
+      Effects:
+        # Appear when the loot chest is not opened
+        Idle:
+          - vortex 3.0
+        # Appear when the loot chest is opened and not renewable
+        Opened:
+          - vortex 3.0
+        # Appear when the loot chest is opened and waiting for renewal
+        Renew:
+          - vortex 3.0
+      Hologram:
+        Idle:
+          Offset: 4.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=991d961c-b6b4-4d49-88e6-01788cf445dc}'
+            - '&fOPEN ME!'
+        Opened:
+          Offset: 6.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=3fb398fb-f50a-42de-998d-692c35048e86}'
+            - '&7CLAIMED'
+        Renew:
+          Offset: 2.0
+          Lines:
+            - '{material=PLAYER_HEAD;glow=true;damage=0;skullowner=34a35801-3895-4aae-a7e5-fbb52e575e3d}'
+            - '&7RENEW IN %time%'
       Potions:
         - SPEED 10 2 true true true
         - JUMP 10 2 true true true
       # Type of the loot chest, check here for available inventory type
       # https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryType.html
       Type: CHEST
-      # Whether every player in the dungeon has their own loot chest inventory, or they share the same one
+      # Whether every player in the dungeon has their loot chest inventory, or they share the same one
       PerPlayer: true
       # How long(in ticks) will the loot chest renews
       Renew: 60
@@ -421,39 +479,61 @@ Ruins:
         - '{"v":2865,"type":"REDSTONE_BLOCK"} 8'
         - '{"v":2865,"type":"DIAMOND_BLOCK"} 16'
         - '{"v":2865,"type":"EMERALD_BLOCK"} 24'
-    # Teleporters that players can shift on it and teleport to designated location
-    Teleporters:
-      '1':
-        Name: '&bMountain'
-        Location:
-          world: dungeon
-          x: 124.5
-          y: 5.0
-          z: 262.5
-        Effects:
+  # Teleporters that players can shift on it and teleport to designated location
+  Teleporters:
+    '1':
+      Name: '&bMountain'
+      Location:
+        world: dungeon
+        x: 124.5
+        y: 5.0
+        z: 262.5
+      Effects:
+        # Appear when the teleporter is not used
+        Idle:
           - vortex 3.0
-          - vortex 0.0
-        Hologram:
+        # Appear when the teleporter is teleporting players
+        Teleporting:
+          - vortex 3.0
+        # Appear when the teleporter is in cooldown
+        Cooldown:
+          - vortex 3.0
+      Hologram:
+        Idle:
+          Offset: 4.0
+          Lines:
+            - '&bTELEPORT TO'
+            - '&f&lMOUNTAIN'
+            - '&f&l!TELEPORT!'
+            - '{material=WHITE_WOOL}'
+        Teleporting:
+          Offset: 2.0
           Lines:
             - '&bTELEPORT TO'
             - '&f&lMOUNTAIN'
             - 'Teleport in %time%s'
+            - '{material=WHITE_WOOL}'
+        Cooldown:
+          Offset: 6.0
+          Lines:
+            - '&bTELEPORT TO'
+            - '&f&lMOUNTAIN'
             - 'Cooldown in %cooldown%s'
             - '{material=WHITE_WOOL}'
-          Offset: 3.0
-        Range: 1.5
-        # Destination of the teleporter
-        Destination:
-          world: dungeon
-          x: 120.5
-          y: 5.0
-          z: 256.5
-          pitch: 0.0
-          yaw: 0.0
-        Time: 60
-        # Cooldown of the teleporter before it can be used again
-        Cooldown: 60
-  # Different type of traps that can damage players
+      Range: 1.5
+      # Destination of the teleporter
+      Destination:
+        world: dungeon
+        x: 120.5
+        y: 5.0
+        z: 256.5
+        pitch: 0.0
+        yaw: 0.0
+      # How long(in ticks) the player required to stay in the teleporter before getting teleported
+      Time: 60
+      # Cooldown of the teleporter before it can be used again
+      Cooldown: 60
+  # Different types of traps that can damage players
   Traps:
     # Arrow trap that shoots arrows
     Arrow:
@@ -502,7 +582,7 @@ Ruins:
           x: 125.0
           y: 5.0
           z: 257.0
-    # Damage trap that damage players when they are inside
+    # Damage trap that damages players when they are inside
     Damage:
       '4':
         # Interval(in ticks) between damages
@@ -520,7 +600,7 @@ Ruins:
           x: 123.0
           y: 5.0
           z: 250.0
-    # Fire trap that set players on fire when they are inside
+    # Fire trap that sets players on fire when they are inside
     Fire:
       '5':
         Damage: 2.0
@@ -544,7 +624,7 @@ Ruins:
           x: 123.0
           y: 5.0
           z: 250.0
-  # Rewards that will be given to players when the dungeon completes
+  # Rewards that will be given to players when the dungeon is completed
   Rewards:
     # Team reward
     Teams:
@@ -554,7 +634,7 @@ Ruins:
           # Money to give
           Money: 30001.0
           # Items to give
-          # Some custom items plugin are supported, DO NOT add extra spaces or quotations
+          # Some custom item plugins are supported, DO NOT add extra spaces or quotations
           # Only Loot Tables declared in "loottables" folder are supported
           # Use "/mg check" with the items on your hand to retrieve the string
           Items:
@@ -583,5 +663,6 @@ Ruins:
         #   Items:
         #     - '{"v":2865,"type":"REDSTONE_BLOCK"}'
         #     - '{"v":2865,"type":"GOLD_BLOCK"}'
+
 ```
 {% endcode %}
