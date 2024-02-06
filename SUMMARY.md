@@ -63,6 +63,7 @@
 * [Locale](miscellaneous/locale.md)
 * [Loot Tables](miscellaneous/loot-tables.md)
 * [Effects](miscellaneous/effects.md)
+* [Citizens](miscellaneous/citizens.md)
 * [Tutorials](miscellaneous/tutorials.md)
 * [Migration Guide](miscellaneous/migration-guide.md)
 * [FAQ](miscellaneous/faq.md)
