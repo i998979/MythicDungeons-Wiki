@@ -1,4 +1,4 @@
-# Citizens
+# NPCs
 
 Citizens is used to create NPC-related features. Please make sure you have [Citizens](https://www.spigotmc.org/resources/citizens.13811/) installed on your server.
 
