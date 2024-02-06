@@ -36,7 +36,7 @@ Ruins:
       Items:
         Enabled: true
         Items:
-          # Death count, different death counts drops different lists of items
+          # Death count, different death counts drop different lists of items
           # If the player dies once, an Emerald Block and items drawn from LootTable will be removed from the player's inventory/death drop
           # If '3' is enabled and the player dies twice, items in '1' will be removed
           '1':
@@ -76,7 +76,7 @@ Ruins:
     #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 0'
     #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 1'
     #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 2'
-    # Blacklist items that cannot be brought into dungeon
+    # Blacklist items that cannot be brought into the dungeon
     BlacklistItems:
       - '{"v":2865,"type":"EMERALD_BLOCK"}'
       - 'LootTable{id=Stage1Table}'
