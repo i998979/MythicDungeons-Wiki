@@ -96,14 +96,14 @@
 | minlevel      | Minimum mobs level required to kill                                             |                                                                                                                                                                                                                                                                                                   |          |
 | maxlevel      | Maximum mobs level required to kill                                             |                                                                                                                                                                                                                                                                                                   |          |
 
-### NPCInteract (Citizens)
+### ~~NPCInteract (Citizens)~~
 
-| Parameters      | Explanation                           | Examples                                      | Required |
-| --------------- | ------------------------------------- | --------------------------------------------- | -------- |
-| **NPCInteract** | NPC required to interact by players   | `NPCInteract{left=true;right=true;npcId="0"}` |          |
-| id              | ID of the NPC declared in `saves.yml` |                                               |          |
-| left            | Is left-clicking NPC accepted         | `true` or `false`                             |          |
-| right           | Is right-clicking NPC accepted        | `true` or `false`                             |          |
+| Parameters          | Explanation                               | Examples                                          | Required |
+| ------------------- | ----------------------------------------- | ------------------------------------------------- | -------- |
+| ~~**NPCInteract**~~ | ~~NPC required to interact by players~~   | ~~`NPCInteract{left=true;right=true;npcId="0"}`~~ |          |
+| ~~id~~              | ~~ID of the NPC declared in `saves.yml`~~ |                                                   |          |
+| ~~left~~            | ~~Is left-clicking NPC accepted~~         | ~~`true` or `false`~~                             |          |
+| ~~right~~           | ~~Is right-clicking NPC accepted~~        | ~~`true` or `false`~~                             |          |
 
 ### **PlayerPickup**
 
