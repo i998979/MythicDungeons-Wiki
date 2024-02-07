@@ -245,7 +245,7 @@ InGame:
   # %npcinteract%: Left click, Right click or both accepted
   # %npcinteracted%: Did the player interact with NPC or not
   # Click NPC1: Yes
-  NPCInteract: "%e%npcinteract% %npcname%&7: &f%npcinteracted%"
+  NPCInteract: "&e%npcinteract% %npcname%&7: &f%npcinteracted%"
 
   # %item%: Item required player to pick up
   # %picked%: Is the item picked up or not
