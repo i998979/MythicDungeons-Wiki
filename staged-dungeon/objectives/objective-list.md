@@ -44,10 +44,10 @@
 
 </div>
 
-| Parameters    | Explanation                                               | Examples                                                                             | Required |
-| ------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------- |
-| **BuffClaim** | Buff required to claim                                    | `ChatMessage{message="hello world";scoreboard="greetings to the world";cancel=true}` |          |
-| id            | ID of the buff, it should be declared under `Ruins.Buffs` |                                                                                      | true     |
+| Parameters    | Explanation                                               | Examples          | Required |
+| ------------- | --------------------------------------------------------- | ----------------- | -------- |
+| **BuffClaim** | Buff required to claim                                    | `BuffClaim{id=1}` |          |
+| id            | ID of the buff, it should be declared under `Ruins.Buffs` |                   | true     |
 
 ### **ChatMessage**
 
