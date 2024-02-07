@@ -4,6 +4,12 @@
 
 ### **BlockBreak**
 
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/BlockBreakObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
+
 | Parameters         | Explanation                                                                                                                                                          | Examples                                                                                                                                      | Required                                |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
 | **BlockBreak**     | <p>Blocks in region required to break.<br><code>BlockBreak</code> option in <code>config.yml</code> still work, only matching blocks can be broken</p>               | `BlockBreak{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                         |
@@ -14,6 +20,12 @@
 | amount             | Amount of blocks required to break                                                                                                                                   |                                                                                                                                               | true ~~if `type` is `AMOUNT_COMBINED`~~ |
 
 ### BlockPlace
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/BlockPlaceObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
 
 | Parameters         | Explanation                                                                                                                                                                      | Examples                                                                                                                                      | Required                                |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------- |
@@ -26,12 +38,24 @@
 
 ### BuffClaim
 
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/BuffClaimObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
+
 | Parameters    | Explanation                                               | Examples                                                                             | Required |
 | ------------- | --------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------- |
 | **BuffClaim** | Buff required to claim                                    | `ChatMessage{message="hello world";scoreboard="greetings to the world";cancel=true}` |          |
 | id            | ID of the buff, it should be declared under `Ruins.Buffs` |                                                                                      | true     |
 
 ### **ChatMessage**
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/ChatMessageObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
 
 | Parameters      | Explanation                                                                              | Examples                                                                             | Required |
 | --------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------- |
@@ -41,6 +65,12 @@
 | cancel          | Is this message sent by the player not showing in chat                                   | `true` or `false`                                                                    |          |
 
 ### **Checkpoint**
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/CheckpointObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
 
 | Parameters     | Explanation                                                           | Examples           | Required |
 | -------------- | --------------------------------------------------------------------- | ------------------ | -------- |
@@ -53,6 +83,12 @@
 
 ### ContainerPickup
 
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/ContainerPickupObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
+
 | Parameters          | Explanation                                                                                                                                                                | Examples                                                                                  | Required |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------- |
 | **ContainerPickup** | Items required to throw into hopper in specified location. Only 1 item is required in the list. If multiple items are required, please separate it into multiple objective | `ContainerPickup{world=dungeon;x=120;y=4;z=263;item="{"v":3700,"type":"EMERALD_BLOCK"}"}` |          |
@@ -63,6 +99,12 @@
 
 ### Damage
 
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/DamageObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
+
 | Parameters | Explanation                                                  | Examples                            | Required |
 | ---------- | ------------------------------------------------------------ | ----------------------------------- | -------- |
 | **Damage** | Times of damage required to take                             | `Damage{damage=10;raw=true;time=2}` |          |
@@ -71,6 +113,12 @@
 | time       | Times of the damage to take                                  | `3`                                 | true     |
 
 ### **HasItem**
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/HasItemObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
 
 | Parameters  | Explanation                                                                                                                                                   | Examples                                                                                                         | Required |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------- |
@@ -81,12 +129,24 @@
 
 ### **LootChest**
 
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/LootChestObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
+
 | Parameters    | Explanation                                                         | Examples          | Required |
 | ------------- | ------------------------------------------------------------------- | ----------------- | -------- |
 | **LootChest** | Loot Chest required to open                                         | `LootChest{id=1}` |          |
 | id            | ID of the loot chest, it should be declared under `Ruins.LootChest` |                   | true     |
 
 ### **MythicMob**
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/MythicMobObjecetive.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
 
 | Parameters    | Explanation                                                                     | Examples                                                                                                                                                                                                                                                                                          | Required |
 | ------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -106,6 +166,12 @@
 | ~~right~~           | ~~Is right-clicking NPC accepted~~        | ~~`true` or `false`~~                             |          |
 
 ### **PlayerPickup**
+
+<div align="left">
+
+<figure><img src="../../.gitbook/assets/PlayerPickupObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
+
+</div>
 
 | Parameters       | Explanation                                                            | Examples                                                  | Required |
 | ---------------- | ---------------------------------------------------------------------- | --------------------------------------------------------- | -------- |
