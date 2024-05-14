@@ -1,6 +1,6 @@
 # Table of contents
 
-* [⚔ MythicDungeons Wiki](README.md)
+* [⚔️ MythicDungeons Wiki](README.md)
 
 ## 📔 Overview
 
@@ -42,7 +42,7 @@
 * [Signs](joining-dungeon/signs.md)
 * [NPCs](joining-dungeon/npcs.md)
 
-## ⚙ Configuration
+## ⚙️ Configuration
 
 * [General Config](configuration/general-config.md)
 * [Dungeon Group Config (Simplified)](configuration/dungeon-group-config-simplified.md)

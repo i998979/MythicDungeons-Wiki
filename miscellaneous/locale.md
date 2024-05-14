@@ -40,7 +40,7 @@ MESSAGE_ROOM_FULL: "&cThe room is already full."
 MESSAGE_ROOM_START_MAX: "&cDungeon cannot be started because the room has more than {0} players. (Current: {1})."
 MESSAGE_ROOM_START_MIN: "&cDungeon cannot be started because the room has less than {0} players. (Current: {1})."
 MESSAGE_ROOM_OFFLINE_OWNER: "&cThe owner is not online. Tell him/her to get online!"
-MESSAGE_ROOM_OFFLINE_MEMBER: "&c1 member is not online. Tell him/her to get online!"
+MESSAGE_ROOM_OFFLINE_MEMBER: "&cA member is not online. Tell him/her to get online!"
 MESSAGE_ROOM_OFFLINE_MEMBERS: "&c{0} members are not online. Tell them to get online!"
 
 # Chat
@@ -197,7 +197,7 @@ MESSAGE_DUNGEON_START_CANCELLED_OWNER: "&cYou have cancelled the start of the du
 MESSAGE_DUNGEON_START_CANCELLED_MEMBER: "&cRoom owner cancelled the start of the dungeon."
 MESSAGE_DUNGEON_CANNOT_CREATE: "&cDungeon {0} &ccannot be created."
 MESSAGE_DUNGEON_CANNOT_CREATE_DISABLED: "&cDungeon {0} &ccannot be created because it is disabled."
-MESSAGE_DUNGEON_CANNOT_AFFORD: "&cOne/some member(s) cannot afford the price."
+MESSAGE_DUNGEON_NOT_FULFILL: "&cOne/some member(s) does not fulfill the requirements."
 
 # Admin message
 MESSAGE_DUNGEON_LOADED: "&aDungeons loaded."
@@ -206,7 +206,7 @@ MESSAGE_DUNGEON_CREATED: "&aCreated dungeon {0}&a with id {1}."
 MESSAGE_DUNGEON_STARTED: "&aStarted dungeon {0}&a with id {1}."
 MESSAGE_DUNGEON_STOPPED: "&aStopped dungeon {0}&a with id {1}."
 
-MESSAGE_DUNGEON_RELOAD_INVALID_PARAMETER: "&cInvalid arguments. Enter \"Group | Player | LootTable | Scoreboard | Effect | Locale | Config | Menu\": or leave it blank to reload all."
+MESSAGE_DUNGEON_RELOAD_INVALID_PARAMETER: "&cInvalid arguments. Enter \"Group | Player | LootTable | Scoreboard | Effect | Locale | Config | Menu\", or leave it blank to reload all."
 MESSAGE_DUNGEON_RELOADED_GROUP: "&eReloaded {0} Dungeon groups."
 MESSAGE_DUNGEON_RELOADED_PLAYERDATA: "&eReloaded {0} player's data."
 MESSAGE_DUNGEON_CANNOT_RELOAD_PLAYERDATA_STILL_RUNNING: "&cPlayer data cannot be reloaded since there are dungeon still running."
@@ -243,8 +243,17 @@ MESSAGE_DUNGEON_TELEPORT_RUNNING_INVALID: "&2You have been teleported to dungeon
 MESSAGE_DUNGEON_TELEPORT_PREVIOUS: "&2You have been teleported to your previous location as the dungeon you have joined is still running."
 MESSAGE_DUNGEON_TELEPORT_CHECKPOINT: "&2You have been teleported to your checkpoint {0}&2 as the dungeon you have joined is still running."
 
+MESSAGE_DUNGEON_LIVES_LEFT_TEAM: "&cYour team have {0} lives left."
+MESSAGE_DUNGEON_LIVES_LEFT_PLAYER: "&cYou have {0} lives left."
+
 MESSAGE_DUNGEON_RESPAWN: "&aYou have respawned in dungeon's spawn."
 MESSAGE_DUNGEON_RESPAWN_CHECKPOINT: "&aYou have respawned in {0}&a."
+
+MESSAGE_DUNGEON_PENALTY: "&cYou have lost:"
+MESSAGE_DUNGEON_PENALTY_MONEY: "&fMoney:"
+MESSAGE_DUNGEON_PENALTY_MONEY_DETAIL: "&7- ${0}"
+MESSAGE_DUNGEON_PENALTY_ITEM: "&fItems:"
+MESSAGE_DUNGEON_PENALTY_ITEM_DETAIL: "&7- {0}x {1}"
 
 MESSAGE_DUNGEON_COMMAND_BLOCKED: "&cYou are not allowed to use this command during dungeon fight."
 
@@ -255,12 +264,16 @@ MESSAGE_DUNGEON_COMMAND_BLOCKED: "&cYou are not allowed to use this command duri
 SCOREBOARD_STATUS_WAITING: "Waiting"
 SCOREBOARD_STATUS_STARTING_SECOND: "Starting in {0} s"
 
-SCOREBOARD_INGAME_CHATMESSAGE_YES: "&aYes"
+SCOREBOARD_INGAME_BUFFCLAIM_NO: "&cNot claimed"
+SCOREBOARD_INGAME_BUFFCLAIM_YES: "&aClaimed"
 SCOREBOARD_INGAME_CHATMESSAGE_NO: "&cNo"
+SCOREBOARD_INGAME_CHATMESSAGE_YES: "&aYes"
 SCOREBOARD_INGAME_CHECKPOINT_NOT_REACHED: "&cNot reached"
 SCOREBOARD_INGAME_CHECKPOINT_REACHED: "&aReached"
-SCOREBOARD_INGAME_HASITEM_YES: "&aYes"
+SCOREBOARD_INGAME_CONTAINERPICKUP_NO: "&cNo"
+SCOREBOARD_INGAME_CONTAINERPICKUP_YES: "&aYes"
 SCOREBOARD_INGAME_HASITEM_NO: "&cNo"
+SCOREBOARD_INGAME_HASITEM_YES: "&aYes"
 SCOREBOARD_INGAME_LOOTCHEST_NOT_OPENED: "&cNot opened"
 SCOREBOARD_INGAME_LOOTCHEST_OPENED: "&aOpened"
 SCOREBOARD_INGAME_MOB_NOT_KILLED: "&cNot killed"
@@ -268,10 +281,10 @@ SCOREBOARD_INGAME_MOB_KILLED: "&aKilled"
 SCOREBOARD_INGAME_NPCINTERACT_CLICK: "&aClick"
 SCOREBOARD_INGAME_NPCINTERACT_LEFTCLICK: "&aLeft Click"
 SCOREBOARD_INGAME_NPCINTERACT_RIGHTCLICK: "&aRight Click"
-SCOREBOARD_INGAME_NPCINTERACT_YES: "&aYes"
 SCOREBOARD_INGAME_NPCINTERACT_NO: "&cNo"
-SCOREBOARD_INGAME_PLAYERPICKUP_YES: "&aYes"
+SCOREBOARD_INGAME_NPCINTERACT_YES: "&aYes"
 SCOREBOARD_INGAME_PLAYERPICKUP_NO: "&cNo"
+SCOREBOARD_INGAME_PLAYERPICKUP_YES: "&aYes"
 
 
 #
