@@ -151,9 +151,15 @@
 | **LootChest** | Loot Chest required to open                                         | `LootChest{id=1}` |          |
 | id            | ID of the loot chest, it should be declared under `Ruins.LootChest` |                   | true     |
 
-### **MythicMob**
-
 ### Mob
+
+| Parameters | Explanation                                                                                                       | Examples                                           | Required |
+| ---------- | ----------------------------------------------------------------------------------------------------------------- | -------------------------------------------------- | -------- |
+| **Mob**    | Mob required to kill, similar to [MythicMob](objective-list.md#mythicmob) but applicable to all type of mobs      | `Mob{name='Alpha Werewolf';namespace='elitemobs'}` |          |
+| name       | Name of the mob, regex is supported                                                                               |                                                    | true     |
+| namespace  | Namespace of the mob, some custom mob plugin might contain plugin-specific tag, it can be used for detection here |                                                    |          |
+
+### **MythicMob**
 
 <div align="left">
 
@@ -161,22 +167,22 @@
 
 </div>
 
-| Parameters    | Explanation                                                                     | Examples                                                                                                                                                                                                                                                                                          | Required |
-| ------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| **MythicMob** | MythicMobs mob required to kill                                                 | `MythicMob{type=rat1;amount=3}`                                                                                                                                                                                                                                                                   |          |
-| type          | Type of the MythicMob defined in `MythicMobs/Mobs/<Yml containing the mob>.yml` |                                                                                                                                                                                                                                                                                                   | true     |
-| amount        | Amount of the mobs required to kill                                             | `3` if 3 of this mob is required to kill, the scoreboard shows `Mother Rat: 3`, `1` if only 1 is required to kill, the scoreboard shows `Mother Rat: 1`, if it is not set, the default amount is `1`, however, the scoreboard will show `Mother Rat: not dead` or `Mother Rat: dead` respectively |          |
-| minlevel      | Minimum mobs level required to kill                                             |                                                                                                                                                                                                                                                                                                   |          |
-| maxlevel      | Maximum mobs level required to kill                                             |                                                                                                                                                                                                                                                                                                   |          |
+| Parameters    | Explanation                                                                                                    | Examples                                                                                                                                                                                                                                                                                          | Required |
+| ------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| **MythicMob** | MythicMobs mob required to kill, similar to [Mob](objective-list.md#mob) but only applicable to MythicMobs mob | `MythicMob{type=rat1;amount=3}`                                                                                                                                                                                                                                                                   |          |
+| type          | Type of the MythicMob defined in `MythicMobs/Mobs/<Yml containing the mob>.yml`                                |                                                                                                                                                                                                                                                                                                   | true     |
+| amount        | Amount of the mobs required to kill                                                                            | `3` if 3 of this mob is required to kill, the scoreboard shows `Mother Rat: 3`, `1` if only 1 is required to kill, the scoreboard shows `Mother Rat: 1`, if it is not set, the default amount is `1`, however, the scoreboard will show `Mother Rat: not dead` or `Mother Rat: dead` respectively |          |
+| minlevel      | Minimum mobs level required to kill                                                                            |                                                                                                                                                                                                                                                                                                   |          |
+| maxlevel      | Maximum mobs level required to kill                                                                            |                                                                                                                                                                                                                                                                                                   |          |
 
-### ~~NPCInteract (Citizens)~~
+### NPCInteract (Citizens)
 
-| Parameters          | Explanation                               | Examples                                          | Required |
-| ------------------- | ----------------------------------------- | ------------------------------------------------- | -------- |
-| ~~**NPCInteract**~~ | ~~NPC required to interact by players~~   | ~~`NPCInteract{left=true;right=true;npcId="0"}`~~ |          |
-| ~~id~~              | ~~ID of the NPC declared in `saves.yml`~~ |                                                   |          |
-| ~~left~~            | ~~Is left-clicking NPC accepted~~         | ~~`true` or `false`~~                             |          |
-| ~~right~~           | ~~Is right-clicking NPC accepted~~        | ~~`true` or `false`~~                             |          |
+| Parameters      | Explanation                                                               | Examples                                      | Required |
+| --------------- | ------------------------------------------------------------------------- | --------------------------------------------- | -------- |
+| **NPCInteract** | NPC required to interact by players                                       | `NPCInteract{left=true;right=true;npcId="0"}` |          |
+| id              | ID of the NPC declared in `MythicDungeons/groups/<Dungeon Type>/npcs.yml` |                                               | true     |
+| left            | Is left-clicking NPC accepted                                             | `true` or `false`                             |          |
+| right           | Is right-clicking NPC accepted                                            | `true` or `false`                             |          |
 
 ### **PlayerPickup**
 
@@ -191,3 +197,12 @@
 | **PlayerPickup** | Item required to pick up by players                                    | `PlayerPickup{item='{"v":2865,"type":"REDSTONE_BLOCK"}'}` |          |
 | item             | Item required to pick up, type `/mg check` to get the formatted string |                                                           |          |
 | fuzzy            | Is only item type and amount is checked or same item meta is required  | `true` or `false`                                         |          |
+
+### RedstonePower
+
+| Parameters        | Explanation                                               | Examples                                                    | Required |
+| ----------------- | --------------------------------------------------------- | ----------------------------------------------------------- | -------- |
+| **RedstonePower** | Item required to pick up by players                       | `RedstonePower{world=dungeon;x=115;y=5;z=247;min=1;max=15}` |          |
+| world, x, y, z    | Location of the block to detect                           |                                                             | true     |
+| min               | Minimum redstone power required to trigger this objective | `1` to `16`                                                 |          |
+| max               | Maximum redstone power required to trigger this objective | `1` to `16`                                                 |          |
