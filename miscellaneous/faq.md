@@ -84,16 +84,6 @@ Please make sure that other plugins did not handle teleport upon death / login.
 
 <details>
 
-<summary><del>Getting <code>java.lang.IndexOutOfBoundsException</code> when starting dungeon.</del></summary>
-
-~~The dungeon schematic is most likely pasting outside Minecraft's height limit. Try adjusting `Origin` in~~[ ~~Dungeon Group Config~~](../configuration/dungeon-group-config-simplified.md)~~.~~
-
-_**Fixed in 2.6.1-SNAPSHOT.**_
-
-</details>
-
-<details>
-
 <summary>Getting <code>Caused by: java.lang.NoClassDefFoundError</code>.</summary>
 
 Please make sure that all dependencies are installed properly.
@@ -101,19 +91,5 @@ Please make sure that all dependencies are installed properly.
 If you have plugin hook enabled, please make sure those plugins are installed properly.
 
 Otherwise, disable the plugin hook that you don't have the plugin installed.
-
-</details>
-
-<details>
-
-<summary>Getting <code>HolographicDisplays is no longer being actively maintained.</code> warning in console.</summary>
-
-According to [HolographicDisplays](https://dev.bukkit.org/projects/holographic-displays), the plugin is no longer being actively maintained.
-
-Additionally, there are some major difficulties in creating item lines with player head without blocking the server thread and the current implementation causes the hologram line to be sorted incorrectly.&#x20;
-
-As a result, the plugin hook for HolographicDisplays will soon be discontinued for maintenance.&#x20;
-
-Please use [DecentHolograms](https://www.spigotmc.org/resources/decentholograms-1-8-1-20-4-papi-support-no-dependencies.96927/) for hologram functions.
 
 </details>
