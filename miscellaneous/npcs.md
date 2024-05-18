@@ -2,9 +2,14 @@
 
 Citizens is used to create NPC-related features. Please make sure you have [Citizens](https://www.spigotmc.org/resources/citizens.13811/) installed on your server.
 
-Citizens NPC is saved inside `MythicDungeons/<Dungeon Type>/npcs.yml`. Please create one if you want to use NPC-related features.
+However, MythicDungeons does not provide any method to create/copy NPC, please follow the steps below to create an NPC in dungeon.
 
-MythicDungeons does not provide any method to create/copy NPC. However, you can create an NPC using Citizens command, save it using `/Citizens save`, open `Citizens/npcs.yml`, copy the NPC into `MythicDungeons/<Dungeon Type>/npcs.yml`, and replace locations using [Placeholders](placeholders.md). The plugin will parse placeholders inside before the dungeon is started.
+* Create an NPC with attributes using Citizens command
+* Save it using `/citizens save`
+* Copy `Citizens/npcs.yml` into `MythicDungeons/<Dungeon Type>/npcs.yml`
+* Replace dungeon-specific values inside using [Placeholders](placeholders.md)
+
+The plugin will parse placeholders before the dungeon starts.
 
 {% code title="npcs.yml" lineNumbers="true" %}
 ```yaml
