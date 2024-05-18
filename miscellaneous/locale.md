@@ -197,7 +197,7 @@ MESSAGE_DUNGEON_START_CANCELLED_OWNER: "&cYou have cancelled the start of the du
 MESSAGE_DUNGEON_START_CANCELLED_MEMBER: "&cRoom owner cancelled the start of the dungeon."
 MESSAGE_DUNGEON_CANNOT_CREATE: "&cDungeon {0} &ccannot be created."
 MESSAGE_DUNGEON_CANNOT_CREATE_DISABLED: "&cDungeon {0} &ccannot be created because it is disabled."
-MESSAGE_DUNGEON_NOT_FULFILL: "&cOne/some member(s) does not fulfill the requirements."
+MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT: "&cOne/some member(s) does not fulfill the requirements."
 
 # Admin message
 MESSAGE_DUNGEON_LOADED: "&aDungeons loaded."

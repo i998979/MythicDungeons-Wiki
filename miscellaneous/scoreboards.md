@@ -10,8 +10,6 @@ Please let me know if you need additional placeholders.
 
 Available placeholders for specific scoreboard is located below the corresponding scoreboard.
 
-~~Please keep in mind that `%bosscond%` under `InGame.Scores` are vertically scrolled independently and you should maintain the `Boss`, `AmountToKill`, `MobToKill`, `Checkpoint` and `LootChest` do not exceed the length of the scoreboard.~~
-
 {% code title="scoreboard.yml" lineNumbers="true" %}
 ```yaml
 InRoom:
