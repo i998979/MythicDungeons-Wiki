@@ -37,10 +37,7 @@
 ## 🏃 Joining Dungeon
 
 * [Room Mechanics](joining-dungeon/room-mechanics.md)
-* [Commands](joining-dungeon/commands.md)
-* [GUIs](joining-dungeon/guis.md)
-* [Signs](joining-dungeon/signs.md)
-* [NPCs](joining-dungeon/npcs.md)
+* [Ways To Join Dungeon](joining-dungeon/ways-to-join-dungeon.md)
 
 ## ⚙️ Configuration
 
