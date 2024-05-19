@@ -42,6 +42,14 @@
 ## ⚙️ Configuration
 
 * [General Config](configuration/general-config.md)
+* [Dungeon Group Config](configuration/dungeon-group-config/README.md)
+  * [general.yml](configuration/dungeon-group-config/general.yml.md)
+  * [stages.yml](configuration/dungeon-group-config/stages.yml.md)
+  * [buffs.yml](configuration/dungeon-group-config/buffs.yml.md)
+  * [checkpoints.yml](configuration/dungeon-group-config/checkpoints.yml.md)
+  * [lootchests.yml](configuration/dungeon-group-config/lootchests.yml.md)
+  * [teleporters.yml](configuration/dungeon-group-config/teleporters.yml.md)
+  * [traps.yml](configuration/dungeon-group-config/traps.yml.md)
 * [Dungeon Group Config (Simplified)](configuration/dungeon-group-config-simplified.md)
 * [Dungeon Group Config (Full)](configuration/dungeon-group-config-full.md)
 
