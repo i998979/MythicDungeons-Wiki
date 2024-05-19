@@ -8,7 +8,7 @@ Dungeon Group is the type of dungeon, all the dungeon instances share the same a
 
 As of MythicDungeons 3.0.0, Dungeon Group Config has been split into multiple config files. This would provide a bigger flexibility for future updates.
 
-The minimum file structure for a working dungeon is as follows:
+The following items are minimum requirements for a working dungeon.
 
 * Ruins/
   * schematics/

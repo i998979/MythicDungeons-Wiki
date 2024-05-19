@@ -45,7 +45,7 @@ Effects:
 
 ## Brief explanation
 
-Basically, effects listed [here](https://github.com/elBukkit/EffectLib/tree/master/src/main/java/de/slikey/effectlib/effect) can be used in the section `class` below. You can add/remove options mentioned [here](https://github.com/elBukkit/EffectLib/blob/master/src/main/java/de/slikey/effectlib/Effect.java).&#x20;
+The effects listed [here](https://github.com/elBukkit/EffectLib/tree/master/src/main/java/de/slikey/effectlib/effect) can be used in the section `class` below. You can add/remove options mentioned [here](https://github.com/elBukkit/EffectLib/blob/master/src/main/java/de/slikey/effectlib/Effect.java).&#x20;
 
 Remember only `public` variables can be added/removed and `class` is REQUIRED. In addition, effect-specific options can be added, it depends on what kind of effects you have used. You may check effect-specific options [here](https://github.com/elBukkit/EffectLib/tree/master/src/main/java/de/slikey/effectlib/effect).
 

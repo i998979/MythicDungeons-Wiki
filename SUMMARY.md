@@ -33,6 +33,10 @@
   * [Objective List](staged-dungeon/objectives/objective-list.md)
 * [Branches](staged-dungeon/branches/README.md)
   * [Parameters](staged-dungeon/branches/parameters.md)
+* [Displays](staged-dungeon/displays/README.md)
+  * [Scoreboard](staged-dungeon/displays/scoreboard.md)
+  * [Boss Bar](staged-dungeon/displays/boss-bar.md)
+  * [Action Bar](staged-dungeon/displays/action-bar.md)
 
 ## 🏃 Joining Dungeon
 
