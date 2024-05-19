@@ -1,14 +1,14 @@
 # Building Dungeon
 
+{% hint style="info" %}
+**Reminder:** Unless specified, Dungeon Type will be named `Ruins` throughout the Wiki. Change it respectively.
+{% endhint %}
+
 Since 2.2.2-SNAPSHOT, schematic file is no longer hard-dependency if you have all 3 dimensions `Length`, `Width`, and `Height` configured. It provides a possibility to use the plugin with the dungeon pre-built in the world.
 
 However, it is still highly recommended to have a schematic file in place so that the plugin calculates things like location automatically.
 
 Also, it is recommended to have `RestoreTerrains` disabled in `general.yml` if have a huge dungeon and you do not allow players to break/place blocks, explosions, etc. In this case, you should have all dungeon instances pasted in the world already and all 3 dimensions configured.
-
-{% hint style="info" %}
-**Reminder:** Unless specified, Dungeon Type will be named `Ruins` throughout the Wiki. Change it respectively.
-{% endhint %}
 
 {% tabs %}
 {% tab title="With schematic file" %}

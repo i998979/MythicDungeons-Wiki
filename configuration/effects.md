@@ -43,7 +43,7 @@ Effects:
 ```
 {% endcode %}
 
-## Brief explanation
+## Explanation
 
 The effects listed [here](https://github.com/elBukkit/EffectLib/tree/master/src/main/java/de/slikey/effectlib/effect) can be used in the section `class` below. You can add/remove options mentioned [here](https://github.com/elBukkit/EffectLib/blob/master/src/main/java/de/slikey/effectlib/Effect.java).&#x20;
 

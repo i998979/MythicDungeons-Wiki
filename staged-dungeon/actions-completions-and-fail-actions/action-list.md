@@ -1,12 +1,12 @@
 # Action List
 
-## Under `Stages.<ID>.Actions`,  `Stages.<ID>.Completions` & `Stages.<ID>.FailActions`:
-
 {% hint style="info" %}
 **Reminder:** If the parameters are located under `Actions`, the list of actions will be done when the stage starts.
 
 If the parameters are located under `Completions`, the list of actions will be done after all objectives of this stage are completed.
 {% endhint %}
+
+## Under `Stages.<ID>.Actions`,  `Stages.<ID>.Completions` & `Stages.<ID>.FailActions`:
 
 ### Buff
 

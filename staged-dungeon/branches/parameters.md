@@ -1,10 +1,10 @@
 # Parameters
 
-## Under `Stages.<ID>.Branches`:
-
 {% hint style="warning" %}
 **Warning:** Please make sure that all branches will reach a stage with option `End` to make sure that there is no infinite loop.
 {% endhint %}
+
+## Under `Stages.<ID>.Branches`:
 
 ### Branch
 
