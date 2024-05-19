@@ -62,7 +62,7 @@ MythicMobs Spawner start spawning mobs once it is called, it is default enabled,
 
 An external item editing plugin is required or use an Anvil instead.
 
-Edit the name, lore, custom model data through external item editing plugin, then type `/mg check` and click the message to copy formatted string, and paste it into the [Dungeon Group Config](../configuration/dungeon-group-config-simplified.md).
+Edit the name, lore, custom model data through external item editing plugin, then type `/mg check` and click the message to copy formatted string, and paste it into the [Dungeon Group Config](../configuration/dungeon-group-config/general.yml.md).
 
 </details>
 

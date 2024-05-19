@@ -50,8 +50,6 @@
   * [lootchests.yml](configuration/dungeon-group-config/lootchests.yml.md)
   * [teleporters.yml](configuration/dungeon-group-config/teleporters.yml.md)
   * [traps.yml](configuration/dungeon-group-config/traps.yml.md)
-* [Dungeon Group Config (Simplified)](configuration/dungeon-group-config-simplified.md)
-* [Dungeon Group Config (Full)](configuration/dungeon-group-config-full.md)
 
 ## 🚫 Commands & Permissions
 
