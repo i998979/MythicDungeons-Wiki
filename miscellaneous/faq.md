@@ -36,7 +36,7 @@ If you are having problems with the specified Platform / Server / Minecraft vers
 
 <summary>The scoreboard does not show when the dungeon starts.</summary>
 
-If you have TAB installed, disable it in the dungeon world.&#x20;
+If you have [TAB](https://www.spigotmc.org/resources/tab-1-5-1-20-6.57806/) installed, disable it in the dungeon world.&#x20;
 
 </details>
 
@@ -52,7 +52,7 @@ Loot Chest does not spawn by default, it requires you to have the chest in the s
 
 <summary>MythicMobs Spawner keeps spawning mobs.</summary>
 
-MythicMobs Spawner start spawning mobs once it is called, it is default enabled, you may disable it whenever you want through [MythicSpawner Action](https://factorycraft.gitbook.io/wiki/get-started/actions-completions-and-fail-actions/action-list#mythicspawner).
+MythicMobs Spawner starts spawning mobs once it is called, it is default enabled, it can be disabled through [MythicSpawner Action](https://factorycraft.gitbook.io/wiki/get-started/actions-completions-and-fail-actions/action-list#mythicspawner).
 
 </details>
 
@@ -62,7 +62,7 @@ MythicMobs Spawner start spawning mobs once it is called, it is default enabled,
 
 An external item editing plugin is required or use an Anvil instead.
 
-Edit the name, lore, custom model data through external item editing plugin, then type `/mg check` and click the message to copy formatted string, and paste it into the [Dungeon Group Config](../configuration/dungeon-group-config/general.yml.md).
+Edit the name, lore, custom model data through external item editing plugin, then type `/mg check` and click the message to copy the formatted string, and paste it into [general.yml](../configuration/dungeon-group-config/general.yml.md).
 
 </details>
 
@@ -78,7 +78,7 @@ Please make sure that the dungeon instance does not overlap with any existing bu
 
 <summary>Players get teleported outside during dungeon fight.</summary>
 
-Please make sure that other plugins did not handle teleport upon death / login.
+Please make sure that other plugins do not handle teleport upon death / login.
 
 </details>
 
