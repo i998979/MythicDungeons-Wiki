@@ -4,13 +4,12 @@
 
 The Dungeon Group file structure has changed since MythicDungeons 3.0.0 in order to provide a bigger flexibility for future updates.
 
+* Different attributes of the dungeon now split into different files
 * In-Game Scoreboard is renamed to Scoreboard Display and has been moved into Stages along with BossBar Display and Action Bar Display
 * Price is renamed to Requirement to cope with PlaceholderAPI condition check support
 * Moved various global configuration settings to dungeon-specific
 
 By typing `/mg migrate <file name/all>`, the dungeon specified will be migrated. To migrate all dungeon configurations, you may enter `all` in the command argument.
-
-~~Alternatively, if you find the migrated configuration does not fit you or it is not working, you may refer to this picture and migrate manually.~~&#x20;
 
 ## v1 to v2
 
