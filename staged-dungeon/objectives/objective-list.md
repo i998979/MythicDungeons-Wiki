@@ -1,6 +1,6 @@
 # Objective List
 
-## Under `Ruins.Stages.<ID>.Objectives`:
+## Under `Stages.<ID>.Objectives`:
 
 ### **BlockBreak**
 
@@ -12,7 +12,7 @@
 
 | Parameters         | Explanation                                                                                                                                                          | Examples                                                                                                                                      | Required                            |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **BlockBreak**     | <p>Blocks in region required to break.<br><code>BlockBreak</code> option in <code>config.yml</code> still work, only matching blocks can be broken</p>               | `BlockBreak{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                     |
+| **BlockBreak**     | <p>Blocks in region required to break.<br><code>BlockBreak</code> option in <code>general.yml</code> still work, only matching blocks can be broken</p>              | `BlockBreak{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                     |
 | world1, x1, y1, z1 | First corner of the region                                                                                                                                           |                                                                                                                                               | true                                |
 | world2, x2, y2, z2 | Second corner of the region                                                                                                                                          |                                                                                                                                               | true                                |
 | material           | Block material required to break, it follows the rule from [Spigot API](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html), multiple can be combined | `STONE COBBLESTONE`                                                                                                                           | true                                |
@@ -23,7 +23,7 @@
 
 | Parameters         | Explanation                                                                                                                                                                         | Examples                                                                                                                                      | Required                            |
 | ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **BlockInteract**  | <p>Blocks in region required to interact.<br><code>BlockInteract</code> option in <code>config.yml</code> still work, only matching blocks can be placed</p>                        | `BlockPlace{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                     |
+| **BlockInteract**  | <p>Blocks in region required to interact.<br><code>BlockInteract</code> option in <code>general.yml</code> still work, only matching blocks can be placed</p>                       | `BlockPlace{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                     |
 | world1, x1, y1, z1 | First corner of the region                                                                                                                                                          |                                                                                                                                               | true                                |
 | world2, x2, y2, z2 | Second corner of the region                                                                                                                                                         |                                                                                                                                               | true                                |
 | material           | Block material required to interact, it follows the rule from [Spigot API](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html), multiple can be combined with space  | `STONE COBBLESTONE`                                                                                                                           | true                                |
@@ -40,7 +40,7 @@
 
 | Parameters         | Explanation                                                                                                                                                                      | Examples                                                                                                                                      | Required                            |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| **BlockPlace**     | <p>Blocks in region required to place.<br><code>BlockPlace</code> option in <code>config.yml</code> still work, only matching blocks can be placed</p>                           | `BlockPlace{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                     |
+| **BlockPlace**     | <p>Blocks in region required to place.<br><code>BlockPlace</code> option in <code>general.yml</code> still work, only matching blocks can be placed</p>                          | `BlockPlace{world1=dungeon;x1=114;y1=4;z1=246;world2=dungeon;x2=126;y2=10;z2=264;material='STONE COBBLESTONE';type=AMOUNT_COMBINED;amount=3}` |                                     |
 | world1, x1, y1, z1 | First corner of the region                                                                                                                                                       |                                                                                                                                               | true                                |
 | world2, x2, y2, z2 | Second corner of the region                                                                                                                                                      |                                                                                                                                               | true                                |
 | material           | Block material required to place, it follows the rule from [Spigot API](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html), multiple can be combined with space  | `STONE COBBLESTONE`                                                                                                                           | true                                |
@@ -83,14 +83,14 @@
 
 </div>
 
-| Parameters     | Explanation                                                           | Examples           | Required |
-| -------------- | --------------------------------------------------------------------- | ------------------ | -------- |
-| **Checkpoint** | Checkpoint required to capture                                        | `Checkpoint{id=1}` |          |
-| id             | ID of the checkpoint, it should be declared under `Ruins.Checkpoints` |                    | true     |
-| allplayer      | Are all players required to stay inside                               | `true` or `false`  |          |
-| allpoint       | Are all points required to be captured at once                        | `true` or `false`  |          |
-| time           | Time in ticks the player has to stay inside before it is captured     |                    |          |
-| sneak          | Is sneaking required to claim this checkpoint                         | `true` or `false`  |          |
+| Parameters     | Explanation                                                       | Examples           | Required |
+| -------------- | ----------------------------------------------------------------- | ------------------ | -------- |
+| **Checkpoint** | Checkpoint required to capture                                    | `Checkpoint{id=1}` |          |
+| id             | ID of the checkpoint, it should be declared in `checkpoints.yml`  |                    | true     |
+| allplayer      | Are all players required to stay inside                           | `true` or `false`  |          |
+| allpoint       | Are all points required to be captured at once                    | `true` or `false`  |          |
+| time           | Time in ticks the player has to stay inside before it is captured |                    |          |
+| sneak          | Is sneaking required to claim this checkpoint                     | `true` or `false`  |          |
 
 ### ContainerPickup
 
@@ -146,10 +146,10 @@
 
 </div>
 
-| Parameters    | Explanation                                                         | Examples          | Required |
-| ------------- | ------------------------------------------------------------------- | ----------------- | -------- |
-| **LootChest** | Loot Chest required to open                                         | `LootChest{id=1}` |          |
-| id            | ID of the loot chest, it should be declared under `Ruins.LootChest` |                   | true     |
+| Parameters    | Explanation                                                  | Examples          | Required |
+| ------------- | ------------------------------------------------------------ | ----------------- | -------- |
+| **LootChest** | Loot Chest required to open                                  | `LootChest{id=1}` |          |
+| id            | ID of the loot chest, it should be declared `lootchests.yml` |                   | true     |
 
 ### Mob
 
@@ -159,7 +159,7 @@
 | name       | Name of the mob, regex is supported                                                                               |                                                    | true     |
 | namespace  | Namespace of the mob, some custom mob plugin might contain plugin-specific tag, it can be used for detection here |                                                    |          |
 
-### **MythicMob**
+### **MythicMob (MythicMobs)**
 
 <div align="left">
 
@@ -170,19 +170,19 @@
 | Parameters    | Explanation                                                                                                    | Examples                                                                                                                                                                                                                                                                                          | Required |
 | ------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | **MythicMob** | MythicMobs mob required to kill, similar to [Mob](objective-list.md#mob) but only applicable to MythicMobs mob | `MythicMob{type=rat1;amount=3}`                                                                                                                                                                                                                                                                   |          |
-| type          | Type of the MythicMob defined in `MythicMobs/Mobs/<Yml containing the mob>.yml`                                |                                                                                                                                                                                                                                                                                                   | true     |
+| type          | Type of the MythicMob defined in `MythicMobs/Mobs/<yml contains the mob>.yml`                                  |                                                                                                                                                                                                                                                                                                   | true     |
 | amount        | Amount of the mobs required to kill                                                                            | `3` if 3 of this mob is required to kill, the scoreboard shows `Mother Rat: 3`, `1` if only 1 is required to kill, the scoreboard shows `Mother Rat: 1`, if it is not set, the default amount is `1`, however, the scoreboard will show `Mother Rat: not dead` or `Mother Rat: dead` respectively |          |
 | minlevel      | Minimum mobs level required to kill                                                                            |                                                                                                                                                                                                                                                                                                   |          |
 | maxlevel      | Maximum mobs level required to kill                                                                            |                                                                                                                                                                                                                                                                                                   |          |
 
 ### NPCInteract (Citizens)
 
-| Parameters      | Explanation                                                               | Examples                                      | Required |
-| --------------- | ------------------------------------------------------------------------- | --------------------------------------------- | -------- |
-| **NPCInteract** | NPC required to interact by players                                       | `NPCInteract{left=true;right=true;npcId="0"}` |          |
-| id              | ID of the NPC declared in `MythicDungeons/groups/<Dungeon Type>/npcs.yml` |                                               | true     |
-| left            | Is left-clicking NPC accepted                                             | `true` or `false`                             |          |
-| right           | Is right-clicking NPC accepted                                            | `true` or `false`                             |          |
+| Parameters      | Explanation                                                      | Examples                                      | Required |
+| --------------- | ---------------------------------------------------------------- | --------------------------------------------- | -------- |
+| **NPCInteract** | NPC required to interact by players                              | `NPCInteract{left=true;right=true;npcId="0"}` |          |
+| id              | ID of the NPC declared in `MythicDungeons/groups/Ruins/npcs.yml` |                                               | true     |
+| left            | Is left-clicking NPC accepted                                    | `true` or `false`                             |          |
+| right           | Is right-clicking NPC accepted                                   | `true` or `false`                             |          |
 
 ### **PlayerPickup**
 
@@ -202,7 +202,7 @@
 
 | Parameters        | Explanation                                               | Examples                                                    | Required |
 | ----------------- | --------------------------------------------------------- | ----------------------------------------------------------- | -------- |
-| **RedstonePower** | Item required to pick up by players                       | `RedstonePower{world=dungeon;x=115;y=5;z=247;min=1;max=15}` |          |
+| **RedstonePower** | Redstone power required for the specified block           | `RedstonePower{world=dungeon;x=115;y=5;z=247;min=1;max=15}` |          |
 | world, x, y, z    | Location of the block to detect                           |                                                             | true     |
 | min               | Minimum redstone power required to trigger this objective | `1` to `16`                                                 |          |
 | max               | Maximum redstone power required to trigger this objective | `1` to `16`                                                 |          |

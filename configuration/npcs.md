@@ -6,8 +6,8 @@ However, MythicDungeons does not provide any method to create/copy NPC, please f
 
 * Create an NPC with attributes using Citizens command
 * Save it using `/citizens save`
-* Copy `Citizens/saves.yml` into `MythicDungeons/<Dungeon Type>/npcs.yml`
-* Replace dungeon-specific values inside using [Placeholders](placeholders.md)
+* Copy `Citizens/saves.yml` into `MythicDungeons/Ruins/npcs.yml`
+* Replace dungeon-specific values inside using [Placeholders](../miscellaneous/placeholders.md)
 
 The plugin will parse placeholders before the dungeon starts.
 

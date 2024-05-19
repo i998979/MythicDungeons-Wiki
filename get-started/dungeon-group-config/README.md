@@ -13,8 +13,8 @@ The following items are minimum requirements for a working dungeon.
 * Ruins/
   * schematics/
     * Ruins.schem
-  * [general.yml](general.yml.md)
-  * [stages.yml](stages.yml.md)
+  * general.yml
+  * stages.yml
 
 In the following example, the following items are required for the dungeon to work.
 

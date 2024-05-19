@@ -1,4 +1,4 @@
-# ⚔ MythicDungeons Wiki
+# ⚔️ MythicDungeons Wiki
 
 {% hint style="warning" %}
 **Warning:** This plugin is developed by i998979, **NOT** the author of MythicMobs, they are different plugins. Please watch carefully before buying and contact me for support but not them if you bought my plugin. **NO refund** if you bought the wrong one.
@@ -8,7 +8,7 @@
 
 ## About
 
-MythicDungeons is the world's first plugin that provides a multi-instance dungeon system in the same world. Unlike any other plugin on the market that required multiple servers for multiple instances, MythicDungeons lets your player be able to challenge the same kind of dungeon at the same time in the same world.
+MythicDungeons is the world's first plugin that provides a multi-instance dungeon system in the same world. Unlike any other plugin on the market that requires multiple servers for multiple instances, MythicDungeons lets your player be able to challenge the same kind of dungeon at the same time in the same world.
 
 This plugin provides a complete teaming system, players can form a team to challenge the dungeon together. With full-featured GUI, everything can be accessed with simple clicks. Also, the brand-new Vertical Scrolling Scoreboard system provides endless information they need when waiting or even in-game.
 
