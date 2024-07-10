@@ -10,7 +10,7 @@ As of MythicDungeons 3.0.0, Dungeon Group Config has been split into multiple co
 
 The following items are minimum requirements for a working dungeon.
 
-* Ruins/
+* MythicDungeons/groups/Ruins/
   * schematics/
     * Ruins.schem
   * general.yml
