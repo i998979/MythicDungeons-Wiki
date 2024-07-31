@@ -1,7 +1,5 @@
 # ⚔️ MythicDungeons Wiki
 
-111
-
 {% hint style="warning" %}
 **Warning:** This plugin is developed by i998979, **NOT** the author of MythicMobs, they are different plugins. Please watch carefully before buying and contact me for support but not them if you bought my plugin. **NO refund** if you bought the wrong one.
 {% endhint %}
