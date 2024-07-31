@@ -22,9 +22,9 @@ Placeholders are used within Displays to display objective-specific information.
 
 ## General Placeholders
 
-| Placeholder | Explanation                               |
-| ----------- | ----------------------------------------- |
-| progress    | Progress of the objective between 0 and 1 |
+| Placeholder | Explanation                                   |
+| ----------- | --------------------------------------------- |
+| progress    | Progress of the objective between 0.0 and 1.0 |
 
 ## Placeholders
 
