@@ -22,10 +22,80 @@ The order of Display objectives will be:
 
 ## Placeholders
 
-Placeholders are used within Displays to display objective-specific information. It can be used like `%<objective type>_<objective order>_<placeholder>%`. For example, `%MythicMobs_1_mobamtkill%` shows the name of the mob required to kill in [MythicMobs Objective](../objectives/objective-list.md#mythicmob).
+Placeholders are used within Displays to display objective-specific information. It can be used like `%<objective type>_<objective order>_<placeholder>%`. For example, `%MythicMobs_1_mobamtkill%` shows the mob's name required to kill in [MythicMobs Objective](../objectives/objective-list.md#mythicmob).
 
-| Objectives | Placeholders | Explanation |
-| ---------- | ------------ | ----------- |
-|            |              |             |
-|            |              |             |
-|            |              |             |
+| Objective                | Placeholder        | Explanation |
+| ------------------------ | ------------------ | ----------- |
+| BlockBreakObjective      | broke              |             |
+|                          | amount             |             |
+|                          | block              |             |
+|                          | world1, x1, y1, z1 |             |
+|                          | world2, x2, y2, z2 |             |
+|                          | progress           |             |
+| BlockPlaceObjective      | placed             |             |
+|                          | amount             |             |
+|                          | block              |             |
+|                          | world1, x1, y1, z1 |             |
+|                          | world2, x2, y2, z2 |             |
+|                          | progress           |             |
+| BlockInteractObjective   | placed             |             |
+|                          | amount             |             |
+|                          | block              |             |
+|                          | world1, x1, y1, z1 |             |
+|                          | world2, x2, y2, z2 |             |
+|                          | progress           |             |
+| BuffClaimObjective       | bf                 |             |
+|                          | bfclaimed          |             |
+|                          | progress           |             |
+| ChatMessageObjective     | chatscoreboard     |             |
+|                          | chathassaid        |             |
+|                          | progress           |             |
+| CheckpointObjective      | cp                 |             |
+|                          | cpreached          |             |
+|                          | progress           |             |
+| ContainerPickupObjective | world, x, y, z     |             |
+|                          | item               |             |
+|                          | amount             |             |
+|                          | picked             |             |
+|                          | progress           |             |
+| DamageObjective          | damage             |             |
+|                          | time               |             |
+|                          | damaged            |             |
+|                          | progress           |             |
+| HasItemObjective         | item               |             |
+|                          | amount             |             |
+|                          | hasitem            |             |
+|                          | progress           |             |
+| LootChestObjective       | lc                 |             |
+|                          | lcopened           |             |
+|                          | progress           |             |
+| MobObjective             | mobkill            |             |
+|                          | mobkilled          |             |
+|                          | progress           |             |
+|                          | mobamtkill         |             |
+|                          | mobamtmax          |             |
+|                          | mobamtkilled       |             |
+|                          | progress           |             |
+| MythicMobObjective       | mobkill            |             |
+|                          | mobkilled          |             |
+|                          | progress           |             |
+|                          | mobamtkill         |             |
+|                          | mobamtmax          |             |
+|                          | mobamtkilled       |             |
+|                          | progress           |             |
+|                          | mobminlevel        |             |
+|                          | mobmaxlevel        |             |
+| NPCInteractObjective     | npcname            |             |
+|                          | npcinteracted      |             |
+|                          | npcinteract        |             |
+|                          | progress           |             |
+| PlaceholderObjective     | scoreboard         |             |
+| PlayerPickupObjective    | item               |             |
+|                          | picked             |             |
+|                          | progress           |             |
+| RedstonePowerObjective   | min                |             |
+|                          | max                |             |
+|                          | progress           |             |
+| TimerObjective           | time               |             |
+|                          | scoreboard         |             |
+|                          | progress           |             |
