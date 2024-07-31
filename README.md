@@ -19,19 +19,3 @@ If you have any inquiries, please join our [Discord](https://discord.gg/DVvCXFP4
 ## Get Started
 
 Here are some quick links for you to understand different parts of the plugin.
-
-{% content-ref url="get-started/building-dungeon.md" %}
-[building-dungeon.md](get-started/building-dungeon.md)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
