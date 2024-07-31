@@ -187,6 +187,16 @@
 | left            | Is left-clicking NPC accepted                                    | `true` or `false`                             |          |
 | right           | Is right-clicking NPC accepted                                   | `true` or `false`                             |          |
 
+### **Placeholder (PlaceholderAPI)**
+
+| Parameters                            | Explanation                                                                                                                                                                        | Examples                                                                                                   | Required |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | -------- |
+| <h3><strong>Placeholder</strong></h3> | Item required to pick up by players                                                                                                                                                | `Placeholder{1='%changeoutput_>=_input:{player_level}_matcher:5_ifmatch:true_else:false%';allplayer=true}` |          |
+| conditions                            | PlaceholderAPI's placeholder, use [ChangeOutput](https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput) to apply checking. Only `true` will be treated as fulfilled | `%changeoutput_>=_input:{player_level}_matcher:5_ifmatch:true_else:false%`                                 | true     |
+| scoreboard                            | Alterative text to be shown on scoreboard                                                                                                                                          |                                                                                                            |          |
+| allplayer                             | Are all players required to fulfill all conditions                                                                                                                                 |                                                                                                            |          |
+| interval                              | Interval in ticks of conditions are being checked                                                                                                                                  |                                                                                                            |          |
+
 ### **PlayerPickup**
 
 <div align="left">
@@ -209,3 +219,12 @@
 | world, x, y, z    | Location of the block to detect                           |                                                             | true     |
 | min               | Minimum redstone power required to trigger this objective | `1` to `16`                                                 |          |
 | max               | Maximum redstone power required to trigger this objective | `1` to `16`                                                 |          |
+
+### Timer
+
+| Parameters   | Explanation                          | Examples                                                | Required |
+| ------------ | ------------------------------------ | ------------------------------------------------------- | -------- |
+| **Timer**    | Time required to wait                | `Time{scoreboard='Wait 5 seconds';time=100;interval=1}` |          |
+| scoreboard   | Alternative text shown in scoreboard |                                                         |          |
+| time         | Time in ticks required to wait       |                                                         | true     |
+| ~~interval~~ | ~~Interval of timer update~~         |                                                         |          |
