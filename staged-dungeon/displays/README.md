@@ -18,11 +18,15 @@ The order of Display objectives will be:
 - '&fDiscover the secret of %Checkpoint_2_cp%: %Checkpoint_2_cpreached%'
 ```
 
-## General Parameters
+Placeholders are used within Displays to display objective-specific information. It can be used like `%<objective type>_<objective order>_<placeholder>%`. For example, `%MythicMobs_1_mobamtkill%` shows the mob's name required to kill in [MythicMobs Objective](../objectives/objective-list.md#mythicmob).
+
+## General Placeholders
+
+| Placeholder | Explanation                               |
+| ----------- | ----------------------------------------- |
+| progress    | Progress of the objective between 0 and 1 |
 
 ## Placeholders
-
-Placeholders are used within Displays to display objective-specific information. It can be used like `%<objective type>_<objective order>_<placeholder>%`. For example, `%MythicMobs_1_mobamtkill%` shows the mob's name required to kill in [MythicMobs Objective](../objectives/objective-list.md#mythicmob).
 
 | Objective                    | Placeholder        | Explanation                                                                                        |
 | ---------------------------- | ------------------ | -------------------------------------------------------------------------------------------------- |
