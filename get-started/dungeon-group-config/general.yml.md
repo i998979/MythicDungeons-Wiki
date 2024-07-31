@@ -113,7 +113,7 @@ General:
         # Death count, different death counts drop different lists of items
         # If the player dies once, an Emerald Block and items drawn from LootTable will be removed from the player's inventory/death drop
         # If '3' is enabled and the player dies twice, items in '1' will be removed
-        '0':
+        '1':
           - '{"v":2865,"type":"EMERALD_BLOCK"}'
           - 'LootTable{id=Stage1Table}'
         # If the player dies 3 times, a Diamond Block will be removed from the player's inventory/death drop
@@ -125,6 +125,21 @@ General:
         '1': 300
   # Cancel death screen when the player dies
   AutoRespawn: true
+  # Death action when player dies
+  DeathAction:
+    # NONE: Nothing to do, respawn after death
+    # SPECTATE: Spectate other teammates, if no alive teammate was found, set Spectator and teleport to option below
+    # WAITROOM: Teleport to wait room, after timer, teleport to option below
+    Action: NONE
+    WaitRoom:
+      world: dungeon
+      x: 109.5
+      y: 5.0
+      z: 242.5
+      yaw: 0.0
+      pitch: 180.0
+    # How long does the player stay before getting teleported back into dungeon
+    Time: 100
   # Teleport back players into the dungeon when they left the server and join back during dungeon fight
   # If the server has static spawn, it should be enabled
   TeleportBack: true
@@ -142,9 +157,9 @@ General:
   # Potion effects will be saved and removed in the dungeon and revert after dungeon ends
   KeepPotions: true
   # Allow breaking blocks in the dungeon, not including specified blocks in a specified location
-  BlockBreak: true
+  BlockBreak: false
   # Allow placing blocks in the dungeon, not including specified blocks in a specified location
-  BlockPlace: true
+  BlockPlace: false
   # Allow interacting blocks in the dungeon, not including specified blocks in a specified location
   BlockInteract: true
   # Block PvP when challenging dungeon
@@ -161,7 +176,7 @@ General:
   # Hide messages sent by all players except teammates from dungeon challengers
   HideOtherChat: false
   # Use countdown GUI to allow cancelling pre-starting dungeon
-  GUICountdown: false
+  GUICountdown: true
   # Additional title countdown, players will be invincible and frozen during countdown
   TitleCountdown: false
   # Icon of this Dungeon Group in Dungeon Type Selector
@@ -303,8 +318,8 @@ Expire:
     x: 109.5
     y: 5.0
     z: 242.5
-    pitch: 180.0
     yaw: 0.0
+    pitch: 180.0
 # Spawn/Respawn point of the players, they will be randomly teleported to the locations in the list
 PlayerSpawns:
   '0':
@@ -312,22 +327,22 @@ PlayerSpawns:
     x: 121.47342204269181
     y: 5.0
     z: 247.30001128668135
-    pitch: 0.0
     yaw: 0.0
+    pitch: 0.0
   '1':
     world: dungeon
     x: 120.49530775493284
     y: 5.0
     z: 248.4028314339493
-    pitch: 0.0
     yaw: 0.0
+    pitch: 0.0
   '2':
     world: dungeon
     x: 119.51566596838329
     y: 5.0
     z: 247.53789380317693
-    pitch: 0.0
     yaw: 0.0
+    pitch: 0.0
 # Rewards that will be given to players when the dungeon is completed
 Rewards:
   # Team reward
