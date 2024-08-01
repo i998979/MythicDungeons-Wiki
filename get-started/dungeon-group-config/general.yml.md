@@ -145,7 +145,16 @@ General:
   # SPAWN: Teleport back to dungeon's spawn
   # CHECKPOINT: Teleport back to last reached checkpoint
   # PREVIOUS: Teleport back to player's logout location
+  # DESIGNATED: Designated location, teleport to option below
   TeleportTo: SPAWN
+  # Designated location if TeleportTo is DESIGNATED
+  Designated:
+    world: dungeon
+    x: 121.47342204269181
+    y: 5.0
+    z: 247.30001128668135
+    yaw: 0.0
+    pitch: 0.0
   # Inventory items will not drop on the ground upon death
   KeepInventory: true
   # Experience will not drop on the ground upon death
