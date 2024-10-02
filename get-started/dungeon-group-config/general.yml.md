@@ -305,7 +305,7 @@ Map:
   # How many blocks of the gap in columns between adjoining dungeons
   ColumnGap: 1
   # Load all chunks of the dungeon and keep it loaded until dungeon ends
-  LoadChunks: true
+  LoadChunks: false
   # Restore the dungeon to what it used to look like after the challenge is ended
   RestoreTerrains: true
 # How long is the dungeon challenge time, and what to do after it ends
