@@ -139,7 +139,7 @@ General:
       yaw: 0.0
       pitch: 180.0
     # How long does the player stay before getting teleported back into dungeon
-    Time: 100
+    Time: 3
   # Where to teleport after players death or rejoining the server during dungeon fight
   # Available options:
   # SPAWN: Teleport back to dungeon's spawn
