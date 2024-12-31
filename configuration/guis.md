@@ -45,6 +45,9 @@ Menus:
   #
   # Only these options can be used when modifying the item
   #
+  # Item: "Item string retrieved by /mg check, if options below are declared,
+  #        corresponding attributes will be overwritten"
+  #
   # Material: BEDROCK
   # Name: "Whatever you want, but only placeholders existed in the item below can be used"
   # Lores: "Whatever you want, but only placeholders existed in the item below can be used"
@@ -227,7 +230,7 @@ Menus:
       Material: PLAYER_HEAD
       Name: "&e%owner%"
       Lores:
-        - "&7Id: %id%"
+        - "&7ID: %id%"
         - "&7Dungeon: %dungeon%"
         - "&7Members: %current%/%max%"
         - "&7Privacy: %privacy%"
@@ -255,13 +258,13 @@ Menus:
         # Nothing is filtered
         Empty:
           - "&7Find room by owner's name"
-          - "&7room type, or room id."
+          - "&7room type, or room ID."
           - ""
           - "&eClick to search!"
         # Filtered text included
         Filtered:
           - "&7Find room by owner's name"
-          - "&7room type, or room id."
+          - "&7room type, or room ID."
           - ""
           - "&7Filtered: &e%search%"
           - ""
@@ -288,7 +291,7 @@ Menus:
         - "%c_none%> None"
         - "%c_name%> Owner name"
         - "%c_type%> Room type"
-        - "%c_id%> Room id"
+        - "%c_id%> Room ID"
         - ""
         - "&eClick to change!"
       # Color code of selected sorting method
@@ -393,7 +396,7 @@ Menus:
       Lores:
         # Info for privacy PUBLIC or PRIVATE
         Default:
-          - "&7Id: %id%"
+          - "&7ID: %id%"
           - "&7Owner: %owner%"
           - "&7Dungeon: %dungeon%"
           - "&7Created: %created% ago"
@@ -401,7 +404,7 @@ Menus:
           - "&7Note: %note%"
         # Info for privacy PASSWORD
         Password:
-          - "&7Id: %id%"
+          - "&7ID: %id%"
           - "&7Owner: %owner%"
           - "&7Dungeon: %dungeon%"
           - "&7Created: %created% ago"
@@ -442,21 +445,21 @@ Menus:
       Title: "Confirm leaving?"
       Name: "&e%owner%'s %dungeon% &r&eroom"
       Lores:
-        - "&7Id: %id%"
+        - "&7ID: %id%"
         - "&7Owner: %owner%"
         - "&7Dungeon: %dungeon%"
     Promotion:
       Title: "Confirm promotion?"
       Name: "&ePromote %name% to owner"
       Lores:
-        - "&7Id: %id%"
+        - "&7ID: %id%"
         - "&7Owner: %owner%"
         - "&7Dungeon: %dungeon%"
     Removal:
       Title: "Confirm removal?"
       Name: "&eRemove %name% from the room"
       Lores:
-        - "&7Id: %id%"
+        - "&7ID: %id%"
         - "&7Owner: %owner%"
         - "&7Dungeon: %dungeon%"
   RoomInfo:
@@ -510,7 +513,7 @@ Menus:
       Material: BOOK
       Name: "&aRoom information"
       Lores:
-        - "&7Id: %id%"
+        - "&7ID: %id%"
         - "&7Owner: %owner%"
         - "&7Dungeon: %dungeon%"
         - "&7Created: %created% ago"

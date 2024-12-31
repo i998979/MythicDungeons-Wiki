@@ -128,7 +128,7 @@ General:
   # Death action when player dies
   DeathAction:
     # NONE: Nothing to do, respawn after death
-    # SPECTATE: Spectate other teammates, if no alive teammate was found, set Spectator and teleport to option below
+    # SPECTATE: Spectate other teammates, if no alive teammate is found, set Spectator and teleport to option below
     # WAITROOM: Teleport to wait room, after timer, teleport to option below
     Action: NONE
     WaitRoom:
@@ -281,7 +281,7 @@ Map:
   # It should be the lower corner of the dungeon
   Origin:
     world: dungeon
-    x: 127.0
+    x: 113.0
     y: 4.0
     z: 245.0
   # Length, Width, Height are optional if you have a dungeon schematic in place
@@ -308,6 +308,19 @@ Map:
   LoadChunks: false
   # Restore the dungeon to what it used to look like after the challenge is ended
   RestoreTerrains: true
+  # World border of the dungeon, only visible to players in the dungeon, it is always a square
+  # Available options:
+  # CENTER: Center of the dungeon schematic
+  # ORIGIN: Designated origin
+  Border: ORIGIN
+  # Designated location when Border is "ORIGIN"
+  Designated:
+    # Center of the world border
+    Origin:
+      x: 120.5
+      z: 254.5
+    # Length of a single side of the world border
+    Size: 10
 # How long is the dungeon challenge time, and what to do after it ends
 Expire:
   # Maximum dungeon challenge time(in sec), after the timer ends, the dungeon fails

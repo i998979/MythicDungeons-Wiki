@@ -57,6 +57,10 @@ LootChests:
     # Contents of the loot chest
     # Use "/mg check" with the items on your hand to retrieve the string
     # Followed by which slot to put
+    # Loot Table can also be used by LootTable{id=Stage1Table} 1 2 3
+    # where Stage1Table is the name of the Loot Table and 1 2 3 is the slot applying the Loot Table
+    # If the items drawn do not fit in the slots, then the rear slots will not be filled
+    # or the items in the rear of the list will not be fitted in
     Items:
       - '{"v":2865,"type":"REDSTONE_BLOCK"} 8'
       - '{"v":2865,"type":"DIAMOND_BLOCK"} 16'
