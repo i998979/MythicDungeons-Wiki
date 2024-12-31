@@ -12,6 +12,8 @@ Generally, all possible placeholders are already put inside. If you require more
 
 Texts on SignGUI may not appear in all Minecraft versions. However, as long as you see the SignGUI appearing, even if it is empty, you can still input texts on the first line and it will still be detected and processed.
 
+Since 3.0.0-BETA-8, item string retrieved from `/mg check` can also be used to specify the item. If extra attributes are specified, the one in item string will be overwritten.
+
 {% code title="menu.yml" lineNumbers="true" %}
 ```yaml
 Menus:
