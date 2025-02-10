@@ -188,15 +188,42 @@ General:
   # Either use "/mg check" with the items on your hand to retrieve the string
   # Or follow the format in menu.yml
   # The dungeon will be sorted by the time it is loaded if only 1 is specified
-  Icon: '{"v":2865,"type":"REDSTONE_BLOCK"}'
-  # If the slot is specified, it will be placed in that slot
-  # All existing buttons will be overridden
-  # If the slot is not specified, it will be placed in the next available slot
+  Icon: '{"v":3955,"type":"REDSTONE_BLOCK"}'
+  # Icon: '{id:"minecraft:suspicious_stew",count:1,components:{suspicious_stew_effects:[{id:wither,duration:160}]}}'
+  # Icon:
+  #   Slot: 0
+  #   Material: REDSTONE_BLOCK
+  #   Name: "Whatever you want, but only placeholders existed in the item below can be used"
+  #   Lores: "Whatever you want, but only placeholders existed in the item below can be used"
+  #   Amount: 64
+  #   # If the slot is specified, it will be placed in that slot
+  #   # All existing buttons will be overridden
+  #   # If the slot is not specified, it will be placed in the next available slot
   # Icon:
   #   Items:
   #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 0'
   #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 1'
   #     - '{"v":2865,"type":"REDSTONE_BLOCK"} 2'
+  # Icon:
+  #   Items:
+  #     '0':
+  #       Slot: 3
+  #       Material: REDSTONE_BLOCK
+  #       Name: "Whatever you want, but only placeholders existed in the item below can be used"
+  #       Lores: "Whatever you want, but only placeholders existed in the item below can be used"
+  #       Amount: 64
+  #     '1':
+  #       Slot: 4
+  #       Material: REDSTONE_BLOCK
+  #       Name: "Whatever you want, but only placeholders existed in the item below can be used"
+  #       Lores: "Whatever you want, but only placeholders existed in the item below can be used"
+  #       Amount: 64
+  #     '2':
+  #       Slot: 5
+  #       Material: REDSTONE_BLOCK
+  #       Name: "Whatever you want, but only placeholders existed in the item below can be used"
+  #       Lores: "Whatever you want, but only placeholders existed in the item below can be used"
+  #       Amount: 64
   # Blacklist items that cannot be brought into the dungeon
   BlacklistItems:
     - '{"v":2865,"type":"EMERALD_BLOCK"}'
