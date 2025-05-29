@@ -4,11 +4,7 @@
 
 ### **BlockBreak**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/BlockBreakObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/BlockBreakObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters         | Explanation                                                                                                                                                          | Examples                                                                                                                                      | Required                            |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
@@ -35,11 +31,7 @@
 
 ### BlockPlace
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/BlockPlaceObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/BlockPlaceObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters         | Explanation                                                                                                                                                                      | Examples                                                                                                                                      | Required                            |
 | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
@@ -52,11 +44,7 @@
 
 ### BuffClaim
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/BuffClaimObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/BuffClaimObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters    | Explanation                                               | Examples          | Required |
 | ------------- | --------------------------------------------------------- | ----------------- | -------- |
@@ -65,11 +53,7 @@
 
 ### **ChatMessage**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/ChatMessageObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/ChatMessageObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters      | Explanation                                                                              | Examples                                                                             | Required |
 | --------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | -------- |
@@ -80,11 +64,7 @@
 
 ### **Checkpoint**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/CheckpointObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/CheckpointObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters     | Explanation                                                       | Examples           | Required |
 | -------------- | ----------------------------------------------------------------- | ------------------ | -------- |
@@ -97,11 +77,7 @@
 
 ### ContainerPickup
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/ContainerPickupObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/ContainerPickupObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters          | Explanation                                                                                                                                                                | Examples                                                                                  | Required |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | -------- |
@@ -113,11 +89,7 @@
 
 ### Damage
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/DamageObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/DamageObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters | Explanation                                                  | Examples                            | Required |
 | ---------- | ------------------------------------------------------------ | ----------------------------------- | -------- |
@@ -128,11 +100,7 @@
 
 ### **HasItem**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/HasItemObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/HasItemObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters  | Explanation                                                                                                                                                   | Examples                                                                                                         | Required |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | -------- |
@@ -143,11 +111,7 @@
 
 ### **LootChest**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/LootChestObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/LootChestObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters    | Explanation                                                  | Examples          | Required |
 | ------------- | ------------------------------------------------------------ | ----------------- | -------- |
@@ -164,11 +128,7 @@
 
 ### **MythicMob (MythicMobs)**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/MythicMobObjecetive.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/MythicMobObjecetive.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters    | Explanation                                                                                                    | Examples                                                                                                                                                                                                                                                                                          | Required |
 | ------------- | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
@@ -180,12 +140,12 @@
 
 ### NPCInteract (Citizens)
 
-| Parameters      | Explanation                                                      | Examples                                      | Required |
-| --------------- | ---------------------------------------------------------------- | --------------------------------------------- | -------- |
-| **NPCInteract** | NPC required to interact by players                              | `NPCInteract{left=true;right=true;npcId="0"}` |          |
-| id              | ID of the NPC declared in `MythicDungeons/groups/Ruins/npcs.yml` |                                               | true     |
-| left            | Is left-clicking NPC accepted                                    | `true` or `false`                             |          |
-| right           | Is right-clicking NPC accepted                                   | `true` or `false`                             |          |
+| Parameters      | Explanation                                                      | Examples                                   | Required |
+| --------------- | ---------------------------------------------------------------- | ------------------------------------------ | -------- |
+| **NPCInteract** | NPC required to interact by players                              | `NPCInteract{left=true;right=true;id="0"}` |          |
+| id              | ID of the NPC declared in `MythicDungeons/groups/Ruins/npcs.yml` |                                            | true     |
+| left            | Is left-clicking NPC accepted                                    | `true` or `false`                          |          |
+| right           | Is right-clicking NPC accepted                                   | `true` or `false`                          |          |
 
 ### **Placeholder (PlaceholderAPI)**
 
@@ -199,11 +159,7 @@
 
 ### **PlayerPickup**
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/PlayerPickupObjective.gif" alt="" width="540"><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/PlayerPickupObjective.gif" alt="" width="540"><figcaption></figcaption></figure></div>
 
 | Parameters       | Explanation                                                            | Examples                                                  | Required |
 | ---------------- | ---------------------------------------------------------------------- | --------------------------------------------------------- | -------- |
