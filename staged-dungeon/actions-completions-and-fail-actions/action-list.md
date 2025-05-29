@@ -71,7 +71,7 @@ If the parameters are located under `Completions`, the list of actions will be d
 
 ### Look (Citizens)
 
-<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>Look</strong></td><td>Make Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> look at location</td><td><code>Look{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location the NPC will look at</td><td></td><td>true</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>Look</strong></td><td>Make Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> look at location</td><td><code>NPCLook{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location the NPC will look at</td><td></td><td>true</td></tr></tbody></table>
 
 ### Message
 
@@ -79,7 +79,7 @@ If the parameters are located under `Completions`, the list of actions will be d
 
 ### PathTo (Citizens)
 
-<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>PathTo</strong></td><td>Make Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> pathfind to location</td><td><code>PathTo{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location the NPC will pathfind to</td><td></td><td>true</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>PathTo</strong></td><td>Make Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> pathfind to location</td><td><code>NPCPathTo{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location the NPC will pathfind to</td><td></td><td>true</td></tr></tbody></table>
 
 ### Sound
 
@@ -87,7 +87,7 @@ If the parameters are located under `Completions`, the list of actions will be d
 
 ### Spawn (Citizens)
 
-<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>Spawn</strong></td><td>Spawn Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> into world</td><td><code>Spawn{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location of the NPC to spawn</td><td></td><td>true</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>Spawn</strong></td><td>Spawn Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> into world</td><td><code>NPCSpawn{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location of the NPC to spawn</td><td></td><td>true</td></tr></tbody></table>
 
 ### TakeItem
 
@@ -95,7 +95,7 @@ If the parameters are located under `Completions`, the list of actions will be d
 
 ### TeleportTo (Citizens)
 
-<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>TeleportTo</strong></td><td>Teleport Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> into location</td><td><code>TeleportTo{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location to teleport the NPC</td><td></td><td>true</td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>TeleportTo</strong></td><td>Teleport Citizens NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code> into location</td><td><code>NPCTeleportTo{id=1;world=dungeon;x=116.0;y=5.0;z=255.0;pitch=0.0;yaw=0.0}</code></td><td></td></tr><tr><td>id</td><td>ID of the NPC declared in <code>MythicDungeons/groups/Ruins/npcs.yml</code></td><td></td><td>true</td></tr><tr><td>world, x, y, z, yaw, pitch</td><td>Location to teleport the NPC</td><td></td><td>true</td></tr></tbody></table>
 
 ### Teleport
 
