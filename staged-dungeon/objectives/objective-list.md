@@ -181,9 +181,9 @@
 
 ### Timer
 
-| Parameters   | Explanation                          | Examples                                                | Required |
-| ------------ | ------------------------------------ | ------------------------------------------------------- | -------- |
-| **Timer**    | Time required to wait                | `Time{scoreboard='Wait 5 seconds';time=100;interval=1}` |          |
-| scoreboard   | Alternative text shown in scoreboard |                                                         |          |
-| time         | Time in ticks required to wait       |                                                         | true     |
-| ~~interval~~ | ~~Interval of timer update~~         |                                                         |          |
+| Parameters   | Explanation                          | Examples                                                 | Required |
+| ------------ | ------------------------------------ | -------------------------------------------------------- | -------- |
+| **Timer**    | Time required to wait                | `Timer{scoreboard='Wait 5 seconds';time=100;interval=1}` |          |
+| scoreboard   | Alternative text shown in scoreboard |                                                          |          |
+| time         | Time in ticks required to wait       |                                                          | true     |
+| ~~interval~~ | ~~Interval of timer update~~         |                                                          |          |
