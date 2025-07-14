@@ -8,13 +8,17 @@ Please let me know if you need additional placeholders.
 
 ## Scoreboard Text (scoreboard.yml)
 
-Available placeholders for specific scoreboard is located below the corresponding scoreboard.
+Available placeholders for specific scoreboard are located below the corresponding scoreboard.
+
+Due to Minecraft's limitation, at most 16 lines can be displayed on scoreboard, exceeding lines will not be shown.
+
+Since 3.1.0-BETA, Right Text (line numbers) will be hidden automatically. Right Text can be configured by splitting the line with `||`  and it will be split automatically.
 
 {% code title="scoreboard.yml" lineNumbers="true" %}
 ```yaml
 InRoom:
   # Scoreboard display when player is in a room
-  # %id%: Room's id
+  # %id%: Room's ID
   # %dungeon%: Room's dungeon group
   # %owner%: Room's owner
   # %current%: Room's member count
@@ -32,49 +36,43 @@ InRoom:
       - "&6&lMythicDungeons"
       - "&eMythicDungeons"
     Scores:
-      - "&e&m--------===========--------"
-      - "&eDungeon&7: &f%dungeon%"
+      - "&0"
+      - "&eDungeon||&f%dungeon%"
       - "&1"
-      - "&eStatus: &f%status%"
+      - "&eStatus||&f%status%"
       - "&2"
-      - "&ePlayers: &f%current%/%max%"
+      - "&ePlayers||&f%current%/%max%"
       - "&3"
-      - "&eId: &f%id%"
-      - "&4"
-      - "&ewww.Example.com"
+      - "&eID||&f%id%"
   Member:
     Interval: 10
     Title:
       - "&6&lMythicDungeons"
       - "&eMythicDungeons"
     Scores:
-      - "&e&m--------===========--------"
-      - "&eDungeon&7: &f%dungeon%"
+      - "&0"
+      - "&eDungeon||&f%dungeon%"
       - "&1"
-      - "&eStatus: &f%status%"
+      - "&eStatus||&f%status%"
       - "&2"
-      - "&ePlayers: &f%current%/%max%"
+      - "&ePlayers||&f%current%/%max%"
       - "&3"
-      - "&eOwner: &f%owner%"
-      - "&4"
-      - "&ewww.Example.com"
+      - "&eOwner||&f%owner%"
   NoOwner:
     Interval: 10
     Title:
       - "&6&lMythicDungeons"
       - "&eMythicDungeons"
     Scores:
-      - "&e&m--------===========--------"
-      - "&eDungeon&7: &f%dungeon%"
+      - "&0"
+      - "&eDungeon||&f%dungeon%"
       - "&1"
-      - "&eStatus: &f%status%"
+      - "&eStatus||&f%status%"
       - "&2"
-      - "&ePlayers: &f%current%/%max%"
-      - "&3"
-      - "&ewww.Example.com"
+      - "&ePlayers||&f%current%/%max%"
 Starting:
   # Scoreboard display when owner starts the dungeon
-  # %id%: Room's id
+  # %id%: Room's ID
   # %dungeon%: Room's dungeon group
   # %owner%: Room's owner
   # %current%: Room's member count
@@ -92,33 +90,28 @@ Starting:
       - "&6&lMythicDungeons"
       - "&eMythicDungeons"
     Scores:
-      - "&e&m--------===========--------"
-      - "&eDungeon&7: &f%dungeon%"
+      - "&0"
+      - "&eDungeon||&f%dungeon%"
       - "&1"
-      - "&eStatus: &f%status%"
-      - "&cClick \"Cancel\" to cancel"
+      - "&eStatus||&f%status%"
       - "&2"
-      - "&ePlayers: &f%current%/%max%"
+      - "&ePlayers||&f%current%/%max%"
       - "&3"
-      - "&eId: &f%id%"
-      - "&4"
-      - "&ewww.Example.com"
+      - "&eID||&f%id%"
   Member:
     Interval: 10
     Title:
       - "&6&lMythicDungeons"
       - "&eMythicDungeons"
     Scores:
-      - "&e&m--------===========--------"
-      - "&eDungeon&7: &f%dungeon%"
+      - "&0"
+      - "&eDungeon||&f%dungeon%"
       - "&1"
-      - "&eStatus: &f%status%"
+      - "&eStatus||&f%status%"
       - "&2"
-      - "&ePlayers: &f%current%/%max%"
+      - "&ePlayers||&f%current%/%max%"
       - "&3"
-      - "&eOwner: &f%owner%"
-      - "&4"
-      - "&ewww.Example.com"
+      - "&eOwner||&f%owner%"
 Ending:
   # %dungeon%: Dungeon's name
   # %teleport%: Time before dungeon ends and teleport all challengers to lobby
@@ -127,20 +120,14 @@ Ending:
     - "&6&lMythicDungeons"
     - "&eMythicDungeons"
   Scores:
-    - "&e&m--------===========--------"
-    - "&eDungeon&7: &f%dungeon%"
-    - "&eTeleport in &f%teleport%"
+    - "&0"
+    - "&eDungeon||&f%dungeon%"
     - "&1"
+    - "&eTeleport in||&f%teleport%"
     - "&2"
     - "&3"
     - "&4"
     - "&5"
-    - "&6"
-    - "&7"
-    - "&8"
-    - "&9"
-    - "&0"
-    - "&a"
-    - "&ewww.Example.com"
+
 ```
 {% endcode %}

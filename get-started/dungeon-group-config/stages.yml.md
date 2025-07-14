@@ -39,21 +39,14 @@ Stages:
         # If no lines are specified, the next stage with objective lines specified
         # will inherit previous active lines
         Lines:
-          - "&e&m--------===========--------"
-          - "&eDungeon&7: &f%dungeon%"
-          - "&eTime left&7: &f%expire%"
+          - "&0"
+          - "&eDungeon||&f%dungeon%"
+          - "&eTime left||&f%expire%"
           - "&1"
           - "&2%objective%"
           - "&3%objective%"
           - "&4%objective%"
           - "&5%objective%"
-          - "&6%objective%"
-          - "&7%objective%"
-          - "&8%objective%"
-          - "&9%objective%"
-          - "&0%objective%"
-          - "&a"
-          - "&ewww.Example.com"
         # Objective lines of the stage, follows the order where Objectives are defined
         Objectives:
           - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
@@ -94,23 +87,18 @@ Stages:
           - "&eMythicDungeons"
         ScrollInterval: 20
         Lines:
-          - "&e&m--------===========--------"
-          - "&eDungeon&7: &f%dungeon%"
-          - "&eTime left&7: &f%expire%"
+          - "&0"
+          - "&eDungeon||&f%dungeon%"
+          - "&eTime left||&f%expire%"
           - "&1"
           - "&2%objective%"
           - "&3%objective%"
           - "&4%objective%"
-          - "&2"
-          - "&ewww.Example.com"
+          - "&5%objective%"
         Objectives:
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
+          - '&eSlain %MythicMob_1_mobamtkill%||(%MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%)'
           - ''
-          - '&fDiscover the secret of %Checkpoint_2_cp%: %Checkpoint_2_cpreached%'
-          - ''
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
-          - ''
-          - '&fDiscover the secret of %Checkpoint_2_cp%: %Checkpoint_2_cpreached%'
+          - '&fDiscover the secret of %Checkpoint_2_cp%||&f%Checkpoint_2_cpreached%'
           - ''
       BossBar:
         Interval: 20
@@ -142,7 +130,6 @@ Stages:
       - MythicMob{type=rat3;at=LOCATION;world=dungeon;x=120.5;y=5.0;z=259.5;yaw=180.0;pitch=0.0}
     Objectives:
       - MythicMob{type=rat2;amount=2}
-      # - MythicMob{type=rat3}
     Displays:
       Scoreboard:
         Interval: 10
@@ -151,27 +138,16 @@ Stages:
           - "&aMythicDungeons"
         ScrollInterval: 20
         Lines:
-          - "&a&m--------===========--------"
-          - "&eDungeon&7: &f%dungeon%"
-          - "&eTime left&7: &f%expire%"
+          - "&0"
+          - "&eDungeon||&f%dungeon%"
+          - "&eTime left||&f%expire%"
           - "&1"
           - "&2%objective%"
           - "&3%objective%"
           - "&4%objective%"
-          - "&2"
-          - "&ewww.Example.com"
+          - "&5%objective%"
         Objectives:
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
-          - ''
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
-          - ''
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
-          - ''
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
-          - ''
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
-          - ''
-          - '&fSlain %MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%x %MythicMob_1_mobamtkill%'
+          - '&eSlain %MythicMob_1_mobamtkill%||(%MythicMob_1_mobamtkilled%/%MythicMob_1_mobamtmax%)'
           - ''
       BossBar:
         Interval: 20
@@ -203,27 +179,16 @@ Stages:
           - "&1MythicDungeons"
         ScrollInterval: 20
         Lines:
-          - "&d&m--------===========--------"
+          - "&0"
+          - "&eDungeon||&f%dungeon%"
+          - "&eTime left||&f%expire%"
           - "&1"
           - "&2%objective%"
           - "&3%objective%"
           - "&4%objective%"
           - "&5%objective%"
-          - "&6%objective%"
-          - "&2"
-          # - "&ewww.Example.com"
         Objectives:
-          - '&fSlain %MythicMob_1_mobkill% %MythicMob_1_mobkilled%'
-          - ''
-          - '&fSlain %MythicMob_1_mobkill% %MythicMob_1_mobkilled%'
-          - ''
-          - '&fSlain %MythicMob_1_mobkill% %MythicMob_1_mobkilled%'
-          - ''
-          - '&fSlain %MythicMob_1_mobkill% %MythicMob_1_mobkilled%'
-          - ''
-          - '&fSlain %MythicMob_1_mobkill% %MythicMob_1_mobkilled%'
-          - ''
-          - '&fSlain %MythicMob_1_mobkill% %MythicMob_1_mobkilled%'
+          - '&cKill %MythicMob_1_mobkill%'
           - ''
       BossBar:
         Interval: 20

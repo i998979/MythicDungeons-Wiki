@@ -4,4 +4,4 @@
 **Reminder:** Older versions are currently not supported.
 {% endhint %}
 
-* 1.16 + Spigot / Paper
+* 1.20 + Spigot / Paper
