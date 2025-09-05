@@ -30,6 +30,7 @@ MESSAGE_PAGE_INVALID: "&cThe page number you have entered is invalid."
 #
 MESSAGE_ROOM_NOT_IN_ROOM: "&cYou are not in any room."
 MESSAGE_ROOM_ALREADY_IN: "&cYou are already in a room."
+MESSAGE_ROOM_ALREADY_IN_MEMBER: "&cOne/some member(s) are already in a room."
 MESSAGE_ROOM_PLAYER_NOT_IN: "&cPlayer {0}&c is not in your room."
 MESSAGE_ROOM_PLAYER_ALREADY_IN: "&cPlayer {0}&c is already in your room."
 MESSAGE_ROOM_COMMAND_UNAVAILABLE: "&cThis command is unavailable."
@@ -102,6 +103,14 @@ MESSAGE_ROOM_DISBAND_LEFT_MEMBER: "&eThe room owner has left the room and the ro
 MESSAGE_ROOM_LEFT_SELF: "&eYou left the room."
 MESSAGE_ROOM_LEFT_MEMBER: "&e{0}&e left the room."
 
+# Min & Max Player
+MESSAGE_ROOM_MINMAX_ENTER_MINPLAYER: "&cPlease enter minimum players required."
+MESSAGE_ROOM_MINMAX_ENTER_MAXPLAYER: "&cPlease enter maximum players allowed."
+MESSAGE_ROOM_MINMAX_LIMIT_INVALID: "&cThe amount you have entered is invalid. ({0} to {1} players)"
+MESSAGE_ROOM_MINMAX_MIN_LARGER: "&cThe minimum players you have entered is larger than maximum players allowed. (Minimum: {0})"
+MESSAGE_ROOM_MINMAX_MAX_SMALLER: "&cThe maximum players you have entered is smaller than minimum players required. (Maximum: {0})"
+MESSAGE_ROOM_MINMAX_LIMIT_SET: "&ePlayer limit of the room is now {0} to {1} players."
+
 # Note
 MESSAGE_ROOM_NOTE_CLEARED: "&eRoom note has been cleared."
 MESSAGE_ROOM_NOTE_SET: "&eRoom note has been set to \"{0}\"."
@@ -172,9 +181,13 @@ MESSAGE_DUNGEON_CHAT: "&5[&6Dungeon&5]&r {0}&r: {1}"
 MESSAGE_DUNGEON_LIMIT_REACHED: "&cDungeon {0}&c limit has reached. Please join an existing one or wait for one of them to finish."
 
 MESSAGE_DUNGEON_ENTER_ID: "&cPlease enter dungeon's ID."
+MESSAGE_DUNGEON_ENTER_STAGE: "&cPlease enter dungeon's stage ID."
+MESSAGE_DUNGEON_STAGE_OBJECTIVE_ID_INVALID: "&cThe dungeon stage's objective index you have entered is invalid."
 MESSAGE_DUNGEON_ENTER_NAME_OR_ID: "&cPlease enter the dungeon owner's name or dungeon ID that you want to join."
 MESSAGE_DUNGEON_ID_INVALID: "&cThe dungeon's ID you have entered is invalid."
+MESSAGE_DUNGEON_DIFFICULTY_INVALID: "&cThe dungeon's difficulty you have entered is invalid."
 MESSAGE_DUNGEON_ID_NOT_EXIST: "&cThe dungeon's ID you have entered does not exist."
+MESSAGE_DUNGEON_STAGE_ID_NOT_EXIST: "&cThe dungeon's stage ID you have entered does not exist or not active."
 MESSAGE_DUNGEON_NO_JOINED: "&c{0}&c is not in any dungeon."
 
 MESSAGE_DUNGEON_NO_PERMISSION_CREATE: "&cYou don't have permission to create dungeon {0}&c."
@@ -203,16 +216,20 @@ MESSAGE_DUNGEON_START_CANCELLED_OWNER: "&cYou have cancelled the start of the du
 MESSAGE_DUNGEON_START_CANCELLED_MEMBER: "&cRoom owner cancelled the start of the dungeon."
 MESSAGE_DUNGEON_CANNOT_CREATE: "&cDungeon {0} &ccannot be created."
 MESSAGE_DUNGEON_CANNOT_CREATE_DISABLED: "&cDungeon {0} &ccannot be created because it is disabled."
+MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT_SELF: "&cYou do not fulfill the requirements."
 MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT: "&cOne/some member(s) does not fulfill the requirements."
 
 # Admin message
+MESSAGE_DUNGEON_STAGE_COMPLETED: "&aDungeon {0} with ID {1}'s Stage {2} has been completed."
+MESSAGE_DUNGEON_STAGE_OBJECTIVE_COMPLETED: "&aDungeon {0} with ID {1} Stage {2}'s {3} Objective has been completed."
 MESSAGE_DUNGEON_LOADED: "&aDungeons loaded."
 MESSAGE_DUNGEON_SAVED: "&aDungeons saved."
 MESSAGE_DUNGEON_CREATED: "&aCreated dungeon {0}&a with ID {1}."
+MESSAGE_DUNGEON_CREATED_DIFFICULTY: "&aCreated dungeon {0}&a with ID {1} and Difficulty {2}."
 MESSAGE_DUNGEON_STARTED: "&aStarted dungeon {0}&a with ID {1}."
 MESSAGE_DUNGEON_STOPPED: "&aStopped dungeon {0}&a with ID {1}."
 
-MESSAGE_DUNGEON_RELOAD_INVALID_PARAMETER: "&cInvalid arguments. Enter \"Group | Player | LootTable | Scoreboard | Effect | Locale | Config | Menu\: or leave it blank to reload all."
+MESSAGE_DUNGEON_RELOAD_INVALID_PARAMETER: "&cInvalid arguments. Enter \"Group | Player | LootTable | Scoreboard | Effect | Locale | Config | Menu\", or leave it blank to reload all."
 MESSAGE_DUNGEON_RELOADED_GROUP: "&eReloaded {0} Dungeon groups."
 MESSAGE_DUNGEON_RELOADED_PLAYERDATA: "&eReloaded {0} player's data."
 MESSAGE_DUNGEON_CANNOT_RELOAD_PLAYERDATA_STILL_RUNNING: "&cPlayer data cannot be reloaded since there are dungeon still running."
