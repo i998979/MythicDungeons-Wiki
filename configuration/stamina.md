@@ -1,3 +1,20 @@
+---
+layout:
+  width: default
+  title:
+    visible: true
+  description:
+    visible: false
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+  metadata:
+    visible: true
+---
+
 # Stamina
 
 Stamina acts like another type of currency, but it will recover over time.
