@@ -21,7 +21,9 @@ Stamina acts like another type of currency, but it will recover over time.
 
 Different Dungeon Group can have different stamina configurations. If Dungeon Group is charging stamina, but no corresponding stamina definition was found, the `default` branch will be used.
 
-It can have different configurations depending on the permissions the player has, the first branch with matching permissions will be selected. If no matching permission was found, the `default` branch will be used.
+It can have different configurations depending on the permissions the player has, the first branch with matching permissions will be selected. If no matching permission was found, the `default` branch will be used and the `default` stamina will be deducted.
+
+Keep only the default branch and adjust values if global stamina is used.
 
 {% code title="stamina.yml" %}
 ```yaml
