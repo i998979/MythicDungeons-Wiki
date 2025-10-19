@@ -39,15 +39,19 @@ If the parameters are located under `Completions`, the list of actions will be d
 
 <table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>Command</strong></td><td>Send command from the server console</td><td><code>Command{from=CONSOLE;command='give %player% GOLDEN_CARROT 1'}</code></td><td></td></tr><tr><td>from</td><td>Who will execute the command</td><td><code>CONSOLE</code> if the command is sent from the server, if it is not set, the command will be sent from the player</td><td></td></tr><tr><td>chance</td><td>Chance of this command will be executed</td><td><code>0.0</code> if the command never runs, <code>1.0</code> if the command runs every time</td><td></td></tr><tr><td>command</td><td>Command to send from the server console, use <code>%player%</code> to replace the player's name</td><td><code>give %player% GOLDEN_CARROT 1</code></td><td>true</td></tr></tbody></table>
 
+### Data
+
+<table data-full-width="false"><thead><tr><th>Parameters</th><th>Explanation</th><th>Examples</th><th>Required</th></tr></thead><tbody><tr><td><strong>Dada</strong></td><td>Update player's data</td><td><code>Data{key="stamina_Ruins";value="%math_{mythicdungeons_playervariable_stamina_Ruins}+1%"}</code></td><td></td></tr><tr><td>key</td><td>Key to update</td><td></td><td>true</td></tr><tr><td>value</td><td>Value to update</td><td><code>%math_{mythicdungeons_playervariable_stamina_Ruins}+1%</code></td><td></td></tr><tr><td>remove</td><td>Remove the key and data</td><td></td><td></td></tr></tbody></table>
+
 ### **Effect (EffectLib)**
 
-| Parameters     | Explanation                                            | Examples                                                              | Required                         |
-| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------- | -------------------------------- |
-| **Effect**     | Spawn EffectLib particles                              | `Effect{id=effectA;type=vortex;world=dungeon;x=120.5;y=5.0;z=259.5;}` |                                  |
-| id             | ID of the effect if you want to remove it later        |                                                                       | `true` if `remove` is configured |
-| remove         | Remove the particles so that it does not spawn anymore | `true` of the effect is being removed                                 |                                  |
-| type           | Type of the effect declared in `effects.yml`           |                                                                       | true                             |
-| world, x, y, z | Location to spawn the particles                        |                                                                       | true                             |
+| Parameters     | Explanation                                            | Examples                                                              | Required                       |
+| -------------- | ------------------------------------------------------ | --------------------------------------------------------------------- | ------------------------------ |
+| **Effect**     | Spawn EffectLib particles                              | `Effect{id=effectA;type=vortex;world=dungeon;x=120.5;y=5.0;z=259.5;}` |                                |
+| id             | ID of the effect if you want to remove it later        |                                                                       | true if `remove` is configured |
+| remove         | Remove the particles so that it does not spawn anymore | `true` of the effect is being removed                                 |                                |
+| type           | Type of the effect declared in `effects.yml`           |                                                                       | true                           |
+| world, x, y, z | Location to spawn the particles                        |                                                                       | true                           |
 
 ### Fly
 

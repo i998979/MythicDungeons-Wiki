@@ -1,14 +1,21 @@
 # Placeholders
 
-Since 2.3.0-BETA, for the convenience of displaying different information in different ways, various PlaceholderAPI placeholders have been added.
+Since 2.3.0-BETA, for the convenience of displaying different information in various ways, several PlaceholderAPI placeholders have been added.
 
-Please make sure you have PlaceholderAPI installed properly.
+Please ensure that you have installed PlaceholderAPI properly.
 
 {% hint style="warning" %}
-**Warning:** Placeholder might not parse / return `...` or `none`if the player did not join any room / dungeon.
+**Warning:** Placeholder might not parse / return `...` or `none` if the player did not join any room / dungeon.
 
 If your PlaceholderAPI's placeholders aren't parsing, please check [here](https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/FAQ#it-only-shows-placeholder-and-not-the-variable).
 {% endhint %}
+
+## General Placeholders
+
+| Placeholder                              | Explanation                               |
+| ---------------------------------------- | ----------------------------------------- |
+| %mythicdungeons\_playervariable\_\<key>% | Value of specified player's variable      |
+| %mythicdungeons\_stamina\_\<type>%       | Stamina of specified Dungeon Group's type |
 
 ## Dungeon Room Placeholders
 
@@ -39,15 +46,17 @@ If your PlaceholderAPI's placeholders aren't parsing, please check [here](https:
 
 ## Dungeon Placeholders
 
-| Placeholders                             |                                                                               |
-| ---------------------------------------- | ----------------------------------------------------------------------------- |
-| %mythicdungeons\_dungeon\_id%            | Dungeon's ID                                                                  |
-| %mythicdungeons\_dungeon\_origin\_world% | Dungeon's Origin world                                                        |
-| %mythicdungeons\_dungeon\_origin\_x%     | Dungeon's Origin x-axis                                                       |
-| %mythicdungeons\_dungeon\_origin\_y%     | Dungeon's Origin y-axis                                                       |
-| %mythicdungeons\_dungeon\_origin\_z%     | Dungeon's Origin z-axis                                                       |
-| %mythicdungeons\_dungeon\_current%       | Dungeon's current players amount                                              |
-| %mythicdungeons\_dungeon\_playerdeath%   | Dungeon's player death count                                                  |
-| %mythicdungeons\_dungeon\_teamdeath%     | Dungeon's team death count                                                    |
-| %mythicdungeons\_dungeon\_startedat%     | Timestamp of the dungeon started                                              |
-| %mythicdungeons\_dungeon\_state%         | Dungeon's state (`NOT_STARTED`, `PRE_STARTING`, `STARTED`, `ENDING`, `ENDED`) |
+| Placeholders                                                                                              | Explanation                                                                                                                                            |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| %mythicdungeons\_dungeon\_id%                                                                             | Dungeon's ID                                                                                                                                           |
+| %mythicdungeons\_dungeon\_origin\_world%                                                                  | Dungeon's Origin world                                                                                                                                 |
+| %mythicdungeons\_dungeon\_origin\_x%                                                                      | Dungeon's Origin x-axis                                                                                                                                |
+| %mythicdungeons\_dungeon\_origin\_y%                                                                      | Dungeon's Origin y-axis                                                                                                                                |
+| %mythicdungeons\_dungeon\_origin\_z%                                                                      | Dungeon's Origin z-axis                                                                                                                                |
+| %mythicdungeons\_dungeon\_current%                                                                        | Dungeon's current players amount                                                                                                                       |
+| %mythicdungeons\_dungeon\_playerdeath%                                                                    | Dungeon's player death count                                                                                                                           |
+| %mythicdungeons\_dungeon\_teamdeath%                                                                      | Dungeon's team death count                                                                                                                             |
+| %mythicdungeons\_dungeon\_startedat%                                                                      | Timestamp of the dungeon started                                                                                                                       |
+| %mythicdungeons\_dungeon\_state%                                                                          | Dungeon's state (`NOT_STARTED`, `PRE_STARTING`, `STARTED`, `ENDING`, `ENDED`)                                                                          |
+| %mythicdungeons\_dungeon\_stage\_\<Stage Index>\_objectiv&#x65;_\__\<Objective Index>\_\<argument>%       | Specified Dungeon stage objective index argument's value. For arguments, please refer to [here](../staged-dungeon/objectives/objective-list.md)        |
+| %mythicdungeons\_dungeon\_activestage\_\<Stage Index>\_objectiv&#x65;_\__\<Objective Index>\_\<argument>% | Specified Dungeon active stage objective index argument's value. For arguments, please refer to [here](../staged-dungeon/objectives/objective-list.md) |

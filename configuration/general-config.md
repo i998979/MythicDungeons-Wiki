@@ -13,8 +13,12 @@ MythicDungeons:
   Language: en_US
   # Save scoreboard created by other plugin and revert after dungeon scoreboard is removed
   SaveExternalScoreboard: false
-  # How long will the room invitation expire, in seconds
+  # Hide scoreboard numbers on right side, only effective on 1.20.3+
+  HideScoreboardNumber: false
+  # How long will the room invitation expire (in seconds)
   InviteExpiration: 60
+  # How long will the room disband/members be removed if the owner/member has been disconnected (in seconds)
+  DisconnectRemoval: 60
   # Default input method if string input is required, available options are SIGN, ANVIL, CHAT
   DefaultInputMethod: SIGN
   # Debug message level, 0: no info --- 5: most info
@@ -53,6 +57,9 @@ MythicDungeons:
       Enabled: false
     # Hook for MythicDrops, MythicDrops items can be used if enabled
     MythicDrops:
+      Enabled: false
+    # Hook for Parties, party list will be retrieved when creating room if enabled
+    Parties:
       Enabled: false
     # Hook for Talismans, Talismans items can be used if enabled
     Talismans:

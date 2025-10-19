@@ -43,6 +43,8 @@ MESSAGE_ROOM_START_MIN: "&cDungeon cannot be started because the room has less t
 MESSAGE_ROOM_OFFLINE_OWNER: "&cThe owner is not online. Tell him/her to get online!"
 MESSAGE_ROOM_OFFLINE_MEMBER: "&cA member is not online. Tell him/her to get online!"
 MESSAGE_ROOM_OFFLINE_MEMBERS: "&c{0} members are not online. Tell them to get online!"
+MESSAGE_ROOM_DISCONNECT_OWNER: "&eThe room owner {0} has been offline for too long and the room has been disbanded."
+MESSAGE_ROOM_DISCONNECT_MEMBER: "&e{0} has been offline for too long and has been removed from the room."
 
 # Chat
 MESSAGE_ROOM_CHAT: "&5[&6Room&5]&r {0}&r: {1}"
@@ -88,9 +90,9 @@ MESSAGE_ROOM_ALLINVITE_ENABLED: "&e{0}&a enabled&e all invite. Now all members c
 MESSAGE_ROOM_ALLINVITE_DISABLED: "&e{0}&c disabled&e all invite. Members can no longer invite new players."
 
 # Create
-MESSAGE_ROOM_CREATED: "&eCreated room for dungeon {0}&e."
-MESSAGE_ROOM_NO_PERMISSION_CREATE: "&cYou don't have permission to create room for dungeon {0}&c."
-MESSAGE_ROOM_NO_PERMISSION_JOIN: "&cYou don't have permission to join room for dungeon {0}&c."
+MESSAGE_ROOM_CREATED: "&eCreated room for dungeon {1}&c {0}&c."
+MESSAGE_ROOM_NO_PERMISSION_CREATE: "&cYou don't have permission to create room for dungeon {1}&c {0}&c."
+MESSAGE_ROOM_NO_PERMISSION_JOIN: "&cYou don't have permission to join room for dungeon {1}&c {0}&c."
 MESSAGE_ROOM_NOT_LEADER: "&cYou are not party leader."
 
 # Disband
@@ -134,6 +136,11 @@ MESSAGE_ROOM_REMOVE_SELF: "&cYou removed yourself and the room is disbanded."
 MESSAGE_ROOM_REMOVE_REMOVED: "&eYou have been removed from {0}&e's room."
 MESSAGE_ROOM_REMOVE_OWNER: "&eYou removed {0}&e from the room."
 MESSAGE_ROOM_REMOVE_MEMBER: "&eMember {0}&e has been removed from the room."
+
+# Privacy
+ROOM_PRIVACY_PUBLIC: "PUBLIC"
+ROOM_PRIVACY_PASSWORD: "PASSWORD"
+ROOM_PRIVACY_PRIVATE: "PRIVATE"
 
 
 #
@@ -220,8 +227,8 @@ MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT_SELF: "&cYou do not fulfill the requirem
 MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT: "&cOne/some member(s) does not fulfill the requirements."
 
 # Admin message
-MESSAGE_DUNGEON_STAGE_COMPLETED: "&aDungeon {0} with ID {1}'s Stage {2} has been completed."
-MESSAGE_DUNGEON_STAGE_OBJECTIVE_COMPLETED: "&aDungeon {0} with ID {1} Stage {2}'s {3} Objective has been completed."
+MESSAGE_DUNGEON_STAGE_COMPLETED: "&eDungeon {0} with ID {1}'s Stage {2} has been completed."
+MESSAGE_DUNGEON_STAGE_OBJECTIVE_COMPLETED: "&eDungeon {0} with ID {1} Stage {2}'s {3} Objective has been completed."
 MESSAGE_DUNGEON_LOADED: "&aDungeons loaded."
 MESSAGE_DUNGEON_SAVED: "&aDungeons saved."
 MESSAGE_DUNGEON_CREATED: "&aCreated dungeon {0}&a with ID {1}."

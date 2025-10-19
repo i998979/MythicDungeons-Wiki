@@ -44,6 +44,7 @@
 * [GUIs](configuration/guis.md)
 * [NPCs](configuration/npcs.md)
 * [Scoreboards](configuration/scoreboards.md)
+* [Stamina](configuration/stamina.md)
 
 ## 🏃 Joining Dungeon
 

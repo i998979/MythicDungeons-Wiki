@@ -270,36 +270,81 @@ Requirements:
     # Deduct per player, if you have 3 players, all of them pay 30000.0
     # Otherwise, only the leader will be charged
     PerPlayer: true
+    ApplyToAll: false
     # Amount to charge
-    Amount: 30000.0
+    Amount:
+      '0':
+        Permission: 'MythicDungeons.VIP'
+        Amount: 10000.0
+      default:
+        Amount: 30000.0
   # Items to pay to start the dungeon
   Items:
     # Deduct per player, the items in the list will be removed from all players
     # Otherwise, only the leader will be charged
     PerPlayer: true
+    ApplyToAll: false
     # Items to pay
     # Some custom item plugins are supported, DO NOT add extra spaces or quotations
     # Only Loot Tables declared in "loottables" folder are supported
     # Use "/mg check" with the items on your hand to retrieve the string
     Items:
-      - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
-      - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
-      - "{\"v\":3578,\"type\":\"EMERALD_BLOCK\"}"
-      # - 'MMOItems{type=FOOD;id=ICE_CREAM;amount=64}'
-      # - 'MythicMobs{id="SkeletonKingSword";amount=2}'
-      # - 'ItemsAdder{id=iron_search;amount=2}'
-      # - 'EcoItems{id=armor_core;amount=1}'
-      # - 'EcoArmor{id=default;amount=1;type=crystal}'
-      # - 'EcoArmor{id=reaper;amount=1;type=set;slot=boots}'
-      # - 'EcoArmor{id=reaper;amount=1;type=shard}'
-      # - 'Talismans{id=boss_1;amount=1}'
-      # - 'LootTable{id=Stage1Table}'
+      '0':
+        Permission: 'MythicDungeons.VIP'
+        Items:
+          - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
+          - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
+      default:
+        - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
+        - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
+        - "{\"v\":3578,\"type\":\"EMERALD_BLOCK\"}"
+        # - 'MMOItems{type=FOOD;id=ICE_CREAM;amount=64}'
+        # - 'MythicMobs{id="SkeletonKingSword";amount=2}'
+        # - 'ItemsAdder{id=iron_search;amount=2}'
+        # - 'EcoItems{id=armor_core;amount=1}'
+        # - 'EcoArmor{id=default;amount=1;type=crystal}'
+        # - 'EcoArmor{id=reaper;amount=1;type=set;slot=boots}'
+        # - 'EcoArmor{id=reaper;amount=1;type=shard}'
+        # - 'Talismans{id=boss_1;amount=1}'
+        # - 'LootTable{id=Stage1Table}'
+  # Stamina to deduct to start the dungeon
+  Stamina:
+    PerPlayer: true
+    ApplyToAll: false
+    Amount:
+      '0':
+        Permission: 'MythicDungeons.VIP'
+        Amount: 10
+      default:
+        Amount: 30
+  # Conditions required to start the dungeon by using PlaceholderAPI
+  # Obeys the rule from https://wiki.placeholderapi.com/users/placeholder-list/#changeoutput
+  # while changing the output to "true" if the matcher matches
+  # and changing the output to "false" if the matcher does not match
+  # Trailing true/false indicates whether everyone must meet the condition to start the dungeon
   Conditions:
+    # If false, conditions fulfillment for all members controlled by the trailing true/false will no longer be checked
+    ApplyToAll: false
+    # All the conditions are required to be fulfilled
     Required:
-      - '%changeoutput_>=_input:{player_level}_matcher:5_ifmatch:true_else:false% true'
+      '0':
+        Permission: 'MythicDungeons.VIP'
+        Conditions:
+          - '%changeoutput_>=_input:{player_level}_matcher:3_ifmatch:true_else:false% true'
+      default:
+        Conditions:
+          - '%changeoutput_>=_input:{player_level}_matcher:5_ifmatch:true_else:false% true'
+    # Only 1 of the following conditions is required to be fulfilled
     Optional:
-      - '%changeoutput_ignorecase_input:{player_allow_flight}_matcher:yes_ifmatch:true_else:false% true'
-      - '%changeoutput_>=_input:{player_exp}_matcher:1_ifmatch:true_else:false% true'
+      '0':
+        Permission: 'MythicDungeons.VIP'
+        Conditions:
+          - '%changeoutput_ignorecase_input:{player_allow_flight}_matcher:yes_ifmatch:true_else:false% true'
+          - '%changeoutput_>=_input:{player_exp}_matcher:1_ifmatch:true_else:false% true'
+      default:
+        Conditions:
+          - '%changeoutput_ignorecase_input:{player_allow_flight}_matcher:yes_ifmatch:true_else:false% true'
+          - '%changeoutput_>=_input:{player_exp}_matcher:3_ifmatch:true_else:false% true'
 # How the dungeon is placed
 Map:
   # Name of the schematic to place

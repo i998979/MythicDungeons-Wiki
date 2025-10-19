@@ -52,7 +52,8 @@ Menus:
   #
   # Material: BEDROCK
   # Name: "Whatever you want, but only placeholders existed in the item below can be used"
-  # Lores: "Whatever you want, but only placeholders existed in the item below can be used"
+  # Lores:
+  #   - "Whatever you want, but only placeholders existed in the item below can be used"
   # Amount: 64
   # Glow: true
   # Enchants:
@@ -318,16 +319,21 @@ Menus:
       Material: YELLOW_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
+      # Sound to play on countdown
+      # - Sound Category Volume Pitch
+      Sound: "block.anvil.place MASTER 1.0 2.0"
     Two:
       Slot: [ 11, 15 ]
       Material: ORANGE_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
+      Sound: "block.anvil.place MASTER 1.0 1.0"
     One:
       Slot: [ 12, 14 ]
       Material: RED_STAINED_GLASS_PANE
       Name: " "
       Lores: [ ]
+      Sound: "block.anvil.place MASTER 1.0 0.0"
     Cancel:
       Slot: [ 4, 22 ]
       Material: REDSTONE_BLOCK
@@ -440,6 +446,7 @@ Menus:
       Enchants:
         - DAMAGE_ALL 1
       ItemFlags:
+        - HIDE_ENCHANTS
         - HIDE_ATTRIBUTES
       Lores:
         - "&7Challenge dungeon %dungeon% &r&7!"
