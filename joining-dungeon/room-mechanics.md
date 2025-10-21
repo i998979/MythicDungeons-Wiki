@@ -22,4 +22,3 @@ The dungeon will auto-start after countdown if the room has enough players. Howe
 
 ## **Queue Command**
 
-Queue Command acts the same as Join Sign or Join NPC, it creates a temporary room and acts like a queue with a fixed size as well. However, Dungeon Group type wanted to queue for has to be specified. The command is `/mr queue <Type>`.

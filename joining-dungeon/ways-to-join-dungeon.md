@@ -2,11 +2,11 @@
 
 ## Commands
 
-By typing `/mr create <type>`, a `Regular Room` with specified type will be created. You can either use command for other actions or use `/mr menu` to access the GUI for other actions.
+By typing `/mr create <type>`, a `Regular Room` with specified type will be created. You can either use command for other actions or use `/mr menu` to access the GUI for other actions. And `/mr queue <Type>`, it creates a temporary room and acts like a queue with a fixed size, like joining through Signs and NPCs. However, Dungeon Group type wanted to queue for has to be specified.
 
 ## GUIs
 
-By typing `/mr menu`, a GUI will be opened and you may search for `Regular Rooms` with specified dungeon type, invite other players to the room, and start challenging the dungeon.
+By typing `/mr menu`, a GUI will be opened, and you may search for `Regular Rooms` with specified dungeon type, invite other players to the room, and start challenging the dungeon.
 
 ## Signs
 
