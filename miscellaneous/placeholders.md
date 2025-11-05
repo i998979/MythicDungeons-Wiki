@@ -12,10 +12,11 @@ If your PlaceholderAPI's placeholders aren't parsing, please check [here](https:
 
 ## General Placeholders
 
-| Placeholder                              | Explanation                               |
-| ---------------------------------------- | ----------------------------------------- |
-| %mythicdungeons\_playervariable\_\<key>% | Value of specified player's variable      |
-| %mythicdungeons\_stamina\_\<type>%       | Stamina of specified Dungeon Group's type |
+| Placeholder                              | Explanation                                   |
+| ---------------------------------------- | --------------------------------------------- |
+| %mythicdungeons\_playervariable\_\<key>% | Value of specified player's variable          |
+| %mythicdungeons\_stamina\_\<type>%       | Stamina of specified Dungeon Group's type     |
+| %mythicdungeons\_staminamax\_\<type>%    | Max stamina of specified Dungeon Group's type |
 
 ## Dungeon Room Placeholders
 
