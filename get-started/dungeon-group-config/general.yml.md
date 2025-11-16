@@ -295,18 +295,19 @@ Requirements:
           - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
           - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
       default:
-        - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
-        - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
-        - "{\"v\":3578,\"type\":\"EMERALD_BLOCK\"}"
-        # - 'MMOItems{type=FOOD;id=ICE_CREAM;amount=64}'
-        # - 'MythicMobs{id="SkeletonKingSword";amount=2}'
-        # - 'ItemsAdder{id=iron_search;amount=2}'
-        # - 'EcoItems{id=armor_core;amount=1}'
-        # - 'EcoArmor{id=default;amount=1;type=crystal}'
-        # - 'EcoArmor{id=reaper;amount=1;type=set;slot=boots}'
-        # - 'EcoArmor{id=reaper;amount=1;type=shard}'
-        # - 'Talismans{id=boss_1;amount=1}'
-        # - 'LootTable{id=Stage1Table}'
+        Items:
+          - "{\"v\":3578,\"type\":\"DIAMOND_BLOCK\"}"
+          - "{\"v\":3578,\"type\":\"REDSTONE_BLOCK\"}"
+          - "{\"v\":3578,\"type\":\"EMERALD_BLOCK\"}"
+          # - 'MMOItems{type=FOOD;id=ICE_CREAM;amount=64}'
+          # - 'MythicMobs{id="SkeletonKingSword";amount=2}'
+          # - 'ItemsAdder{id=iron_search;amount=2}'
+          # - 'EcoItems{id=armor_core;amount=1}'
+          # - 'EcoArmor{id=default;amount=1;type=crystal}'
+          # - 'EcoArmor{id=reaper;amount=1;type=set;slot=boots}'
+          # - 'EcoArmor{id=reaper;amount=1;type=shard}'
+          # - 'Talismans{id=boss_1;amount=1}'
+          # - 'LootTable{id=Stage1Table}'
   # Stamina to deduct to start the dungeon
   Stamina:
     PerPlayer: true
