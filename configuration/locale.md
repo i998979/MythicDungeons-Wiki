@@ -210,6 +210,18 @@ MESSAGE_DUNGEON_PLAYER_LEAVE_SELF: "&aYou have left the dungeon."
 MESSAGE_DUNGEON_OFFLINE_PLAYER: "&c1 challenger is not online, tell him/her to get online."
 MESSAGE_DUNGEON_OFFLINE_PLAYERS: "&c{0} challengers are not online, tell them to get online."
 
+# Stamina message
+MESSAGE_DUNGEON_STAMINA_INVALID_ACTION: "&cPlease specify Info/Add/Set/Remove."
+MESSAGE_DUNGEON_STAMINA_INVALID_GROUP: "&cPlease specify Dungeon group type or \"default\" for default stamina."
+MESSAGE_DUNGEON_STAMINA_ENTER_AMOUNT: "&cPlease specify amount or \"default\" if you have specified Dungeon group type."
+MESSAGE_DUNGEON_STAMINA_NOT_ONLINE: "&cDefault value cannot be applied if player is offline."
+MESSAGE_DUNGEON_STAMINA_AMOUNT_INVALID: "&cThe amount you have entered is invalid."
+MESSAGE_DUNGEON_STAMINA_AMOUNT_INVALID_DEFAULT: "&cYou cannot enter \"default\" amount on default stamina."
+MESSAGE_DUNGEON_STAMINA_INFO: "&ePlayer {2} has {0} {1} stamina."
+MESSAGE_DUNGEON_STAMINA_GIVE: "&eGave {0} {1} stamina to {2}."
+MESSAGE_DUNGEON_STAMINA_SET: "&eSet {2} {1} stamina to {0}."
+MESSAGE_DUNGEON_STAMINA_REMOVE: "&eRemoved {0} {1} stamina from {2}."
+
 # Join message
 MESSAGE_DUNGEON_NO_AVAILABLE: "&cThere is no dungeon {0}&c available at the moment. Please create a new one or try again later."
 MESSAGE_DUNGEON_ALREADY_STARTED: "&cDungeon {0}&c with ID {1} has already started."
@@ -223,10 +235,13 @@ MESSAGE_DUNGEON_START_CANCELLED_OWNER: "&cYou have cancelled the start of the du
 MESSAGE_DUNGEON_START_CANCELLED_MEMBER: "&cRoom owner cancelled the start of the dungeon."
 MESSAGE_DUNGEON_CANNOT_CREATE: "&cDungeon {0} &ccannot be created."
 MESSAGE_DUNGEON_CANNOT_CREATE_DISABLED: "&cDungeon {0} &ccannot be created because it is disabled."
+MESSAGE_DUNGEON_COOLING_DOWN_SELF: "&cPlease wait {0} before joining {1} &cagain."
+MESSAGE_DUNGEON_COOLING_DOWN: "&cOne/some member(s) are still in cooldown before joining {0} &cagain."
 MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT_SELF: "&cYou do not fulfill the requirements."
 MESSAGE_DUNGEON_NOT_FULFILL_REQUIREMENT: "&cOne/some member(s) does not fulfill the requirements."
 
 # Admin message
+MESSAGE_DUNGEON_COMPLETE_NO_ONLINE: "&cDungeon must have at least 1 online challenger when completing a stage or objective."
 MESSAGE_DUNGEON_STAGE_COMPLETED: "&eDungeon {0} with ID {1}'s Stage {2} has been completed."
 MESSAGE_DUNGEON_STAGE_OBJECTIVE_COMPLETED: "&eDungeon {0} with ID {1} Stage {2}'s {3} Objective has been completed."
 MESSAGE_DUNGEON_LOADED: "&aDungeons loaded."
@@ -236,7 +251,7 @@ MESSAGE_DUNGEON_CREATED_DIFFICULTY: "&aCreated dungeon {0}&a with ID {1} and Dif
 MESSAGE_DUNGEON_STARTED: "&aStarted dungeon {0}&a with ID {1}."
 MESSAGE_DUNGEON_STOPPED: "&aStopped dungeon {0}&a with ID {1}."
 
-MESSAGE_DUNGEON_RELOAD_INVALID_PARAMETER: "&cInvalid arguments. Enter \"Group | Player | LootTable | Scoreboard | Effect | Locale | Config | Menu\", or leave it blank to reload all."
+MESSAGE_DUNGEON_RELOAD_INVALID_PARAMETER: "&cInvalid arguments. Enter \"Group|Player|LootTable|Scoreboard|Effect|Locale|Config|Menu\", or leave it blank to reload all."
 MESSAGE_DUNGEON_RELOADED_GROUP: "&eReloaded {0} Dungeon groups."
 MESSAGE_DUNGEON_RELOADED_PLAYERDATA: "&eReloaded {0} player's data."
 MESSAGE_DUNGEON_CANNOT_RELOAD_PLAYERDATA_STILL_RUNNING: "&cPlayer data cannot be reloaded since there are dungeon still running."
@@ -262,6 +277,7 @@ TITLE_COUNTDOWN_0: "&fFIGHT!"
 #
 MESSAGE_DUNGEON_PLAYTIME_COUNTDOWN: "&aDungeon {0} is ending in {1}s."
 
+MESSAGE_DUNGEON_FAIL: "&cDungeon challenge failed. {1}"
 MESSAGE_DUNGEON_FAIL_EXPIRED: "&cDungeon challenge failed. The timer has expired."
 MESSAGE_DUNGEON_FAIL_DEATH: "&cDungeon challenge failed. The death limit has been reached."
 MESSAGE_DUNGEON_COMPLETED: "&5Congratulation! You have completed dungeon {0}&5 !"
@@ -325,6 +341,7 @@ TIMER_DAY: "d"
 TIMER_HOUR: "h"
 TIMER_MIN: "m"
 TIMER_SEC: "s"
+TIMER_INFINITE: "Infinite"
 
 
 #

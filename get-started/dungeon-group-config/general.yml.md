@@ -57,7 +57,7 @@ Map:
   ColumnGap: 1
 # How long is the dungeon challenge time, and what to do after it ends
 Expire:
-  # Maximum dungeon challenge time(in sec), after the timer ends, the dungeon fails
+# Maximum dungeon challenge time(in seconds), after the timer ends, the dungeon fails, -1 for infinite challenge time
   Time: 60
   # Time before teleporting players back(in sec)
   Teleport: 10
@@ -91,11 +91,11 @@ General:
   MaxPlayer: 4
   # Are players visible to other challengers in the same Dungeon Group except for their teammates
   VisibleToNearby: false
-  # Show message to remind player the dungeon is about to end, ascending order, in seconds
+  # Show message to remind player the dungeon is about to end, ascending order (in seconds)
   PlaytimeRemind: '60 30 15 5'
   # How long will the dungeon start if the room has enough players, only effective when joining through signs or NPCs
   AutoStartTimer: 30
-  # Show message to remind player the dungeon is about to auto-start, ascending order, in seconds
+  # Show message to remind player the dungeon is about to auto-start, ascending order (in seconds)
   AutoStartTimeRemind: '60 30 15 5'
   # Death limits before the player fails the dungeon
   # Available limits:
@@ -107,6 +107,13 @@ General:
   DeathPenalty:
     # Use player's death or team's death for counting
     PerPlayer: true
+    # Apply highest fulfilled permission list to all players or individually
+    # If enabled, if any player in the team has a listed permission
+    # the corresponding penalty list will apply to all team members
+    # If disabled, check permissions for each player
+    # If no permissions are fulfilled, the default list will be used
+    # Permission checking follows the declaration order of the list
+    ApplyToAll: false
     # Item penalty
     Items:
       Items:
@@ -114,15 +121,22 @@ General:
         # If the player dies once, an Emerald Block and items drawn from LootTable will be removed from the player's inventory/death drop
         # If '3' is enabled and the player dies twice, items in '1' will be removed
         '1':
-          - '{"v":2865,"type":"EMERALD_BLOCK"}'
-          - 'LootTable{id=Stage1Table}'
+          MythicDungeons.VIP:
+            - 'LootTable{id=Stage1Table}'
+          default:
+            - '{"v":2865,"type":"EMERALD_BLOCK"}'
+            - 'LootTable{id=Stage1Table}'
         # If the player dies 3 times, a Diamond Block will be removed from the player's inventory/death drop
-        # '3':
-        #   - '{"v":2865,"type":"DIAMOND_BLOCK"}'
+        '3':
+          default:
+            - '{"v":2865,"type":"DIAMOND_BLOCK"}'
     # Money penalty. Only effective if Vault and economy plugin is installed and the hook is enabled
     Money:
       Amount:
-        '1': 300
+        MythicDungeons.VIP:
+          '1': 100
+        default:
+          '1': 300
   # Cancel death screen when the player dies
   AutoRespawn: true
   # Death action when player dies
@@ -169,6 +183,10 @@ General:
   BlockInteract: true
   # Block PvP when challenging dungeon
   BlockPvP: true
+  # Block item pickup when challenging dungeon
+  BlockItemPickup: false
+  # Block item drop when challenging dungeon
+  BlockItemDrop: false
   # Block commands when challenging dungeon
   BlockCommands: true
   # Command whitelist while BlockCommands is enabled
@@ -184,6 +202,8 @@ General:
   GUICountdown: true
   # Additional title countdown, players will be invincible and frozen during countdown
   TitleCountdown: false
+  # Gamemode when challenging dungeon
+  GameMode: ADVENTURE
   # Icon of this Dungeon Group in Dungeon Type Selector
   # Either use "/mg check" with the items on your hand to retrieve the string
   # Or follow the format in menu.yml
@@ -265,6 +285,16 @@ General:
 # The cost of starting the dungeon
 Requirements:
   Permission: true
+  # How long does player have to wait before joining the dungeon again
+  Cooldown:
+    PerPlayer: true
+    ApplyToAll: false
+    Time:
+      '0':
+        Permission: 'MythicDungeons.VIP'
+        Time: 10000
+      default:
+        Time: 30000
   # Money to pay to start the dungeon
   Money:
     # Deduct per player, if you have 3 players, all of them pay 30000.0
@@ -396,9 +426,9 @@ Map:
     Size: 10
 # How long is the dungeon challenge time, and what to do after it ends
 Expire:
-  # Maximum dungeon challenge time(in sec), after the timer ends, the dungeon fails
+  # Maximum dungeon challenge time(in seconds), after the timer ends, the dungeon fails, -1 for infinite challenge time
   Time: 60
-  # Time before teleporting players back(in sec)
+  # Time before teleporting players back(in seconds)
   Teleport: 10
   # Where to teleport after the dungeon ends
   # Available location:
@@ -444,20 +474,31 @@ Rewards:
     Guaranteed:
       DiamondBlockAndApplePieAndSomeMoney:
         # Money to give
-        Money: 30001.0
+        Money:
+          MythicDungeons.VIP: 40000.0
+          default: 30001.0
         # Items to give
         # Some custom item plugins are supported, DO NOT add extra spaces or quotations
         # Only Loot Tables declared in "loottables" folder are supported
         # Use "/mg check" with the items on your hand to retrieve the string
         Items:
-          - '{"v":2865,"type":"DIAMOND_BLOCK"}'
+          MythicDungeons.VIP:
+            - '{"v":2865,"type":"DIAMOND_BLOCK"}'
+            - '{"v":2865,"type":"DIAMOND_BLOCK"}'
+          default:
+            - '{"v":2865,"type":"DIAMOND_BLOCK"}'
         # Commands that will be executed for all players
         Commands:
-          # Available placeholders:
-          # %player%: The player that gets the reward
-          - '{ from=CONSOLE;command=''mi give FOOD APPLE_PIE %player%'' }'
-          # Corresponding permissions are required if needed for players to run the command
-          - '{ from=PLAYER;command=''me has just rewarded an apple pie!'' }'
+          MythicDungeons.VIP:
+            # Available placeholders:
+            # %player%: The player that gets the reward
+            - '{ from=CONSOLE;command=''mi give FOOD APPLE_PIE %player%'' }'
+            - '{ from=CONSOLE;command=''mi give FOOD APPLE_PIE %player%'' }'
+            # Corresponding permissions are required if needed for players to run the command
+            - '{ from=PLAYER;command=''me has just rewarded 2 apple pies!'' }'
+          default:
+            - '{ from=CONSOLE;command=''mi give FOOD APPLE_PIE %player%'' }'
+            - '{ from=PLAYER;command=''me has just rewarded an apple pie!'' }'
     # Weighted rewards
     Weighted:
       CrazyRare:
@@ -467,12 +508,21 @@ Rewards:
         # The chance of dropping "CrazyRare" will be 30 / 80 = 37.5%
         Chance: 30
         Items:
-          - '{"v":2865,"type":"REDSTONE_BLOCK"}'
-          - '{"v":2865,"type":"GOLD_BLOCK"}'
-        Commands: [ ]
+          MythicDungeons.VIP:
+            - '{"v":2865,"type":"REDSTONE_BLOCK"}'
+            - '{"v":2865,"type":"GOLD_BLOCK"}'
+          default:
+            - '{"v":2865,"type":"GOLD_BLOCK"}'
+        # Commands that will be executed for all players
+        Commands:
+          MythicDungeons.VIP: [ ]
+          default: [ ]
       # Rare:
       #   Chance: 50
       #   Items:
-      #     - '{"v":2865,"type":"REDSTONE_BLOCK"}'
-      #     - '{"v":2865,"type":"GOLD_BLOCK"}'
+      #     MythicDungeons.VIP:
+      #       - '{"v":2865,"type":"REDSTONE_BLOCK"}'
+      #       - '{"v":2865,"type":"GOLD_BLOCK"}'
+      #     default:
+      #       - '{"v":2865,"type":"GOLD_BLOCK"}'
 ```

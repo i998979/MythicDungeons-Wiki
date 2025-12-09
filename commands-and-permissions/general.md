@@ -10,6 +10,7 @@
 | MythicDungeons.Bypass.Dungeons.Commands           | Bypass command whitelist limitation                                                |
 | MythicDungeons.Bypass.Dungeons.BlacklistItem      | Bypass blacklist item limitation                                                   |
 | MythicDungeons.Bypass.Dungeons.Price              | Bypass dungeon entry fee                                                           |
+| MythicDungeons.Bypass.Dungeons.Cooldown           | Bypass dungeon join cooldown                                                       |
 | MythicDungeons.Bypass.Dungeons.Stamina            | Bypass dungeon entry stamina                                                       |
 | MythicDungeons.Bypass.Dungeons.Conditions         | Bypass dungeon entry condition requirements                                        |
 | MythicDungeons.Bypass.Dungeons.DeathLimit         | Bypass death count for the player                                                  |
@@ -22,4 +23,4 @@
 | MythicDungeons.Bypass.Rooms.MaxLimit              | Bypass limit of starting dungeon with excessive players                            |
 | MythicDungeons.Bypass.Dungeons.PvP                | Bypass limit of PvPing players inside dungeon                                      |
 
-\
+<br>
