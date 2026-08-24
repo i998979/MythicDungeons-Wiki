@@ -19,7 +19,3 @@ External party plugin's party owner and members will be synchronized with the ro
 Using Join Sign, Join NPC, or Join Portal creates a temporary room. It acts like a queue with a fixed size. If you are using any supported external party plugin and its plugin hook is enabled, the party will be put into a temporary room that can fit all party members in, or create a new temporary room if no existing room with enough space, parties will not be merged.
 
 The dungeon will auto-start after countdown if the room has enough players. However, the auto-start will be cancelled if there are insufficient players.
-
-## **Queue Command**
-
-`/mr queue` acts the same as using Join Sign, Join NPC, or Join Portal. It is an additional command for players to queue for dungeon through command.
