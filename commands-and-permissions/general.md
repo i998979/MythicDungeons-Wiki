@@ -17,6 +17,7 @@
 | MythicDungeons.Bypass.Dungeons.DeathPenalty.Money | Bypass money death penalty for the player                                          |
 | MythicDungeons.Bypass.Dungeons.DeathPenalty.Items | Bypass item death penalty for the player                                           |
 | MythicDungeons.Bypass.Dungeons.SeeChat            | Bypass limit of visibility of global chat and whether the chat is globally visible |
+| MythicDungeons.Bypass.Dungeons.VisibleToNearby    | Bypass limit of visibility of seeing players in other dungeon instances            |
 | MythicDungeons.Bypass.Rooms.Full                  | Bypass full room limit                                                             |
 | MythicDungeons.Bypass.Rooms.Private               | Bypass private room limit                                                          |
 | MythicDungeons.Bypass.Rooms.MinLimit              | Bypass limit of starting dungeon with insufficient players                         |

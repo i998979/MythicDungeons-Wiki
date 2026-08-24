@@ -74,6 +74,7 @@ Menus:
   #
   #
   Confirm:
+    Size: 45
     Pane:
       Slot: [ 0, 8, 9, 17, 18, 26, 27, 35, 36, 44 ]
       Material: WHITE_STAINED_GLASS_PANE

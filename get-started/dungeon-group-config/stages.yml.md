@@ -10,7 +10,7 @@ Stages:
   # ID of the stage, must be unique
   '0':
     Options:
-      # True if this is the first stage of the dungeon, only 1 can exist
+      # True if this stage starts when the dungeon begins
       Initial: true
       # True if this is the last stage of the dungeon, more than 1 can exist
       End: true
@@ -68,7 +68,7 @@ Stages:
   # ID of the stage, must be unique
   '0':
     Options:
-      # True if this is the first stage of the dungeon, only 1 can exist
+      # True if this stage starts when the dungeon begins
       Initial: true
     # A list of actions will do when this stage starts
     Actions:

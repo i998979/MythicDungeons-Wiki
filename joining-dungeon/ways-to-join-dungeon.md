@@ -19,3 +19,7 @@ Also, you can configure a Leave Sign for players to leave the room.
 Joining dungeon through NPCs requires [Citizens](https://www.spigotmc.org/resources/citizens.13811/) installed and NPC ID configured in the dungeon group config. It acts similarly to Signs.
 
 You can also configure a Leave NPC for players to leave the room.
+
+## Portals
+
+Since 3.2.6-BETA, joining through Nether Portals is supported. Its configuration is the same as Signs. All portals connected to the specified location are considered the same portal.

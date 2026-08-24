@@ -12,11 +12,14 @@ If your PlaceholderAPI's placeholders aren't parsing, please check [here](https:
 
 ## General Placeholders
 
-| Placeholder                              | Explanation                                   |
-| ---------------------------------------- | --------------------------------------------- |
-| %mythicdungeons\_playervariable\_\<key>% | Value of specified player's variable          |
-| %mythicdungeons\_stamina\_\<type>%       | Stamina of specified Dungeon Group's type     |
-| %mythicdungeons\_staminamax\_\<type>%    | Max stamina of specified Dungeon Group's type |
+| Placeholder                                                              | Explanation                                                                                  |
+| ------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| %mythicdungeons\_playervariable\_\<key>%                                 | Value of specified player's variable                                                         |
+| %mythicdungeons\_stamina\_\<type>%                                       | Stamina of specified Dungeon Group's type                                                    |
+| %mythicdungeons\_staminamax\_\<type>%                                    | Max stamina of specified Dungeon Group's type                                                |
+| %mythicdungeons\_lastplayed\_\<type>%                                    | Last played time of specified Dungeon Group's type                                           |
+| %mythicdungeons\_challengetime\_\<type>\_top\_\<rank>\[\_\[time]]%       | Top # challenge time of specified Dungeon Group's type (in the past X minutes)               |
+| %mythicdungeons\_challengetime\_\<type>\_top\_\<rank>\[\_time]\_\<name>% | Top # challenge time's player name of specified Dungeon Group's type (in the past X minutes) |
 
 ## Dungeon Room Placeholders
 

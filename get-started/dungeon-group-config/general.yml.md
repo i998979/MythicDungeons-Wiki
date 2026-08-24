@@ -282,10 +282,32 @@ General:
       IDs:
         - 2
         - 3
+  # Portals for users to join/leave the dungeon queue (temporary room)
+  Portals:
+    # Configure Join Portals
+    Join:
+      # Location of the Join Portals, ID must be unique
+      # All connecting portal blocks are considered
+      Locations:
+        '0':
+          world: dungeon
+          x: 113.0
+          y: 4.0
+          z: 242.0
+    Leave:
+      # Configure Leave Portals
+      Locations:
+        # Location of the Leave Portals, ID must be unique
+        # All connecting portal blocks are considered
+        '0':
+          world: dungeon
+          x: 102.0
+          y: 4.0
+          z: 242.0
 # The cost of starting the dungeon
 Requirements:
   Permission: true
-  # How long does player have to wait before joining the dungeon again
+  # How long (in milliseconds) does player have to wait before joining the dungeon again
   Cooldown:
     PerPlayer: true
     ApplyToAll: false
@@ -332,11 +354,6 @@ Requirements:
           # - 'MMOItems{type=FOOD;id=ICE_CREAM;amount=64}'
           # - 'MythicMobs{id="SkeletonKingSword";amount=2}'
           # - 'ItemsAdder{id=iron_search;amount=2}'
-          # - 'EcoItems{id=armor_core;amount=1}'
-          # - 'EcoArmor{id=default;amount=1;type=crystal}'
-          # - 'EcoArmor{id=reaper;amount=1;type=set;slot=boots}'
-          # - 'EcoArmor{id=reaper;amount=1;type=shard}'
-          # - 'Talismans{id=boss_1;amount=1}'
           # - 'LootTable{id=Stage1Table}'
   # Stamina to deduct to start the dungeon
   Stamina:
@@ -426,9 +443,9 @@ Map:
     Size: 10
 # How long is the dungeon challenge time, and what to do after it ends
 Expire:
-  # Maximum dungeon challenge time(in seconds), after the timer ends, the dungeon fails, -1 for infinite challenge time
+  # Maximum dungeon challenge time (in seconds), after the timer ends, the dungeon fails, -1 for infinite challenge time
   Time: 60
-  # Time before teleporting players back(in seconds)
+  # Time before teleporting players back (in seconds)
   Teleport: 10
   # Where to teleport after the dungeon ends
   # Available location:
