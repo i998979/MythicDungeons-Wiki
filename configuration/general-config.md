@@ -31,20 +31,11 @@ MythicDungeons:
     # Hook for DecentHolograms, holograms will be shown above objectives if enabled
     DecentHolograms:
       Enabled: false
-    # Hook for EcoArmor, EcoArmor items can be used if enabled
-    EcoArmor:
-      Enabled: false
-    # Hook for EcoItems, EcoItems items can be used if enabled
-    EcoItems:
-      Enabled: false
     # Hook for FabledParties, party list will be retrieved when creating room if enabled
     FabledParties:
       Enabled: false
     # Hook for Heroes, party list will be retrieved when creating room if enabled
     Heroes:
-      Enabled: false
-    # Hook for HolographicDisplays, holograms will be shown above objectives if enabled
-    HolographicDisplays:
       Enabled: false
     # Hook for ItemsAdder, ItemsAdder items can be used if enabled
     ItemsAdder:
@@ -60,9 +51,6 @@ MythicDungeons:
       Enabled: false
     # Hook for Parties, party list will be retrieved when creating room if enabled
     Parties:
-      Enabled: false
-    # Hook for Talismans, Talismans items can be used if enabled
-    Talismans:
       Enabled: false
 ```
 {% endcode %}
