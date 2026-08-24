@@ -22,3 +22,4 @@ The dungeon will auto-start after countdown if the room has enough players. Howe
 
 ## **Queue Command**
 
+`/mr queue` acts the same as using Join Sign, Join NPC, or Join Portal. It is an additional command for players to queue for dungeon through command.
