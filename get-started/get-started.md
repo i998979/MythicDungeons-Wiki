@@ -159,4 +159,4 @@ Dungeon Group is now loaded and ready for testing purposes. You will find all .y
 
 Type `/mr menu` and select the newly created Dungeon Group to verify if everything is set properly.
 
-You will want to modify the Dungeon Group config to enhance dungeon gameplay now.
+The Dungeon Group is now all set. However, the Dungeon Group has no gameplay content. You will want to modify the Dungeon Group config to enhance dungeon gameplay now.
