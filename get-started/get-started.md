@@ -10,7 +10,7 @@ Follow [Build from scratch](get-started.md#build-from-scratch) if you:
 
 * Want to start everything fresh and clean
 
-Follow [With existing dungeon builds](get-started.md#with-existing-dungeon-builds) if you:
+Follow [With existing dungeon built in world](get-started.md#with-existing-dungeon-built-in-world) if you:
 
 * Have a Dungeon built in world and want to use it
 
