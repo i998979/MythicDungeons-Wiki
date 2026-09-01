@@ -2,7 +2,7 @@
 
 ## Stages (Simplified)
 
-This dungeon requires killing 1 `SkeletalKnight` within `60` seconds to finish.
+This dungeon requires killing 1 `SkeletalKnight` in `60` seconds to finish.
 
 ```yaml
 # Main flow of the dungeon

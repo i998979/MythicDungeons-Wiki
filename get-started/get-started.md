@@ -1,12 +1,12 @@
 # Get Started
 
 {% hint style="info" %}
-**Reminder:** Unless specified, Dungeon Type will be named `Ruins` throughout the Wiki. Change it respectively.
+**Reminder:** Unless specified, Dungeon Type will be named `Ruins` and world `dungeon` will be used throughout the whole Wiki. Change it accordingly.
 {% endhint %}
 
-There are multiple ways to create Dungeon Group depending on how the dungeon should be loaded.
+Dungeon Group is the type of dungeon, all dungeon instances share the same arguments. But dungeon-specific arguments like origin, and player spawns are automatically calculated.
 
-Only 1 of the following methods should be chosen when creating a new Dungeon Group.
+There are multiple ways to create Dungeon Group depending on how the dungeon should be loaded. Only 1 of the following methods should be chosen when creating a new Dungeon Group.
 
 Follow [Build from scratch](get-started.md#build-from-scratch) if you:
 
@@ -103,7 +103,7 @@ The Creator Command will then save the area you have selected into clipboard, an
 <summary><strong>With pre-built schematic:</strong></summary>
 
 * Join the server
-* Type `//schem load <Schematic Name>` to load schematic in WorldEdit/FastAsyncWorldEdit into clipboard
+* Type `//schem load <schematic name>` to load schematic in WorldEdit/FastAsyncWorldEdit into clipboard
 * Type `//paste` to place the schematic in world
 * ![](https://user-images.githubusercontent.com/7139370/158058569-571a10b9-c7c2-42fb-b15a-c20d33199c7c.png)![](https://user-images.githubusercontent.com/7139370/158058574-38c7ae1e-db3b-4521-863f-c97990185873.png)
 
@@ -143,4 +143,20 @@ The Creator Command will then save the area you have selected into clipboard, an
 
 </details>
 
-Dungeon Group is now loaded and ready for testing purposes. You will still need to define Objectives and Actions to make it playable.
+Once everything is set up, these files will be found in `MythicDungeons/groups` directory:
+
+* schematics/
+  * Ruins.schem <sup>_<mark style="color:$info;">(required)</mark>_</sup>
+* [buffs.yml](dungeon-group-config/buffs.yml.md)
+* [checkpoints.yml](dungeon-group-config/checkpoints.yml.md)
+* [general.yml](dungeon-group-config/general.yml.md) <sup>_<mark style="color:$info;">(required)</mark>_</sup>
+* [lootchests.yml](dungeon-group-config/lootchests.yml.md)
+* [stages.yml](dungeon-group-config/stages.yml.md) <sup>_<mark style="color:$info;">(required)</mark>_</sup>
+* [teleporters.yml](dungeon-group-config/teleporters.yml.md)
+* [traps.yml](dungeon-group-config/traps.yml.md)
+
+Dungeon Group is now loaded and ready for testing purposes. You will find all .yml files are empty except for `general.yml` and `stages.yml`, it is normal, rest of them enhance the dungeon gameplay and are not necessary.
+
+Type `/mr menu` and select the newly created Dungeon Group to verify if everything is set properly.
+
+You will want to modify the Dungeon Group config to enhance dungeon gameplay now.

@@ -2,6 +2,8 @@
 
 ## General Config (Simplified)
 
+This dungeon has <mark style="color:red;">`Ruins`</mark> as display name,  origin at `dungeon(127.0, 4.0, 245.0)` where the schematic will be pasted, `9` instances max (`3` row x `3` column), and player spawns at `dungeon(121.5, 5.0, 247.5)`.
+
 ```yaml
 # General configurations of the dungeon
 General:
@@ -70,15 +72,17 @@ Expire:
 PlayerSpawns:
   '0':
     world: dungeon
-    x: 121.47342204269181
+    x: 121.5
     y: 5.0
-    z: 247.30001128668135
+    z: 247.5
     pitch: 0.0
     yaw: 0.0
 
 ```
 
 ## General Config (Full)
+
+If you are familiar with the configuration, here is the full configuration containing all parameters.
 
 ```yaml
 # General configurations of the dungeon

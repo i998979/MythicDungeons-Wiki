@@ -1,25 +1,18 @@
 # Dungeon Group Config
 
 {% hint style="warning" %}
-**Warning:** The sample config is purely for reference only. Do not copy & paste, change the parameters like location, and mob type accordingly.
+**Warning:** The sample config is purely for reference only. Do not copy & paste, change the parameters such as location, and mob type accordingly.
 {% endhint %}
 
-Dungeon Group is the type of dungeon, all the dungeon instances share the same arguments. But dungeon-specific arguments like origin, and player spawns are automatically calculated.
+After following the guide in [Get Started](../get-started.md), you should have a runnable Dungeon with no content. Now it is time to add some content to it.
 
-As of MythicDungeons 3.0.0, Dungeon Group Config has been split into multiple config files. This would provide a bigger flexibility for future updates.
+To begin with, we will be focusing on `general.yml` and `stages.yml`.
 
-The following items are minimum requirements for a working dungeon.
-
-* MythicDungeons/groups/Ruins/
-  * schematics/
-    * Ruins.schem
-  * general.yml
-  * stages.yml
-
-In the following example, the following items are required for the dungeon to work.
+In the [`general.yml (Simplified)`](general.yml.md#general-config-simplified) and [`stages.yml (Simplified)`](stages.yml.md#stages-simplified) sample config, the following prerequisites are required for the dungeon to work.
 
 * A world named `dungeon`
-* `Ruins.schem` located inside `Ruins/schematics`
 * MythicMob `SkeletalKnight` declared in MythicMobs
 
-Additionally, different config files can be added to expand the content of the dungeon.
+`general.yml` configures general parameters of the Dungeon Group, like how many players can join, how many dungeon instances can exist at the same time, dungeon challenge time, and player spawns, etc...
+
+`stages.yml` configures your main dungeon gameplay, how your dungeon progresses, which mobs to kill, checkpoints to reach, etc... More information can be found in [Staged Dungeon](https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/staged-dungeon).
