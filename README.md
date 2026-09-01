@@ -20,18 +20,18 @@ If you have any inquiries, please join our [Discord](https://discord.gg/DVvCXFP4
 
 Here are some quick links for you to understand different parts of the plugin.
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/get-started" %}
+[Get Started](https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/get-started)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/configuration" %}
+[Configuration](https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/configuration)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/joining-dungeon" %}
+[Joining Dungeon](https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/joining-dungeon)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
+{% content-ref url="https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/commands-and-permissions" %}
+[Commands & Permissions](https://app.gitbook.com/s/hiyaLQEIUITeccgpzZh2/commands-and-permissions)
 {% endcontent-ref %}

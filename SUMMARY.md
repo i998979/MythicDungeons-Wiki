@@ -10,7 +10,7 @@
 
 ## 💡 Get Started
 
-* [Building Dungeon](get-started/building-dungeon.md)
+* [Get Started](get-started/get-started.md)
 * [Dungeon Group Config](get-started/dungeon-group-config/README.md)
   * [general.yml](get-started/dungeon-group-config/general.yml.md)
   * [stages.yml](get-started/dungeon-group-config/stages.yml.md)
