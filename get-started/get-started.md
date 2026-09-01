@@ -58,7 +58,7 @@ The Creator Command will then save the area you have selected into clipboard, an
 
 #### Defining Spawn Point
 
-* Stand at the player Spawn Point of the dungeon, then type anything
+* Stand at the player Spawn Point of the dungeon, then type `add`
 * Type `done` to complete defining player Spawn Point
 * Type `done` again to save Dungeon Group
 
@@ -92,7 +92,7 @@ The Creator Command will then save the area you have selected into clipboard, an
 
 #### Defining Spawn Point
 
-* Stand at the player Spawn Point of the dungeon, then type anything
+* Stand at the player Spawn Point of the dungeon, then type `add`
 * Type `done` to complete defining player Spawn Point
 * Type `done` again to save Dungeon Group
 
@@ -124,7 +124,7 @@ The Creator Command will then save the area you have selected into clipboard, an
 
 #### Defining Spawn Point
 
-* Stand at the player Spawn Point of the dungeon, then type anything
+* Stand at the player Spawn Point of the dungeon, then type `add`
 * Type `done` to complete defining player Spawn Point
 * Type `done` again to save Dungeon Group
 
