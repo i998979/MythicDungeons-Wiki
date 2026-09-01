@@ -6,6 +6,8 @@
 
 There are multiple ways to create Dungeon Group depending on how the dungeon should be loaded.
 
+Only 1 of the following methods should be chosen when creating a new Dungeon Group.
+
 Follow [Build from scratch](get-started.md#build-from-scratch) if you:
 
 * Want to start everything fresh and clean
@@ -18,13 +20,15 @@ Follow [With pre-built schematic](get-started.md#with-pre-built-schematic) if yo
 
 * Have a schematic file with the Dungeon you want to use
 
-Since 3.2.2-BETA, a convenient `/mg creator` command has been made to simplify Dungeon Group creation. Dungeon instances will automatically be calculated and spanned on x-axis positive and z-axis positive. It is highly recommended to do it in an empty world to avoid damaging existing terrains.
+Follow [With all Dungeon Instances built in world](get-started.md#with-existing-dungeon-built-in-world) if you:
 
-If all dungeon instances are prebuilt in the world, defining `Length`, `Width`, and `Height` of the dungeon and have `RestoreTerrains` disabled in `general.yml` so that the terrain will not be unnecessarily restored. Beware of world interactions like block breaking/placement, or explosions, as the terrain is not restored.
+* Have all dungeon instances prebuilt in the world
 
-However, it is still highly recommended to have a schematic file in place or create Dungeon Group through `/mg creator` so that the plugin calculates things like location automatically.
+{% hint style="info" %}
+If all dungeon instances are prebuilt in the world, and `Length`, `Width`, and `Height` of the dungeon is defined, it is highly recommended to have `RestoreTerrains` disabled in `general.yml`. So that the terrain will not be unnecessarily restored. Beware of world interactions such as block breaking/placement or explosions, as the terrain is not restored.
+{% endhint %}
 
-Only 1 of the following methods should be chosen when creating a new Dungeon Group.
+However, it is still highly recommended to have a schematic file prepared or create Dungeon Group through `/mg creator` so that Dungeon dimensions and location are calculated automatically.
 
 <details>
 
